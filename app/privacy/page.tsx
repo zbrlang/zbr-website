@@ -2,7 +2,8 @@ import Footer from "@/components/Footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ZBR | Privacy",
+  title: "Privacy",
+  description: "Privacy Policy for the ZBR framework, detailing data collection and storage practices.",
 };
 
 export default function PrivacyPolicy() {

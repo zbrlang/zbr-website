@@ -2,7 +2,8 @@ import Footer from "@/components/Footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ZBR | TOS",
+  title: "TOS",
+  description: "Terms of Service for the ZBR framework and bot engine.",
 };
 
 export default function TermsOfService() {

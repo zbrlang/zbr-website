@@ -3,7 +3,8 @@ import { Mail, MessageSquare, Twitter, Github } from 'lucide-react';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ZBR | Support",
+  title: "Support",
+  description: "Get support for the ZBR framework. Contact us via email, Discord, or GitHub.",
 };
 
 export default function Contact() {
