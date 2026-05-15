@@ -1,6 +1,9 @@
-'use client';
-
 import Footer from "@/components/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ZBR | TOS",
+};
 
 export default function TermsOfService() {
   return (
@@ -13,30 +16,77 @@ export default function TermsOfService() {
 
         <div className="prose prose-invert prose-blue max-w-none space-y-12">
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">1. Acceptance of Terms</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">1. Description of Service</h2>
             <p className="text-secondary/60 leading-relaxed">
-              By accessing or using ZBR, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services. ZBR is a domain-specific language and toolset provided &quot;as is&quot;.
+              ZBR is a scripting engine and Discord bot framework that allows users to create custom automation and functionality using a specialized scripting language. The service includes the bot, its runtime environment, and associated command-loading capabilities.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">2. Use License</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">2. Bot Permissions and Usage</h2>
             <p className="text-secondary/60 leading-relaxed">
-              ZBR is typically distributed under open-source licenses (e.g., MIT). Your use of the software is governed by the specific license associated with the ZBR repository.
+              By inviting ZBR to your server, you acknowledge and grant the bot permissions to:
+            </p>
+            <ul className="list-disc list-inside text-secondary/60 space-y-2 mt-2">
+              <li><strong>Read and Send Messages</strong>: Necessary for trigger detection and response.</li>
+              <li><strong>Moderate Members</strong>: Including kicking, banning, and timing out users (via Zkick, Zban, Ztimeout).</li>
+              <li><strong>Manage Roles</strong>: Creating, deleting, and assigning roles (via ZcreateRole, ZroleGrant).</li>
+              <li><strong>Manage Channels</strong>: Creating and modifying channels (via ZcreateChannel, ZmodifyChannel).</li>
+              <li><strong>Manage Webhooks</strong>: Creating and deleting webhooks for advanced notifications.</li>
+              <li><strong>Interact with Components</strong>: Handling buttons, select menus, and modals.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">3. User Conduct</h2>
+            <p className="text-secondary/60 leading-relaxed">
+              You agree not to use ZBR for:
+            </p>
+            <ul className="list-disc list-inside text-secondary/60 space-y-2 mt-2">
+              <li>Any illegal activities or to violate any local, state, or international laws.</li>
+              <li>Spamming, harassment, or spreading malicious software.</li>
+              <li>Bypassing Discord&apos;s own Terms of Service or Developer Policy.</li>
+              <li>Making excessive or abusive external HTTP requests using our scripting functions.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">4. Scripting Responsibilities</h2>
+            <p className="text-secondary/60 leading-relaxed">
+              As ZBR is a scripting engine, the functionality of the bot is determined by the scripts provided by the user/admin. We are not responsible for:
+            </p>
+            <ul className="list-disc list-inside text-secondary/60 space-y-2 mt-2">
+              <li>The content or consequences of scripts executed by the engine.</li>
+              <li>Data loss or server damage resulting from poorly written or malicious scripts.</li>
+              <li>Unexpected bot behavior due to script logic.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">5. External Communications</h2>
+            <p className="text-secondary/60 leading-relaxed">
+              ZBR scripts have the capability to make external HTTP requests (ZhttpGet, ZhttpPost, etc.). You are responsible for ensuring that these requests comply with the terms of the receiving services and do not transmit sensitive data insecurely.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">3. Disclaimer</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">6. Limitation of Liability</h2>
             <p className="text-secondary/60 leading-relaxed">
-              The materials on ZBR&apos;s website and software are provided on an &apos;as is&apos; basis. ZBR makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+              ZBR is provided &quot;as is&quot; and &quot;as available&quot; without any warranties. In no event shall the developers be liable for any damages arising out of the use or inability to use the service.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">4. Limitations</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">7. Termination</h2>
             <p className="text-secondary/60 leading-relaxed">
-              In no event shall ZBR or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use ZBR.
+              We reserve the right to terminate access to the service for any user or server that violates these terms or Discord&apos;s policies.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">8. Changes to Terms</h2>
+            <p className="text-secondary/60 leading-relaxed">
+              We may update these terms from time to time. Continued use of the service after changes constitutes acceptance of the new terms.
             </p>
           </section>
         </div>

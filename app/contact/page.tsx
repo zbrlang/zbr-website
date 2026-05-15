@@ -1,7 +1,10 @@
-'use client';
-
 import Footer from "@/components/Footer";
 import { Mail, MessageSquare, Twitter, Github } from 'lucide-react';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ZBR | Support",
+};
 
 export default function Contact() {
   return (
@@ -15,11 +18,11 @@ export default function Contact() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <a href="mailto:support@zbr.dev" className="group p-8 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:bg-white/[0.05] hover:border-white/[0.15] transition-all">
+          <a href="mailto:zubariel@gmail.com" className="group p-8 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:bg-white/[0.05] hover:border-white/[0.15] transition-all">
             <Mail className="text-primary mb-6 group-hover:scale-110 transition-transform" size={32} />
             <h3 className="text-xl font-bold text-white mb-2">Email Support</h3>
             <p className="text-secondary/40 text-sm">Direct support for technical issues and inquiries.</p>
-            <span className="text-primary text-sm mt-4 block font-medium">support@zbr.dev</span>
+            <span className="text-primary text-sm mt-4 block font-medium">zubariel@gmail.com</span>
           </a>
 
           <a href="#" className="group p-8 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:bg-white/[0.05] hover:border-white/[0.15] transition-all">

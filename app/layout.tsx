@@ -4,8 +4,13 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ZBR | The High-Performance DSL",
+  title: "ZBR",
   description: "A modern, minimal, and high-end domain-specific language for the next generation of developers.",
+  icons: {
+    icon: "/images/ZBR_logo.png",
+    shortcut: "/images/ZBR_logo.png",
+    apple: "/images/ZBR_logo.png",
+  },
 };
 
 import Navbar from "@/components/Navbar";
