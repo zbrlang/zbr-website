@@ -1,0 +1,26 @@
+# Zcooldown
+
+Applies a per-user per-server cooldown that blocks re-use of the current command until the duration expires.
+
+## Syntax
+
+```zbr
+Zcooldown{duration;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| duration | duration | Yes | - |
+| errorMessage | string | No | - |
+
+
+
+## Example
+
+```zbr
+Zcooldown{5m;You are on cooldown!}
+```
+

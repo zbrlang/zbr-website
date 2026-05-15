@@ -1,0 +1,26 @@
+# ZcheckUserPerms
+
+Returns true if the specified user has all of the given guild permissions.
+
+## Syntax
+
+```zbr
+ZcheckUserPerms{userID;permission;...}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | Yes | - |
+| permission | permission | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZcheckUserPerms{123456789012345678;manageMessages;kickMembers}
+```
+

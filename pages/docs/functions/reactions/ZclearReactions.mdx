@@ -1,0 +1,27 @@
+# ZclearReactions
+
+Removes a specific emoji reaction from a message, or clears all reactions when !all is passed as the emoji.
+
+## Syntax
+
+```zbr
+ZclearReactions{channelID;messageID;emoji}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| messageID | snowflake | Yes | - |
+| emoji | emoji | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZclearReactions{123456789012345678;987654321098765432;👍}
+```
+

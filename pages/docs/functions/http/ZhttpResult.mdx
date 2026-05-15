@@ -1,0 +1,25 @@
+# ZhttpResult
+
+Returns the response body of the last HTTP request, optionally navigating into it as a JSON path where each argument is one level deeper.
+
+## Syntax
+
+```zbr
+ZhttpResult{key?;...}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| key | string | No | - |
+
+
+
+## Example
+
+```zbr
+ZhttpResult{user;id}
+```
+

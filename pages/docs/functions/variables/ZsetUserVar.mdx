@@ -1,0 +1,28 @@
+# ZsetUserVar
+
+Sets the value of a user-scoped variable, defaulting to the current user and server if not specified.
+
+## Syntax
+
+```zbr
+ZsetUserVar{name;value?;userID?;guildID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+| value | string | No | - |
+| userID | snowflake | No | - |
+| guildID | snowflake | No | - |
+
+
+
+## Example
+
+```zbr
+ZsetUserVar{points;100}
+```
+

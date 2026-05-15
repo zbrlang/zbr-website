@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "docs.zbrlang.xyz"
+        }
+      ],
+      "destination": "/docs/:path*"
+    }
+  ]
+}

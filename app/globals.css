@@ -1,0 +1,359 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #05060f;
+  --foreground: #ffffff;
+  --primary: #c2ccff;
+  --secondary: #d8ecf8;
+  --tertiary: #d1e4fa;
+  --neutral: #05060f;
+  --surface: #0b1020;
+  --border: #374151;
+  --accent: #c2ccff;
+  --nextra-primary-hue: 220deg;
+}
+
+/* Light mode overrides - More professional slate/blue theme */
+:root[class~="light"],
+[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #020617;
+  --primary: #2563eb;
+  --secondary: #475569;
+  --tertiary: #64748b;
+  --neutral: #f8fafc;
+  --surface: #f1f5f9;
+  --border: #e2e8f0;
+  --accent: #2563eb;
+  --nextra-primary-hue: 221deg;
+}
+
+@import url('https://fonts.cdnfonts.com/css/hubot-sans');
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Untitled Sans', 'Inter', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* Fix for Nextra light mode sidebar and other elements */
+:root[class~="light"] .nextra-sidebar-container,
+:root[class~="light"] .nextra-nav-container {
+  background-color: var(--background) !important;
+  border-color: var(--border) !important;
+}
+
+:root[class~="light"] .nextra-search ul {
+  background-color: var(--surface) !important;
+  border-color: var(--border) !important;
+}
+
+/* Remove Gold Mode Styles */
+@layer base {
+  * {
+    @apply border-border;
+  }
+}
+
+/* AuthKit Specific Animations & Styles */
+@keyframes load {  
+  0% { opacity: 0;}    
+  100% { opacity: 1;}    
+}
+
+@keyframes up {      
+  100% { transform: translateY(0); }    
+}
+
+@keyframes loadrot {
+  0% { transform: rotate(0deg) scale(0); }
+  100% { transform: scale(1); }
+}
+
+@keyframes spotlight {
+  0% { transform: rotateZ(0deg) scale(1); filter: blur(25px) opacity(0.5); }
+  20% { transform: rotateZ(-1deg) scale(1.4); filter: blur(30px) opacity(0.7); }    
+  40% { transform: rotateZ(2deg) scale(1.6); filter: blur(25px) opacity(0.4); }    
+  60% { transform: rotateZ(-2deg) scale(1.4); filter: blur(30px) opacity(0.7); }    
+  80% { transform: rotateZ(1deg) scale(1.2); filter: blur(20px) opacity(0.4); }    
+  100% { transform: rotateZ(0deg) scale(1); filter: blur(25px) opacity(0.5); }    
+}
+
+@keyframes pulse { 
+  0% { --p: 0%; }
+  50% { --p: 300%;}
+  100% { --p: 300%;}
+}
+
+@keyframes loop {
+  100% { offset-distance: 100%; }
+}
+
+@keyframes accentload {
+  0% { opacity: 0; transform: scale(0); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@property --p {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 0%;
+}
+
+.hero-text-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text-main {
+  font-family: 'Hubot-Sans', sans-serif;
+  font-size: clamp(6rem, 16vw, 10rem);
+  font-weight: 900;
+  color: #9dc3f7;
+  text-shadow: 0 0 20px rgba(157, 195, 247, 0.4);
+  position: relative;
+  z-index: 10; /* Above spotlights */
+  background: radial-gradient( 2em 2em at 50% 50%,
+      transparent calc(var(--p) - 2em),
+      #fff calc(var(--p) - 1em), 
+      #fff calc(var(--p) - 0.4em), 
+      transparent var(--p) 
+  ),
+  linear-gradient(0deg, #bad1f1 30%, #9dc3f7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pulse 10s linear 1.2s infinite, textPulse 4s ease-in-out infinite;
+  --p: 0%;
+}
+
+@keyframes textPulse {
+  0%, 100% { 
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.3)) brightness(1);
+  }
+  50% { 
+    filter: drop-shadow(0 0 30px rgba(157, 195, 247, 0.6)) brightness(1.2);
+    color: #bad1f1;
+  }
+}
+
+.footer-text-giant {
+  font-family: 'Hubot-Sans', sans-serif;
+  font-size: clamp(10rem, 40vw, 40rem);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 0.8;
+  color: #0d111a;
+  text-shadow: 0 0 40px rgba(157, 195, 247, 0.05);
+  user-select: none;
+  pointer-events: none;
+}
+
+.spotlight-container {
+  position: absolute;
+  inset: 0;
+  font-family: 'Hubot-Sans', sans-serif;
+  font-size: clamp(5rem, 15vw, 10rem);
+  font-weight: 900; /* Bulkier */
+  background: radial-gradient( 2em 2em at 50% 50%,
+      transparent calc(var(--p) - 2em),
+      transparent calc(var(--p) - 1em),
+      #fff calc(var(--p) - 1em), 
+      #fff calc(var(--p) - 0.4em), 
+      transparent calc(var(--p) - 0.4em), 
+      transparent var(--p) 
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: blur(16px) opacity(0.4);
+  animation: pulse 10s linear 1.2s infinite;
+  pointer-events: none;
+  --p: 0%;
+}
+
+.spotlight-container {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1; 
+}
+
+@keyframes beamDown {
+  0% { opacity: 0; transform: scaleY(0) rotate(var(--rotation, 0deg)); transform-origin: top; }
+  100% { opacity: 1; transform: scaleY(1) rotate(var(--rotation, 0deg)); transform-origin: top; }
+}
+
+.spotlight {
+  border-radius: 0 0 50% 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto; 
+  top: 0; 
+  width: 80vw; 
+  height: 140vh; 
+  background-image: conic-gradient(from 0deg at 50% 0%, transparent 43%, rgba(157, 195, 247, 0.3) 47%, rgba(157, 195, 247, 0.6) 50%, rgba(157, 195, 247, 0.3) 53%, transparent 57%);
+  transform-origin: 50% 0;
+  filter: blur(80px);
+  opacity: 0;
+  animation: beamDown 2s ease-out 0.8s forwards;
+}
+
+.mountains {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 20em; /* Increased from 15em */
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Realistic Mountain Lighting - Top Down */
+.mountains > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+  width: 35em;
+  height: 20em;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  /* Curvy top-down lighting using radial gradients - narrowed to center */
+  background: 
+    radial-gradient(ellipse at 50% 0%, rgba(37, 46, 68, 0.8) 0%, transparent 40%), /* Focused lit top */
+    linear-gradient(to bottom, #151a24 0%, #05060f 100%); /* Base gradient */
+  /* Soft white outline/border */
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.1));
+}
+
+.mountains > div:nth-child(1) {
+  z-index: 3;
+}
+
+/* Side Mountains - Dimmest, only slight glow on inner edges */
+.mountains > div:nth-child(2),
+.mountains > div:nth-child(3) {
+  opacity: 0.8;
+  background: 
+    radial-gradient(ellipse at 50% 0%, rgba(32, 40, 59, 0.4) 0%, transparent 30%),
+    linear-gradient(to bottom, #0d111a 0%, #05060f 100%);
+}
+
+.mountains > div:nth-child(2) {
+  left: -25em;
+  width: 30em;
+  height: 12em;
+  z-index: 2;
+}
+
+.mountains > div:nth-child(3) {
+  right: -25em;
+  width: 30em;
+  height: 12em;
+  z-index: 2;
+}
+
+/* Global mountain overlays */
+.mountains > div::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(194, 204, 255, 0.15) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.mountains > div::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: 
+    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(194, 204, 255, 0.08) 3px);
+  z-index: 4;
+}
+
+.mid-spot {
+  width: 2.2em; /* Slightly larger */
+  height: 2.2em;
+  border-radius: 50%;
+  background: black;
+  box-shadow: 0 0 1.5em 0 #98c0ef;
+  transition: box-shadow 1s ease-in-out;
+}
+
+.glow-box {
+  background: radial-gradient(circle at center, rgba(186, 207, 247, 0.15) 0%, transparent 70%);
+  filter: blur(40px);
+}
+
+.pill-button {
+  @apply h-9 px-6 rounded-full font-semibold text-sm transition-all duration-300 flex items-center justify-center relative overflow-hidden;
+}
+
+.pill-button-primary {
+  @apply pill-button bg-white/[0.03] text-[#9dc3f7] border border-white/[0.08] backdrop-blur-md shadow-[0_4px_24px_-1px_rgba(0,0,0,0.2)];
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pill-button-primary:hover {
+  @apply bg-white/[0.08] border-white/[0.15] text-white;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 32px -1px rgba(0,0,0,0.3);
+}
+
+.pill-button-secondary {
+  @apply pill-button bg-white/[0.01] text-foreground/40 border border-white/[0.05] backdrop-blur-sm hover:text-foreground/80 hover:bg-white/[0.04] hover:border-white/[0.1];
+  transition: all 0.3s ease;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+}
+
+.contact-btn .glow {
+  --border-width: 1px;
+  --loop-cycle: 24s;
+  position: absolute;
+  inset: calc(var(--border-width)* -1);
+  border-radius: 50px;
+  border: var(--border-width) solid transparent;
+  -webkit-mask: linear-gradient(transparent, transparent), linear-gradient(white, white);
+  mask: linear-gradient(transparent, transparent), linear-gradient(white, white);
+  -webkit-mask-clip: padding-box, border-box;
+  mask-clip: padding-box, border-box;
+  -webkit-mask-composite: source-in, xor;
+  mask-composite: intersect;
+  pointer-events: none;
+}
+
+.contact-btn .glow::after, .contact-btn .glow::before {
+  content: "";
+  height: 100%;
+  offset-anchor: 100% 50%;
+  background: radial-gradient(circle at 50% 50%, hsla(0, 0%, 100%, 0.75), transparent 50%), radial-gradient(circle at 50% 50%, #c2ccff 50%, transparent);
+  opacity: 0.4;
+  offset-path: rect(0 100% 100% 0 round 33px);
+  position: absolute;
+  display: inline-block;
+  animation: loop var(--loop-cycle) linear infinite;
+  aspect-ratio: 1 / 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.contact-btn .glow::before {
+  animation-delay: calc( var(--loop-cycle) / -2 );
+}
+
+

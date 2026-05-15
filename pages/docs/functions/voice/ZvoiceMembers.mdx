@@ -1,0 +1,25 @@
+# ZvoiceMembers
+
+Returns a space-separated list of user IDs currently in the specified voice channel, defaulting to the author's current voice channel.
+
+## Syntax
+
+```zbr
+ZvoiceMembers{channelID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | No | author's voice channel |
+
+
+
+## Example
+
+```zbr
+ZvoiceMembers{123456789012345678}
+```
+

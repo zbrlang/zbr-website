@@ -1,0 +1,26 @@
+# ZonlyForRoleIDs
+
+Halts execution unless the author has at least one of the specified role IDs.
+
+## Syntax
+
+```zbr
+ZonlyForRoleIDs{roleID;...;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| roleID | snowflake | Yes | - |
+| errorMessage | string | No | You do not have the required role to use this command. |
+
+
+
+## Example
+
+```zbr
+ZonlyForRoleIDs{987654321012345678;111222333444555666}
+```
+

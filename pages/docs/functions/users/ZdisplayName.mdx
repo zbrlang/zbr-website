@@ -1,0 +1,26 @@
+# ZdisplayName
+
+Returns the display name of the command author or specified user; use server for the guild nickname or global for the Discord global name.
+
+## Syntax
+
+```zbr
+ZdisplayName{userID?;type?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | No | author's ID |
+| type | string | No | server |
+
+
+
+## Example
+
+```zbr
+ZdisplayName{123456789012345678;global}
+```
+

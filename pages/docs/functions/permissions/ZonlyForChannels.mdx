@@ -1,0 +1,26 @@
+# ZonlyForChannels
+
+Halts execution unless the current channel matches one of the specified channel IDs.
+
+## Syntax
+
+```zbr
+ZonlyForChannels{channelID;...;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| errorMessage | string | No | This command can only be used in specific channels. |
+
+
+
+## Example
+
+```zbr
+ZonlyForChannels{123456789012345678;987654321012345678}
+```
+

@@ -1,0 +1,26 @@
+# ZonlyForServers
+
+Halts execution unless the current guild ID matches one of the specified server IDs.
+
+## Syntax
+
+```zbr
+ZonlyForServers{guildID;...;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| guildID | snowflake | Yes | - |
+| errorMessage | string | No | This command is not available in this server. |
+
+
+
+## Example
+
+```zbr
+ZonlyForServers{123456789012345678}
+```
+

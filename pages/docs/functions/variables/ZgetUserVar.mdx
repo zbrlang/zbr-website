@@ -1,0 +1,27 @@
+# ZgetUserVar
+
+Returns the value of a user-scoped variable, defaulting to the current user and server if not specified.
+
+## Syntax
+
+```zbr
+ZgetUserVar{name;userID?;guildID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+| userID | snowflake | No | - |
+| guildID | snowflake | No | - |
+
+
+
+## Example
+
+```zbr
+ZgetUserVar{points}
+```
+

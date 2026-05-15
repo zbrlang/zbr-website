@@ -1,0 +1,26 @@
+# ZgetMentionableSelectUserIDs
+
+Returns all selected user and role IDs from a mentionable select menu interaction joined by the given separator.
+
+## Syntax
+
+```zbr
+ZgetMentionableSelectUserIDs{separator?;limit?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| separator | string | No | ,  |
+| limit | integer | No | - |
+
+
+
+## Example
+
+```zbr
+ZgetMentionableSelectUserIDs{, ;5}
+```
+

@@ -1,0 +1,26 @@
+# ZonlyIf
+
+Halts execution with a custom error message if the given condition evaluates to false.
+
+## Syntax
+
+```zbr
+ZonlyIf{condition;error}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| condition | string | Yes | - |
+| error | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZonlyIf{ZisSlash{}==true;This command only works as a slash command.}
+```
+

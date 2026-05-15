@@ -1,0 +1,28 @@
+# ZuserPerms
+
+Returns the guild permissions held by the command author or specified user, up to the given amount, joined by the separator.
+
+## Syntax
+
+```zbr
+ZuserPerms{userID?;amount?;separator?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | No | author's ID |
+| amount | integer | No | all |
+| separator | string | No | 
+ |
+
+
+
+## Example
+
+```zbr
+ZuserPerms{123456789012345678;5;, }
+```
+

@@ -1,0 +1,27 @@
+# ZonlyIfMessageContains
+
+Halts execution with an error message unless the provided message text contains all of the specified words.
+
+## Syntax
+
+```zbr
+ZonlyIfMessageContains{message;word;...;errorMessage}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| message | string | Yes | - |
+| word | string | Yes | - |
+| errorMessage | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZonlyIfMessageContains{Hello world;hello;world;Required words not found.}
+```
+

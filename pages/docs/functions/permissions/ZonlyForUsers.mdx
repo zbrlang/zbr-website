@@ -1,0 +1,26 @@
+# ZonlyForUsers
+
+Halts execution unless the author's username matches one of the specified usernames.
+
+## Syntax
+
+```zbr
+ZonlyForUsers{username;...;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| username | string | Yes | - |
+| errorMessage | string | No | You are not allowed to use this command. |
+
+
+
+## Example
+
+```zbr
+ZonlyForUsers{Alice;Bob}
+```
+

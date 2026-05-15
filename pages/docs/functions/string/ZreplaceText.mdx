@@ -1,0 +1,28 @@
+# ZreplaceText
+
+Replaces occurrences of a sample substring in text with a new string, with an optional limit on the number of replacements.
+
+## Syntax
+
+```zbr
+ZreplaceText{text;sample;new;amount?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| text | string | Yes | - |
+| sample | string | Yes | - |
+| new | string | Yes | - |
+| amount | integer | No | -1 |
+
+
+
+## Example
+
+```zbr
+ZreplaceText{hello world world;world;earth}
+```
+

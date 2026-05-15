@@ -1,0 +1,25 @@
+# ZallowUserMentions
+
+Restricts user pings in the bot response to only the listed user IDs; if no IDs are given, all user mentions are suppressed.
+
+## Syntax
+
+```zbr
+ZallowUserMentions{userID;...}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | No | - |
+
+
+
+## Example
+
+```zbr
+ZallowUserMentions{123456789012345678;987654321098765432}
+```
+

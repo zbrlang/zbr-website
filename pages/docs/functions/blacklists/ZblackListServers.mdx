@@ -1,0 +1,26 @@
+# ZblackListServers
+
+Halts command execution if the current server's guild ID matches any of the provided guild IDs.
+
+## Syntax
+
+```zbr
+ZblackListServers{guildID;...;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| guildID | snowflake | Yes | - |
+| errorMessage | string | No | This command is not available in this server. |
+
+
+
+## Example
+
+```zbr
+ZblackListServers{123456789012345678;This command is disabled here.}
+```
+

@@ -1,0 +1,26 @@
+# ZsetUserRoles
+
+Replaces all roles of the specified user with exactly the provided list of role IDs.
+
+## Syntax
+
+```zbr
+ZsetUserRoles{userID?;roleID;...}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | No | author |
+| roleID | snowflake | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZsetUserRoles{123456789012345678;987654321012345678;111222333444555666}
+```
+

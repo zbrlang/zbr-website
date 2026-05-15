@@ -1,0 +1,25 @@
+# ZeventStatus
+
+Returns the current status of a scheduled event as one of: scheduled, active, completed, or cancelled.
+
+## Syntax
+
+```zbr
+ZeventStatus{eventID}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| eventID | snowflake | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZeventStatus{1234567890123456789}
+```
+

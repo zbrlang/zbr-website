@@ -1,0 +1,26 @@
+# ZblackListRolesIDs
+
+Halts command execution if the triggering user holds any role matching the provided role IDs.
+
+## Syntax
+
+```zbr
+ZblackListRolesIDs{roleID;...;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| roleID | snowflake | Yes | - |
+| errorMessage | string | No | You are blacklisted from using this command. |
+
+
+
+## Example
+
+```zbr
+ZblackListRolesIDs{123456789012345678;987654321098765432;You cannot use this command.}
+```
+

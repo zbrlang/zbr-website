@@ -1,0 +1,27 @@
+# ZsendMessage
+
+Sends a message to the specified channel (or the current channel if omitted), and optionally returns the sent message's ID.
+
+## Syntax
+
+```zbr
+ZsendMessage{channelID?;content;returnID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | No | current channel's ID |
+| content | string | Yes | - |
+| returnID | boolean | No | false |
+
+
+
+## Example
+
+```zbr
+ZsendMessage{123456789012345678;Hello World!;false}
+```
+

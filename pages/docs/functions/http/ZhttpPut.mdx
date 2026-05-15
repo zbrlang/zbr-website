@@ -1,0 +1,26 @@
+# ZhttpPut
+
+Sends an HTTP PUT request to the specified URL with an optional request body and stores the response.
+
+## Syntax
+
+```zbr
+ZhttpPut{url;body?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| url | url | Yes | - |
+| body | string | No | - |
+
+
+
+## Example
+
+```zbr
+ZhttpPut{https://api.example.com/users/1;{"name":"Alice"}}
+```
+

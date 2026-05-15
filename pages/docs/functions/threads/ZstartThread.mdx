@@ -1,0 +1,29 @@
+# ZstartThread
+
+Creates a new thread in the specified channel, optionally attaching it to an existing message, and returns the thread ID if requested.
+
+## Syntax
+
+```zbr
+ZstartThread{name;channelID;messageID?;archiveDuration?;returnID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+| channelID | snowflake | Yes | - |
+| messageID | snowflake | No | - |
+| archiveDuration | integer | No | 60 |
+| returnID | boolean | No | false |
+
+
+
+## Example
+
+```zbr
+ZstartThread{My Thread;123456789012345678;;;true}
+```
+

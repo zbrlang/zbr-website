@@ -1,0 +1,26 @@
+# ZserverCooldown
+
+Applies a server-wide cooldown that prevents anyone in the server from running the command until the duration expires.
+
+## Syntax
+
+```zbr
+ZserverCooldown{duration;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| duration | duration | Yes | - |
+| errorMessage | string | No | - |
+
+
+
+## Example
+
+```zbr
+ZserverCooldown{10m;This command is on cooldown!}
+```
+

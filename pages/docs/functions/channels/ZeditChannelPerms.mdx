@@ -1,0 +1,27 @@
+# ZeditChannelPerms
+
+Edits permission overwrites for a user or role on a channel, using + to allow, - to deny, and / to neutralize each named permission.
+
+## Syntax
+
+```zbr
+ZeditChannelPerms{channelID;userOrRoleID;permission;...}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| userOrRoleID | snowflake | Yes | - |
+| permission | permission | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZeditChannelPerms{1234567890123456789;9876543210987654321;+sendMessages;-manageMessages}
+```
+

@@ -1,0 +1,25 @@
+# ZroleMembers
+
+Returns a space-separated list of user IDs for all members who have the given role, defaulting to the author's highest role.
+
+## Syntax
+
+```zbr
+ZroleMembers{roleID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| roleID | snowflake | No | author's highest role |
+
+
+
+## Example
+
+```zbr
+ZroleMembers{987654321012345678}
+```
+

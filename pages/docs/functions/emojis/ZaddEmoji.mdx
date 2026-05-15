@@ -1,0 +1,27 @@
+# ZaddEmoji
+
+Downloads an image from the given URL and creates a new custom emoji in the current server, optionally returning the usable emoji string.
+
+## Syntax
+
+```zbr
+ZaddEmoji{name;imageURL;returnEmoji?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+| imageURL | url | Yes | - |
+| returnEmoji | boolean | No | false |
+
+
+
+## Example
+
+```zbr
+ZaddEmoji{wave;https://example.com/wave.png;true}
+```
+

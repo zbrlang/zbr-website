@@ -1,0 +1,27 @@
+# Zif
+
+Evaluates a condition and returns the then-branch value if true, or the optional else-branch value if false.
+
+## Syntax
+
+```zbr
+Zif{condition;then;else?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| condition | string | Yes | - |
+| then | string | Yes | - |
+| else | string | No | - |
+
+
+
+## Example
+
+```zbr
+Zif{ZgetUserVar{points}>=100;You have enough points!;Not enough points.}
+```
+

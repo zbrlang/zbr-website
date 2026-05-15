@@ -1,0 +1,26 @@
+# ZrepliedMessageID
+
+Returns the ID of the message that the specified or triggering message is replying to.
+
+## Syntax
+
+```zbr
+ZrepliedMessageID{channelID?;messageID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | No | - |
+| messageID | snowflake | No | - |
+
+
+
+## Example
+
+```zbr
+ZrepliedMessageID{123456789012345678;987654321098765432}
+```
+

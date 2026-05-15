@@ -1,0 +1,31 @@
+# ZaddTextInput
+
+Adds a text input field to the current modal.
+
+## Syntax
+
+```zbr
+ZaddTextInput{fieldID;label;style?;minLength?;maxLength?;required?;placeholder?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| fieldID | string | Yes | - |
+| label | string | Yes | - |
+| style | string | No | short |
+| minLength | integer | No | - |
+| maxLength | integer | No | - |
+| required | boolean | No | true |
+| placeholder | string | No | - |
+
+
+
+## Example
+
+```zbr
+ZaddTextInput{name_field;Your Name;short;1;100;true;Enter your name}
+```
+

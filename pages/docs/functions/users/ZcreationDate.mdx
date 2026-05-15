@@ -1,0 +1,26 @@
+# ZcreationDate
+
+Returns the creation date derived from any Discord snowflake ID, formatted according to the optional format string.
+
+## Syntax
+
+```zbr
+ZcreationDate{id?;format?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| id | snowflake | No | author's ID |
+| format | string | No | %Y-%m-%d |
+
+
+
+## Example
+
+```zbr
+ZcreationDate{123456789012345678;%B %d, %Y}
+```
+

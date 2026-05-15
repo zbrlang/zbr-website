@@ -1,0 +1,26 @@
+# ZforJson
+
+Iterates over a JSON array at the given key path within the current parsed JSON object, executing the code block for each element.
+
+## Syntax
+
+```zbr
+ZforJson{key;...;code}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| key | string | Yes | - |
+| code | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZforJson{items;ZloopIndex{}: ZloopValue{}}
+```
+

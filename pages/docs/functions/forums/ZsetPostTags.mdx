@@ -1,0 +1,26 @@
+# ZsetPostTags
+
+Replaces all applied tags on a forum post thread with the specified tag IDs.
+
+## Syntax
+
+```zbr
+ZsetPostTags{threadID;tagID;...}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| threadID | snowflake | Yes | - |
+| tagID | snowflake | No | - |
+
+
+
+## Example
+
+```zbr
+ZsetPostTags{1234567890123456789;1122334455667788;9988776655443322}
+```
+

@@ -1,0 +1,27 @@
+# ZsetChannelVar
+
+Sets the value of a channel-scoped variable, defaulting to the current channel if not specified.
+
+## Syntax
+
+```zbr
+ZsetChannelVar{name;value?;channelID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+| value | string | No | - |
+| channelID | snowflake | No | - |
+
+
+
+## Example
+
+```zbr
+ZsetChannelVar{topic;General Discussion}
+```
+

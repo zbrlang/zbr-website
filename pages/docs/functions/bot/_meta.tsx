@@ -1,0 +1,18 @@
+export default {
+  "ZallMembersCount": "ZallMembersCount",
+  "ZbotCommands": "ZbotCommands",
+  "ZbotID": "ZbotID",
+  "ZbotOwnerID": "ZbotOwnerID",
+  "ZbotTyping": "ZbotTyping",
+  "ZcommandName": "ZcommandName",
+  "ZcommandsCount": "ZcommandsCount",
+  "ZcommandTrigger": "ZcommandTrigger",
+  "Zenabled": "Zenabled",
+  "ZexecutionTime": "ZexecutionTime",
+  "Zping": "Zping",
+  "ZserverCount": "ZserverCount",
+  "ZserverNames": "ZserverNames",
+  "ZslashCommandsCount": "ZslashCommandsCount",
+  "ZslashID": "ZslashID",
+  "Zuptime": "Zuptime"
+}

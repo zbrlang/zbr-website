@@ -1,0 +1,26 @@
+# ZuserJoined
+
+Returns the date when the command author or specified user joined the current guild, formatted according to the optional format string.
+
+## Syntax
+
+```zbr
+ZuserJoined{userID?;format?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | No | author's ID |
+| format | string | No | %Y-%m-%d |
+
+
+
+## Example
+
+```zbr
+ZuserJoined{123456789012345678;%B %d, %Y}
+```
+

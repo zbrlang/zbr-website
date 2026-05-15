@@ -1,0 +1,25 @@
+# ZhttpRemoveHeader
+
+Removes a custom HTTP header previously set via ZhttpAddHeader so it is no longer sent with subsequent requests.
+
+## Syntax
+
+```zbr
+ZhttpRemoveHeader{name}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZhttpRemoveHeader{Authorization}
+```
+

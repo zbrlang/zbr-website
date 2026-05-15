@@ -1,0 +1,26 @@
+# ZgetBanReason
+
+Returns the ban reason for the specified user, optionally checked against a different guild.
+
+## Syntax
+
+```zbr
+ZgetBanReason{userID;guildID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | Yes | - |
+| guildID | snowflake | No | current guild |
+
+
+
+## Example
+
+```zbr
+ZgetBanReason{123456789012345678}
+```
+

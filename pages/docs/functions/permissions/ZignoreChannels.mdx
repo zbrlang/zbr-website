@@ -1,0 +1,26 @@
+# ZignoreChannels
+
+Halts execution if the current channel matches any of the provided channel IDs.
+
+## Syntax
+
+```zbr
+ZignoreChannels{channelID;...;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| errorMessage | string | No | This command cannot be used in this channel. |
+
+
+
+## Example
+
+```zbr
+ZignoreChannels{123456789012345678;987654321012345678;Not allowed here!}
+```
+

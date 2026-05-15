@@ -1,0 +1,27 @@
+# ZgetMessage
+
+Fetches the specified field from a Discord message, where type is one of content, authorID, username, or avatar.
+
+## Syntax
+
+```zbr
+ZgetMessage{channelID?;messageID;type?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | No | - |
+| messageID | snowflake | Yes | - |
+| type | string | No | content |
+
+
+
+## Example
+
+```zbr
+ZgetMessage{123456789012345678;987654321098765432;authorID}
+```
+

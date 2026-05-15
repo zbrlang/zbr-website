@@ -1,0 +1,26 @@
+# ZblackListRoles
+
+Halts command execution if the triggering user holds any role matching the provided role names.
+
+## Syntax
+
+```zbr
+ZblackListRoles{roleName;...;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| roleName | string | Yes | - |
+| errorMessage | string | No | You are blacklisted from using this command. |
+
+
+
+## Example
+
+```zbr
+ZblackListRoles{Muted;Banned;You are not allowed to use this command.}
+```
+

@@ -1,0 +1,26 @@
+# ZremoveComponent
+
+Removes a specific component by its custom ID from a message, defaulting to the triggering message.
+
+## Syntax
+
+```zbr
+ZremoveComponent{customID;messageID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| customID | string | Yes | - |
+| messageID | snowflake | No | - |
+
+
+
+## Example
+
+```zbr
+ZremoveComponent{my_button;1234567890123456789}
+```
+

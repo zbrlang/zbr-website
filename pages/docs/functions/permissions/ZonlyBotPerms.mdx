@@ -1,0 +1,26 @@
+# ZonlyBotPerms
+
+Halts execution unless the bot has all of the specified guild permissions.
+
+## Syntax
+
+```zbr
+ZonlyBotPerms{permission;...;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| permission | permission | Yes | - |
+| errorMessage | string | No | The bot does not have the required permissions. |
+
+
+
+## Example
+
+```zbr
+ZonlyBotPerms{manageMessages;embedLinks}
+```
+

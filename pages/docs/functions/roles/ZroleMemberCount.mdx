@@ -1,0 +1,25 @@
+# ZroleMemberCount
+
+Returns the number of members who have the given role, defaulting to the author's highest role.
+
+## Syntax
+
+```zbr
+ZroleMemberCount{roleID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| roleID | snowflake | No | author's highest role |
+
+
+
+## Example
+
+```zbr
+ZroleMemberCount{987654321012345678}
+```
+

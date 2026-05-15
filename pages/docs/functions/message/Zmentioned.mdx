@@ -1,0 +1,26 @@
+# Zmentioned
+
+Returns the user ID of the Nth mentioned user in the triggering message, optionally falling back to the author ID.
+
+## Syntax
+
+```zbr
+Zmentioned{index;fallbackToAuthor?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| index | integer | Yes | - |
+| fallbackToAuthor | boolean | No | false |
+
+
+
+## Example
+
+```zbr
+Zmentioned{1;true}
+```
+

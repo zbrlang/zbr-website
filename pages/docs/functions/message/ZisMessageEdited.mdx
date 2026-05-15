@@ -1,0 +1,27 @@
+# ZisMessageEdited
+
+Returns true or false for whether a message has been edited, or returns its edit timestamp when type is timestamp.
+
+## Syntax
+
+```zbr
+ZisMessageEdited{channelID?;messageID;type?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | No | - |
+| messageID | snowflake | Yes | - |
+| type | string | No | edited |
+
+
+
+## Example
+
+```zbr
+ZisMessageEdited{123456789012345678;987654321098765432;timestamp}
+```
+

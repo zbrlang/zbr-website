@@ -1,0 +1,27 @@
+# ZtimeDiff
+
+Returns the absolute difference between two Unix timestamps in the specified unit such as seconds, minutes, hours, or days.
+
+## Syntax
+
+```zbr
+ZtimeDiff{timestamp1;timestamp2;unit?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| timestamp1 | integer | Yes | - |
+| timestamp2 | integer | Yes | - |
+| unit | string | No | seconds |
+
+
+
+## Example
+
+```zbr
+ZtimeDiff{1700000000;1699990000;minutes}
+```
+

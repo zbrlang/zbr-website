@@ -1,0 +1,27 @@
+# ZcropText
+
+Crops text to a maximum number of characters and appends an ending string if the text was truncated.
+
+## Syntax
+
+```zbr
+ZcropText{text;maxChars;ending}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| text | string | Yes | - |
+| maxChars | integer | Yes | - |
+| ending | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZcropText{This is a long sentence;15;...}
+```
+

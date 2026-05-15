@@ -1,0 +1,26 @@
+# ZvarExistError
+
+Halts execution with a custom error message if the specified global variable does not exist.
+
+## Syntax
+
+```zbr
+ZvarExistError{name;error}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+| error | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZvarExistError{my_config;Config variable is missing!}
+```
+

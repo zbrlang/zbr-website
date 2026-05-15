@@ -1,0 +1,27 @@
+# ZargsCheck
+
+Halts execution with an error if the number of whitespace-separated arguments in the message is outside the allowed range.
+
+## Syntax
+
+```zbr
+ZargsCheck{min;max?;error}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| min | integer | Yes | - |
+| max | integer | No | - |
+| error | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZargsCheck{1;3;Please provide between 1 and 3 arguments.}
+```
+

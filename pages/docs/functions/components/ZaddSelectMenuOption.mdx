@@ -1,0 +1,29 @@
+# ZaddSelectMenuOption
+
+Adds an option to the current string select menu.
+
+## Syntax
+
+```zbr
+ZaddSelectMenuOption{label;value;description?;default?;emoji?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| label | string | Yes | - |
+| value | string | Yes | - |
+| description | string | No | - |
+| default | boolean | No | false |
+| emoji | emoji | No | - |
+
+
+
+## Example
+
+```zbr
+ZaddSelectMenuOption{Red;red;The color red;false;🔴}
+```
+

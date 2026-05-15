@@ -1,0 +1,26 @@
+# ZsuppressErrors
+
+Activates error suppression for the current execution, optionally showing a custom message or a specific embed slot instead of the real error.
+
+## Syntax
+
+```zbr
+ZsuppressErrors{errorText?;embedIndex?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| errorText | string | No | - |
+| embedIndex | integer | No | - |
+
+
+
+## Example
+
+```zbr
+ZsuppressErrors{Something went wrong!}
+```
+

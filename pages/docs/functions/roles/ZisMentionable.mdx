@@ -1,0 +1,25 @@
+# ZisMentionable
+
+Returns true if the given role can be mentioned by all users, defaulting to the author's top role if no ID is provided.
+
+## Syntax
+
+```zbr
+ZisMentionable{roleID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| roleID | snowflake | No | author's top role |
+
+
+
+## Example
+
+```zbr
+ZisMentionable{987654321012345678}
+```
+

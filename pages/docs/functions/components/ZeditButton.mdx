@@ -1,0 +1,30 @@
+# ZeditButton
+
+Edits a button on an existing message by its custom ID.
+
+## Syntax
+
+```zbr
+ZeditButton{customID;label?;style?;disabled?;emoji?;messageID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| customID | string | Yes | - |
+| label | string | No | - |
+| style | string | No | secondary |
+| disabled | boolean | No | false |
+| emoji | emoji | No | - |
+| messageID | snowflake | No | - |
+
+
+
+## Example
+
+```zbr
+ZeditButton{my_button;Updated Label;primary;false}
+```
+

@@ -1,0 +1,30 @@
+# ZeditThread
+
+Edits one or more properties of an existing thread such as name, archived state, archive duration, lock status, and slowmode.
+
+## Syntax
+
+```zbr
+ZeditThread{threadID;name?;archived?;archiveDuration?;locked?;slowmode?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| threadID | snowflake | Yes | - |
+| name | string | No | - |
+| archived | boolean | No | - |
+| archiveDuration | integer | No | - |
+| locked | boolean | No | - |
+| slowmode | integer | No | - |
+
+
+
+## Example
+
+```zbr
+ZeditThread{123456789012345678;Updated Name;;;false;10}
+```
+

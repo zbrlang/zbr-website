@@ -1,0 +1,26 @@
+# ZgetServerVar
+
+Returns the value of a server-scoped variable, defaulting to the current server if not specified.
+
+## Syntax
+
+```zbr
+ZgetServerVar{name;guildID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+| guildID | snowflake | No | - |
+
+
+
+## Example
+
+```zbr
+ZgetServerVar{welcome_channel}
+```
+

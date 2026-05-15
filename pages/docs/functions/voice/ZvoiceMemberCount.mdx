@@ -1,0 +1,25 @@
+# ZvoiceMemberCount
+
+Returns the number of users currently in the specified voice channel, defaulting to the author's current voice channel.
+
+## Syntax
+
+```zbr
+ZvoiceMemberCount{channelID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | No | author's voice channel |
+
+
+
+## Example
+
+```zbr
+ZvoiceMemberCount{123456789012345678}
+```
+

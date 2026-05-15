@@ -1,0 +1,26 @@
+# Ztimeout
+
+Applies a communication timeout to a user for the specified duration, up to a maximum of 28 days.
+
+## Syntax
+
+```zbr
+Ztimeout{userID;duration}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | Yes | - |
+| duration | duration | Yes | - |
+
+
+
+## Example
+
+```zbr
+Ztimeout{123456789012345678;1h}
+```
+

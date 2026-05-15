@@ -1,0 +1,26 @@
+# ZroleGrant
+
+Grants or removes one or more roles from a user using prefixed operations where + adds and - removes a role.
+
+## Syntax
+
+```zbr
+ZroleGrant{userID?;operation;...}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | No | author |
+| operation | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZroleGrant{123456789012345678;+987654321012345678;-111222333444555666}
+```
+

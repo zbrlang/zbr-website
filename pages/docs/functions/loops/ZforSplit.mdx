@@ -1,0 +1,25 @@
+# ZforSplit
+
+Iterates over the elements produced by a prior ZtextSplit call, executing the code block for each element with ZloopIndex and ZloopValue populated.
+
+## Syntax
+
+```zbr
+ZforSplit{code}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| code | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZforSplit{ZloopIndex{}: ZloopValue{}}
+```
+

@@ -1,0 +1,25 @@
+# ZchannelCreated
+
+Returns the Unix timestamp in seconds at which the channel was created, extracted from its snowflake ID.
+
+## Syntax
+
+```zbr
+ZchannelCreated{channelID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | No | current channel |
+
+
+
+## Example
+
+```zbr
+ZchannelCreated{1234567890123456789}
+```
+

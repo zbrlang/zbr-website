@@ -1,0 +1,26 @@
+# ZtryRun
+
+Evaluates the code block and falls back to the fallback block if any error occurs.
+
+## Syntax
+
+```zbr
+ZtryRun{code;fallback?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| code | string | Yes | - |
+| fallback | string | No | - |
+
+
+
+## Example
+
+```zbr
+ZtryRun{ZgetUserVar{score};0}
+```
+

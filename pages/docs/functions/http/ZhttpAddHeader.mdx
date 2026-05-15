@@ -1,0 +1,26 @@
+# ZhttpAddHeader
+
+Adds a custom HTTP header by name and value that will be sent with all subsequent HTTP requests in the current execution.
+
+## Syntax
+
+```zbr
+ZhttpAddHeader{name;value}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+| value | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZhttpAddHeader{Authorization;Bearer mytoken123}
+```
+

@@ -1,0 +1,27 @@
+# Zclear
+
+Bulk-deletes up to 100 recent messages in the current channel, with an optional user filter and configurable handling of pinned messages.
+
+## Syntax
+
+```zbr
+Zclear{amount;userID?;removePinned?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| amount | integer | Yes | - |
+| userID | snowflake | No | - |
+| removePinned | boolean | No | true |
+
+
+
+## Example
+
+```zbr
+Zclear{10;123456789012345678;false}
+```
+

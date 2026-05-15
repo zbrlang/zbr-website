@@ -1,0 +1,26 @@
+# ZglobalCooldown
+
+Applies a per-user global cooldown across all servers, preventing the user from running the command until the duration expires.
+
+## Syntax
+
+```zbr
+ZglobalCooldown{duration;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| duration | duration | Yes | - |
+| errorMessage | string | No | - |
+
+
+
+## Example
+
+```zbr
+ZglobalCooldown{1h;You are on global cooldown!}
+```
+

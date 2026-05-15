@@ -1,0 +1,26 @@
+# ZonlyForIDs
+
+Halts execution unless the author's user ID matches one of the specified IDs.
+
+## Syntax
+
+```zbr
+ZonlyForIDs{userID;...;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | Yes | - |
+| errorMessage | string | No | You are not allowed to use this command. |
+
+
+
+## Example
+
+```zbr
+ZonlyForIDs{123456789012345678;987654321012345678}
+```
+

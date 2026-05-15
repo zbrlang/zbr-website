@@ -1,0 +1,27 @@
+# ZcreateInvite
+
+Creates an invite for the specified channel and returns its code.
+
+## Syntax
+
+```zbr
+ZcreateInvite{channelID;maxUses?;maxAge?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| maxUses | integer | No | 0 |
+| maxAge | integer | No | 0 |
+
+
+
+## Example
+
+```zbr
+ZcreateInvite{1234567890123456789;10;86400}
+```
+

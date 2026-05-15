@@ -1,0 +1,28 @@
+# ZcategoryChannels
+
+Returns the channels inside a category sorted by position, formatted as names, IDs, mentions, or a count, joined by the specified separator.
+
+## Syntax
+
+```zbr
+ZcategoryChannels{categoryID;separator?;returnType?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| categoryID | snowflake | Yes | - |
+| separator | string | No | 
+ |
+| returnType | string | No | name |
+
+
+
+## Example
+
+```zbr
+ZcategoryChannels{1234567890123456789;, ;name}
+```
+

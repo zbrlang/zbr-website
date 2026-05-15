@@ -1,0 +1,31 @@
+# ZeditSelectMenuOption
+
+Replaces the options on an existing select menu with a single updated option.
+
+## Syntax
+
+```zbr
+ZeditSelectMenuOption{menuID;label;value;description?;default?;emoji?;messageID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| menuID | string | Yes | - |
+| label | string | Yes | - |
+| value | string | Yes | - |
+| description | string | No | - |
+| default | boolean | No | false |
+| emoji | emoji | No | - |
+| messageID | snowflake | No | - |
+
+
+
+## Example
+
+```zbr
+ZeditSelectMenuOption{color_menu;Blue;blue;The color blue}
+```
+

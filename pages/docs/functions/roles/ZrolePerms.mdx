@@ -1,0 +1,27 @@
+# ZrolePerms
+
+Returns the permission names granted to a role joined by the given separator, defaulting to the author's top role if no ID is provided.
+
+## Syntax
+
+```zbr
+ZrolePerms{roleID?;separator?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| roleID | snowflake | No | author's top role |
+| separator | string | No | 
+ |
+
+
+
+## Example
+
+```zbr
+ZrolePerms{987654321012345678;, }
+```
+

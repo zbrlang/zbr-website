@@ -1,0 +1,25 @@
+# ZallowRoleMentions
+
+Restricts role pings in the bot response to only the listed role IDs; if no IDs are given, all role mentions are suppressed.
+
+## Syntax
+
+```zbr
+ZallowRoleMentions{roleID;...}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| roleID | snowflake | No | - |
+
+
+
+## Example
+
+```zbr
+ZallowRoleMentions{123456789012345678;987654321098765432}
+```
+

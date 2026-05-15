@@ -1,0 +1,29 @@
+# ZmodifyRole
+
+Modifies the name, color, hoist, and mentionable settings of an existing role, leaving any unspecified fields unchanged.
+
+## Syntax
+
+```zbr
+ZmodifyRole{roleID;name?;color?;hoisted?;mentionable?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| roleID | snowflake | Yes | - |
+| name | string | No | - |
+| color | string | No | - |
+| hoisted | boolean | No | - |
+| mentionable | boolean | No | - |
+
+
+
+## Example
+
+```zbr
+ZmodifyRole{987654321012345678;Admin;#E74C3C;true;true}
+```
+

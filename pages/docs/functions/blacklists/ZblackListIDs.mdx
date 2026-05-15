@@ -1,0 +1,26 @@
+# ZblackListIDs
+
+Halts command execution if the triggering user's ID matches any of the provided user IDs.
+
+## Syntax
+
+```zbr
+ZblackListIDs{userID;...;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | Yes | - |
+| errorMessage | string | No | You are blacklisted from using this command. |
+
+
+
+## Example
+
+```zbr
+ZblackListIDs{123456789012345678;987654321098765432;You cannot use this command.}
+```
+

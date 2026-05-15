@@ -1,0 +1,27 @@
+# ZsendEmbed
+
+Sends the embed at the specified slot index to a Discord channel, optionally returning the sent message ID.
+
+## Syntax
+
+```zbr
+ZsendEmbed{channelID;index?;returnID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| index | integer | No | 1 |
+| returnID | boolean | No | false |
+
+
+
+## Example
+
+```zbr
+ZsendEmbed{123456789012345678;1;true}
+```
+

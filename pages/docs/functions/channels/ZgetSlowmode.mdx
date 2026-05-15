@@ -1,0 +1,25 @@
+# ZgetSlowmode
+
+Returns the slowmode rate limit in seconds for the given channel, or 0 if no slowmode is set.
+
+## Syntax
+
+```zbr
+ZgetSlowmode{channelID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | No | current channel |
+
+
+
+## Example
+
+```zbr
+ZgetSlowmode{1234567890123456789}
+```
+

@@ -1,0 +1,26 @@
+# Zenabled
+
+Halts command execution with an optional error message when the condition is false, or continues silently when it is true.
+
+## Syntax
+
+```zbr
+Zenabled{condition;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| condition | boolean | Yes | - |
+| errorMessage | string | No | This command is currently disabled. |
+
+
+
+## Example
+
+```zbr
+Zenabled{true;This feature is not available right now.}
+```
+

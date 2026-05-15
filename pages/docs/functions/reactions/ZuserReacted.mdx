@@ -1,0 +1,28 @@
+# ZuserReacted
+
+Returns true if the specified user reacted to a message with the given emoji, or false otherwise.
+
+## Syntax
+
+```zbr
+ZuserReacted{channelID;messageID;userID;emoji}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| messageID | snowflake | Yes | - |
+| userID | snowflake | Yes | - |
+| emoji | emoji | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZuserReacted{123456789012345678;987654321098765432;111222333444555666;👍}
+```
+

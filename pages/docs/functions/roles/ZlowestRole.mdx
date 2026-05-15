@@ -1,0 +1,25 @@
+# ZlowestRole
+
+Returns the ID of the lowest-position non-everyone role held by the specified user, defaulting to the author.
+
+## Syntax
+
+```zbr
+ZlowestRole{userID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | No | author |
+
+
+
+## Example
+
+```zbr
+ZlowestRole{123456789012345678}
+```
+

@@ -1,0 +1,27 @@
+# ZonlyBotChannelPerms
+
+Halts execution unless the bot has all of the specified permissions in the given channel.
+
+## Syntax
+
+```zbr
+ZonlyBotChannelPerms{channelID;permission;...;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| permission | permission | Yes | - |
+| errorMessage | string | No | The bot does not have the required channel permissions. |
+
+
+
+## Example
+
+```zbr
+ZonlyBotChannelPerms{123456789012345678;sendMessages;embedLinks}
+```
+

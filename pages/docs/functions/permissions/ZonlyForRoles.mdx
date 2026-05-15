@@ -1,0 +1,26 @@
+# ZonlyForRoles
+
+Halts execution unless the author has at least one of the specified roles matched by name.
+
+## Syntax
+
+```zbr
+ZonlyForRoles{roleName;...;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| roleName | string | Yes | - |
+| errorMessage | string | No | You do not have the required role to use this command. |
+
+
+
+## Example
+
+```zbr
+ZonlyForRoles{Moderator;Admin}
+```
+

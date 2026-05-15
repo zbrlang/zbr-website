@@ -1,0 +1,27 @@
+# ZregexReplace
+
+Replaces all substrings in the text that match the regular expression pattern with the specified replacement.
+
+## Syntax
+
+```zbr
+ZregexReplace{text;pattern;replacement}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| text | string | Yes | - |
+| pattern | string | Yes | - |
+| replacement | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZregexReplace{hello   world;\s+;-}
+```
+

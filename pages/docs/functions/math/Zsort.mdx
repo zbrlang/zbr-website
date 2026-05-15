@@ -1,0 +1,28 @@
+# Zsort
+
+Sorts a variadic list of numbers in ascending or descending order and returns up to a specified count joined by a separator.
+
+## Syntax
+
+```zbr
+Zsort{number;...;direction;return_amount;separator}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| number | number | Yes | - |
+| direction | string | Yes | - |
+| return_amount | integer | Yes | - |
+| separator | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+Zsort{5;2;8;1;asc;-1;,}
+```
+

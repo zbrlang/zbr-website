@@ -1,0 +1,28 @@
+# ZcreateRole
+
+Creates a new role in the guild with the specified name and optional color, hoist, and mentionable settings.
+
+## Syntax
+
+```zbr
+ZcreateRole{name;color?;hoisted?;mentionable?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+| color | string | No | - |
+| hoisted | boolean | No | false |
+| mentionable | boolean | No | false |
+
+
+
+## Example
+
+```zbr
+ZcreateRole{Moderator;#FF5733;true;false}
+```
+

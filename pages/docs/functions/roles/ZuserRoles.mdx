@@ -1,0 +1,28 @@
+# ZuserRoles
+
+Returns a list of the specified user's roles joined by the given separator, with output format controlled by returnType.
+
+## Syntax
+
+```zbr
+ZuserRoles{userID?;returnType?;separator?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | No | author |
+| returnType | string | No | name |
+| separator | string | No | 
+ |
+
+
+
+## Example
+
+```zbr
+ZuserRoles{123456789012345678;name;, }
+```
+

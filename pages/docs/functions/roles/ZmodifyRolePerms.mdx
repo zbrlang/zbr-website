@@ -1,0 +1,26 @@
+# ZmodifyRolePerms
+
+Adds or removes permissions from a role using prefixed operations where + grants, - denies, and / resets a permission.
+
+## Syntax
+
+```zbr
+ZmodifyRolePerms{roleID;operation;...}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| roleID | snowflake | Yes | - |
+| operation | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZmodifyRolePerms{987654321012345678;+manageMessages;-kickMembers}
+```
+

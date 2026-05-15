@@ -1,0 +1,26 @@
+# ZslowMode
+
+Sets the slowmode rate limit on a channel to the specified duration (0 or 0s disables it).
+
+## Syntax
+
+```zbr
+ZslowMode{channelID?;duration}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | No | current channel |
+| duration | duration | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZslowMode{1234567890123456789;30s}
+```
+

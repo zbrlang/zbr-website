@@ -1,0 +1,26 @@
+# ZregexMatch
+
+Returns true if the text matches the given regular expression pattern.
+
+## Syntax
+
+```zbr
+ZregexMatch{text;pattern}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| text | string | Yes | - |
+| pattern | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZregexMatch{hello123;[a-z]+\d+}
+```
+

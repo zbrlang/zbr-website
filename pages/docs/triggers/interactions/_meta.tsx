@@ -1,0 +1,1 @@
+export default { "onInteraction": "onInteraction" }

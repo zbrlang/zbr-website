@@ -1,0 +1,27 @@
+# ZcreateChannel
+
+Creates a new channel in the current guild with the specified name, type, and optional parent category.
+
+## Syntax
+
+```zbr
+ZcreateChannel{name;type?;categoryID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+| type | string | No | text |
+| categoryID | snowflake | No | - |
+
+
+
+## Example
+
+```zbr
+ZcreateChannel{announcements;text;1234567890123456789}
+```
+

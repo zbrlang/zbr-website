@@ -1,0 +1,27 @@
+# ZeditMessage
+
+Replaces the text content of an existing message in a channel.
+
+## Syntax
+
+```zbr
+ZeditMessage{channelID;messageID;content}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| messageID | snowflake | Yes | - |
+| content | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZeditMessage{123456789012345678;987654321098765432;Updated content here}
+```
+

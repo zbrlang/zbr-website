@@ -1,0 +1,27 @@
+# ZaddMessageReactions
+
+Adds one or more emoji reactions to a specific message in the specified channel.
+
+## Syntax
+
+```zbr
+ZaddMessageReactions{channelID;messageID;emoji;...}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| messageID | snowflake | Yes | - |
+| emoji | emoji | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZaddMessageReactions{123456789012345678;987654321098765432;👍;🎉}
+```
+

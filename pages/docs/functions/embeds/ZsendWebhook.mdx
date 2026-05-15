@@ -1,0 +1,27 @@
+# ZsendWebhook
+
+Sends the embed at the specified slot index via a Discord webhook URL, optionally returning the message ID.
+
+## Syntax
+
+```zbr
+ZsendWebhook{webhookURL;index?;returnID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| webhookURL | url | Yes | - |
+| index | integer | No | 1 |
+| returnID | boolean | No | false |
+
+
+
+## Example
+
+```zbr
+ZsendWebhook{https://discord.com/api/webhooks/123456789/token;1;true}
+```
+

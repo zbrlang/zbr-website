@@ -1,0 +1,28 @@
+# ZcreateForumTag
+
+Adds a new available tag to a forum channel with an optional emoji and moderation flag.
+
+## Syntax
+
+```zbr
+ZcreateForumTag{channelID;name;emoji?;moderated?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| name | string | Yes | - |
+| emoji | emoji | No | - |
+| moderated | boolean | No | false |
+
+
+
+## Example
+
+```zbr
+ZcreateForumTag{987654321012345678;Bug Report;🐛;false}
+```
+

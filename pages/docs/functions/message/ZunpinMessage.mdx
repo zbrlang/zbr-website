@@ -1,0 +1,26 @@
+# ZunpinMessage
+
+Unpins the specified message in a channel, defaulting to the current channel if no channel ID is provided.
+
+## Syntax
+
+```zbr
+ZunpinMessage{channelID?;messageID}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | No | - |
+| messageID | snowflake | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZunpinMessage{123456789012345678;987654321098765432}
+```
+

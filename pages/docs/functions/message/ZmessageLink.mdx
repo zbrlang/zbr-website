@@ -1,0 +1,26 @@
+# ZmessageLink
+
+Builds and returns a Discord jump URL for the specified message, using the current channel if no channel ID is provided.
+
+## Syntax
+
+```zbr
+ZmessageLink{messageID;channelID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| messageID | snowflake | Yes | - |
+| channelID | snowflake | No | - |
+
+
+
+## Example
+
+```zbr
+ZmessageLink{987654321098765432;123456789012345678}
+```
+

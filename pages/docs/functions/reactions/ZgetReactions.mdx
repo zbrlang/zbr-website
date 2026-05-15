@@ -1,0 +1,28 @@
+# ZgetReactions
+
+Returns a separator-joined list of usernames of users who reacted to a specific message with the given emoji.
+
+## Syntax
+
+```zbr
+ZgetReactions{channelID;messageID;separator;emoji}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| messageID | snowflake | Yes | - |
+| separator | string | Yes | - |
+| emoji | emoji | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZgetReactions{123456789012345678;987654321098765432;, ;👍}
+```
+

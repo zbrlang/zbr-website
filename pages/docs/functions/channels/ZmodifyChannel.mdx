@@ -1,0 +1,30 @@
+# ZmodifyChannel
+
+Modifies one or more properties of an existing channel such as its name, topic, NSFW flag, position, and parent category.
+
+## Syntax
+
+```zbr
+ZmodifyChannel{channelID;name?;topic?;nsfw?;position?;categoryID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| name | string | No | - |
+| topic | string | No | - |
+| nsfw | boolean | No | - |
+| position | integer | No | - |
+| categoryID | snowflake | No | - |
+
+
+
+## Example
+
+```zbr
+ZmodifyChannel{1234567890123456789;new-name;Updated topic;false;2}
+```
+

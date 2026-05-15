@@ -1,0 +1,25 @@
+# ZhighestRole
+
+Returns the ID of the highest-position role held by the specified user, defaulting to the author.
+
+## Syntax
+
+```zbr
+ZhighestRole{userID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | No | author |
+
+
+
+## Example
+
+```zbr
+ZhighestRole{123456789012345678}
+```
+

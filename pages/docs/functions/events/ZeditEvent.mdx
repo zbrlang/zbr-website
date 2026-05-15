@@ -1,0 +1,28 @@
+# ZeditEvent
+
+Edits one or more fields of an existing scheduled event by its ID.
+
+## Syntax
+
+```zbr
+ZeditEvent{eventID;name?;description?;startTime?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| eventID | snowflake | Yes | - |
+| name | string | No | - |
+| description | string | No | - |
+| startTime | integer | No | - |
+
+
+
+## Example
+
+```zbr
+ZeditEvent{1234567890123456789;Updated Event Name}
+```
+

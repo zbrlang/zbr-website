@@ -1,0 +1,25 @@
+# ZremoveLinks
+
+Removes all whitespace-delimited tokens beginning with http:// or https:// from the text.
+
+## Syntax
+
+```zbr
+ZremoveLinks{text}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| text | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZremoveLinks{Visit https://example.com for info}
+```
+

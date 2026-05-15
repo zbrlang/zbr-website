@@ -1,0 +1,26 @@
+# ZhttpPatch
+
+Sends an HTTP PATCH request to the specified URL with an optional request body and stores the response.
+
+## Syntax
+
+```zbr
+ZhttpPatch{url;body?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| url | url | Yes | - |
+| body | string | No | - |
+
+
+
+## Example
+
+```zbr
+ZhttpPatch{https://api.example.com/users/1;{"active":true}}
+```
+

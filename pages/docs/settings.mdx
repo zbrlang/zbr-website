@@ -1,0 +1,23 @@
+# Settings
+
+Configuration options for your ZBR projects.
+
+## Project Configuration
+
+The `zbr.json` file in your project root controls how the engine behaves.
+
+```json
+{
+  "name": "my-bot",
+  "token": "YOUR_DISCORD_TOKEN",
+  "prefix": "!",
+  "intents": ["Guilds", "GuildMessages", "MessageContent"]
+}
+```
+
+### Options
+
+- `name`: The name of your project.
+- `token`: Your Discord bot token.
+- `prefix`: The default prefix for command triggers.
+- `intents`: Array of Discord gateway intents required for your bot.

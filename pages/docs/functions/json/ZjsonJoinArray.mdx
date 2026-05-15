@@ -1,0 +1,26 @@
+# ZjsonJoinArray
+
+Joins all elements of the array at the specified key path into a single string using the provided separator.
+
+## Syntax
+
+```zbr
+ZjsonJoinArray{key;...;separator}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| key | string | Yes | - |
+| separator | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZjsonJoinArray{names;, }
+```
+

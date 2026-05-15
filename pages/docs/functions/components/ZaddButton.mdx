@@ -1,0 +1,30 @@
+# ZaddButton
+
+Adds a button component to the bot's response.
+
+## Syntax
+
+```zbr
+ZaddButton{newRow?;customID;label?;style?;disabled?;emoji?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| newRow | boolean | No | false |
+| customID | string | Yes | - |
+| label | string | No | - |
+| style | string | No | secondary |
+| disabled | boolean | No | false |
+| emoji | emoji | No | - |
+
+
+
+## Example
+
+```zbr
+ZaddButton{false;my_button;Click Me;primary}
+```
+

@@ -1,0 +1,25 @@
+# ZuserVoiceChannel
+
+Returns the ID of the voice channel the specified user is in, or an empty string if they are not in voice.
+
+## Syntax
+
+```zbr
+ZuserVoiceChannel{userID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | No | author |
+
+
+
+## Example
+
+```zbr
+ZuserVoiceChannel{123456789012345678}
+```
+

@@ -1,0 +1,29 @@
+# ZeditSelectMenu
+
+Edits the properties of a string select menu on an existing message.
+
+## Syntax
+
+```zbr
+ZeditSelectMenu{menuID;min?;max?;placeholder?;messageID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| menuID | string | Yes | - |
+| min | integer | No | 1 |
+| max | integer | No | 1 |
+| placeholder | string | No | - |
+| messageID | snowflake | No | - |
+
+
+
+## Example
+
+```zbr
+ZeditSelectMenu{color_menu;1;3;Choose up to 3 colors}
+```
+

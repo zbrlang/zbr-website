@@ -1,0 +1,25 @@
+# ZhttpGetHeader
+
+Returns the value of a custom HTTP header previously registered via ZhttpAddHeader, or an empty string if it does not exist.
+
+## Syntax
+
+```zbr
+ZhttpGetHeader{name}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZhttpGetHeader{Authorization}
+```
+

@@ -1,0 +1,27 @@
+# ZsetServerVar
+
+Sets the value of a server-scoped variable, defaulting to the current server if not specified.
+
+## Syntax
+
+```zbr
+ZsetServerVar{name;value?;guildID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+| value | string | No | - |
+| guildID | snowflake | No | - |
+
+
+
+## Example
+
+```zbr
+ZsetServerVar{welcome_channel;1234567890123456789}
+```
+

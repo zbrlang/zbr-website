@@ -1,0 +1,26 @@
+# ZuserStatus
+
+Returns the online status of the command author or specified user, or their custom status text if customStatus is true.
+
+## Syntax
+
+```zbr
+ZuserStatus{userID?;customStatus?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | No | author's ID |
+| customStatus | boolean | No | false |
+
+
+
+## Example
+
+```zbr
+ZuserStatus{123456789012345678;true}
+```
+

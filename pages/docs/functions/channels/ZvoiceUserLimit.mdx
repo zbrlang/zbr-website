@@ -1,0 +1,25 @@
+# ZvoiceUserLimit
+
+Returns the maximum number of users allowed in a voice or stage channel, or 0 if there is no limit.
+
+## Syntax
+
+```zbr
+ZvoiceUserLimit{channelID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | No | current channel |
+
+
+
+## Example
+
+```zbr
+ZvoiceUserLimit{1234567890123456789}
+```
+

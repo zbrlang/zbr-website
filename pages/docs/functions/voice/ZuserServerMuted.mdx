@@ -1,0 +1,25 @@
+# ZuserServerMuted
+
+Returns true if the specified user has been server-muted by a moderator, defaulting to the author.
+
+## Syntax
+
+```zbr
+ZuserServerMuted{userID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | No | author |
+
+
+
+## Example
+
+```zbr
+ZuserServerMuted{123456789012345678}
+```
+

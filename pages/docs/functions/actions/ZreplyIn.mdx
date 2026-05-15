@@ -1,0 +1,26 @@
+# ZreplyIn
+
+Schedules a reply to the triggering message after the specified duration has elapsed.
+
+## Syntax
+
+```zbr
+ZreplyIn{duration;content}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| duration | duration | Yes | - |
+| content | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZreplyIn{5s;Here is your delayed reply!}
+```
+

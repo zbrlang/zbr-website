@@ -1,0 +1,28 @@
+# ZcreateEvent
+
+Creates a new scheduled voice event in the server and returns its event ID.
+
+## Syntax
+
+```zbr
+ZcreateEvent{name;channelID;startTime;description?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+| channelID | snowflake | Yes | - |
+| startTime | integer | Yes | - |
+| description | string | No | - |
+
+
+
+## Example
+
+```zbr
+ZcreateEvent{Summer Meetup;987654321012345678;1720000000;Join us for a fun event!}
+```
+

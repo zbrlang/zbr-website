@@ -1,0 +1,25 @@
+# ZeventChannel
+
+Returns the channel ID associated with a scheduled event, or an empty string for external events.
+
+## Syntax
+
+```zbr
+ZeventChannel{eventID}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| eventID | snowflake | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZeventChannel{1234567890123456789}
+```
+

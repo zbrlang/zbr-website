@@ -1,0 +1,28 @@
+# ZgetEmbedData
+
+Fetches the specified field from an embed on an existing Discord message, where type is one of title, description, footer, color, image, or timestamp.
+
+## Syntax
+
+```zbr
+ZgetEmbedData{channelID?;messageID;embedIndex;type}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | No | - |
+| messageID | snowflake | Yes | - |
+| embedIndex | integer | Yes | - |
+| type | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZgetEmbedData{123456789012345678;987654321098765432;1;title}
+```
+

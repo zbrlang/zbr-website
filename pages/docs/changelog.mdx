@@ -1,0 +1,66 @@
+# Changelog
+
+All notable changes to the ZBR project are documented here.
+
+---
+
+## v1.0.0 - Production Release
+
+End of Alpha and the first stable production release. This version introduces the official ZBR CLI, automated installation, and multi-OS support.
+
+### CLI & Distribution
+- **New ZBR CLI** — The entire engine is now managed via a unified global command: `zbr`.
+- **Project Initialization** — `zbr init` instantly bootstraps a new project with a recommended folder structure, configuration files, and example scripts.
+- **Unified Runner** — `zbr run` launches the high-performance Rust execution engine and starts your bot.
+- **Multi-OS Support** — Official support and pre-built binaries for Linux (x64), macOS (x64 & ARM64), and Windows (x64).
+- **Smart Installation** — Distributed via npm with a tiny footprint; the CLI automatically downloads the correct binary for your system on install.
+
+---
+
+## Alpha v5
+
+Loop system, async execution, full voice channel coverage, scheduled events, forum channels, stage channels, stickers, invite management, regex, extended string and math utilities, and more.
+
+### Core
+- **Loop system** — `Zrepeat{N;code}` runs a code block N times (max 1000); `ZforSplit{code}` iterates over the current split text; `ZforJson{key;...;code}` iterates over a JSON array at a key path. All three are lazy-evaluated. `ZloopIndex{}` and `ZloopValue{}` expose the current iteration state inside any loop body.
+- **Async execution** — `Zasync{name;code}` spawns a named background task that runs the code block concurrently; `Zawait{name}` blocks until that task completes and returns its result.
+- **Deferred execution** — `Zdelay{duration;code}` runs a code block after a delay (e.g. 10s, 2m) in a background task; `ZreplyIn{duration;content}` replies to the trigger message after a delay. Both are fire-and-forget and cancelled on restart.
+
+---
+
+## Alpha v4
+
+Moderation, message operations, HTTP requests, JSON manipulation, full control flow, error handling, and the component/interaction system.
+
+### Core
+- `#type interaction` — new command type for component interaction handlers.
+- `#type event` — new command type for Discord gateway event handlers.
+- `onInteraction{id?}` trigger — runs when a button, select menu, or modal is submitted. Specific handler (`onInteraction{my_button}`) takes priority over catch-all (`onInteraction`).
+- `ZcustomID{}` — returns the custom_id of the current interaction.
+- `ZinputValue{fieldID}` — reads a submitted modal text input field.
+
+---
+
+## Alpha v2
+
+Reactions, emojis, text splitting, permissions, threads, and blacklists. Introduced the `Zif` condition system.
+
+### Core
+- `Zif{condition;then;else?}` — lazy conditional evaluation with `==`, `!=`, `>`, `<`, `>=`, `<=`, `contains`, `startsWith`, `endsWith`, `&&`, `||` operators.
+- `ZcheckCondition{}` — evaluate a condition string and return `true`/`false`.
+
+---
+
+## Alpha v1
+
+Initial release. Established the core runtime, parser, and execution model.
+
+### Core
+- ZBR scripting language runtime built in Rust.
+- Line-by-line execution with `Z`-prefixed function call syntax.
+- Argument parsing with `;` separator, nested function calls, escape sequences (\{, \;, \\).
+- `#trigger`, `#name`, `#type`, `#description`, `#scope`, `#option` command header system.
+- Prefix command support (#type prefix).
+- Slash command support (#type slash) with typed options.
+- Hot-reload: `commands/` folder is watched and reloaded on file change.
+- SQLite persistence via sqlx for variables and cooldowns.

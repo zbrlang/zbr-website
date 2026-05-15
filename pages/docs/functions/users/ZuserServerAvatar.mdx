@@ -1,0 +1,25 @@
+# ZuserServerAvatar
+
+Returns the guild-specific avatar URL of the command author or specified user, falling back to their global avatar or default avatar if none is set.
+
+## Syntax
+
+```zbr
+ZuserServerAvatar{userID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | No | author's ID |
+
+
+
+## Example
+
+```zbr
+ZuserServerAvatar{123456789012345678}
+```
+

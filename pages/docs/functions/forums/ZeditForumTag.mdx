@@ -1,0 +1,28 @@
+# ZeditForumTag
+
+Edits the name or moderation flag of an existing forum tag by its ID.
+
+## Syntax
+
+```zbr
+ZeditForumTag{channelID;tagID;name?;moderated?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| tagID | snowflake | Yes | - |
+| name | string | No | - |
+| moderated | boolean | No | - |
+
+
+
+## Example
+
+```zbr
+ZeditForumTag{987654321012345678;1122334455667788;Feature Request}
+```
+

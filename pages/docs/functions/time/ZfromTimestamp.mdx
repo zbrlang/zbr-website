@@ -1,0 +1,26 @@
+# ZfromTimestamp
+
+Formats a Unix timestamp into a human-readable date/time string using the active timezone and the specified format.
+
+## Syntax
+
+```zbr
+ZfromTimestamp{unix;format?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| unix | integer | Yes | - |
+| format | string | No | full |
+
+
+
+## Example
+
+```zbr
+ZfromTimestamp{1700000000;date}
+```
+

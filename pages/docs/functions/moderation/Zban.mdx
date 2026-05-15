@@ -1,0 +1,27 @@
+# Zban
+
+Bans a user from the guild with an optional reason and optional number of days of messages to delete.
+
+## Syntax
+
+```zbr
+Zban{userID;reason?;deleteMessageDays?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | Yes | - |
+| reason | string | No | - |
+| deleteMessageDays | integer | No | 0 |
+
+
+
+## Example
+
+```zbr
+Zban{123456789012345678;Spamming;1}
+```
+

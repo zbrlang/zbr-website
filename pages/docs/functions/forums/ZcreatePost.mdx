@@ -1,0 +1,28 @@
+# ZcreatePost
+
+Creates a new forum post in a forum channel and returns its thread ID.
+
+## Syntax
+
+```zbr
+ZcreatePost{channelID;title;content?;tagIDs?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| title | string | Yes | - |
+| content | string | No | - |
+| tagIDs | string | No | - |
+
+
+
+## Example
+
+```zbr
+ZcreatePost{987654321012345678;My First Post;Hello world!}
+```
+

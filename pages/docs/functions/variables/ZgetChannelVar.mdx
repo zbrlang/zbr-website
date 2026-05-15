@@ -1,0 +1,26 @@
+# ZgetChannelVar
+
+Returns the value of a channel-scoped variable, defaulting to the current channel if not specified.
+
+## Syntax
+
+```zbr
+ZgetChannelVar{name;channelID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+| channelID | snowflake | No | - |
+
+
+
+## Example
+
+```zbr
+ZgetChannelVar{topic}
+```
+

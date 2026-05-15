@@ -1,0 +1,26 @@
+# ZonlyForCategories
+
+Halts execution unless the current channel belongs to one of the specified category IDs.
+
+## Syntax
+
+```zbr
+ZonlyForCategories{categoryID;...;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| categoryID | snowflake | Yes | - |
+| errorMessage | string | No | This command can only be used in specific categories. |
+
+
+
+## Example
+
+```zbr
+ZonlyForCategories{123456789012345678;Only allowed in this category!}
+```
+

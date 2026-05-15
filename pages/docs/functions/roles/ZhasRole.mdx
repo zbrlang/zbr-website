@@ -1,0 +1,26 @@
+# ZhasRole
+
+Returns true if the specified user currently has the given role.
+
+## Syntax
+
+```zbr
+ZhasRole{userID?;roleID}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | No | author |
+| roleID | snowflake | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZhasRole{123456789012345678;987654321012345678}
+```
+

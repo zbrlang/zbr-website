@@ -1,0 +1,25 @@
+# ZisUserDMEnabled
+
+Returns true if a DM channel can be successfully opened with the command author or specified user, otherwise false.
+
+## Syntax
+
+```zbr
+ZisUserDMEnabled{userID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | No | author's ID |
+
+
+
+## Example
+
+```zbr
+ZisUserDMEnabled{123456789012345678}
+```
+

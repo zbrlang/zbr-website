@@ -1,0 +1,26 @@
+# ZonlyPerms
+
+Halts execution unless the author has all of the specified guild permissions.
+
+## Syntax
+
+```zbr
+ZonlyPerms{permission;...;errorMessage?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| permission | permission | Yes | - |
+| errorMessage | string | No | You do not have permission to use this command. |
+
+
+
+## Example
+
+```zbr
+ZonlyPerms{manageMessages;kickMembers}
+```
+
