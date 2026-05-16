@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZjsonArray": "ZjsonArray",
   "ZjsonArrayAppend": "ZjsonArrayAppend",
   "ZjsonArrayCount": "ZjsonArrayCount",
@@ -17,4 +17,6 @@ export default {
   "ZjsonSet": "ZjsonSet",
   "ZjsonStringify": "ZjsonStringify",
   "ZjsonUnset": "ZjsonUnset"
-}
+};
+
+export default meta;

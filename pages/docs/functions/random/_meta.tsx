@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "Zrandom": "Zrandom",
   "ZrandomCategoryID": "ZrandomCategoryID",
   "ZrandomChannelID": "ZrandomChannelID",
@@ -9,4 +9,6 @@ export default {
   "ZrandomText": "ZrandomText",
   "ZrandomUser": "ZrandomUser",
   "ZrandomUserID": "ZrandomUserID"
-}
+};
+
+export default meta;

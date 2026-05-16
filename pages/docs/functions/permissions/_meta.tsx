@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZcheckUserPerms": "ZcheckUserPerms",
   "ZignoreChannels": "ZignoreChannels",
   "ZonlyAdmin": "ZonlyAdmin",
@@ -14,4 +14,6 @@ export default {
   "ZonlyIfMessageContains": "ZonlyIfMessageContains",
   "ZonlyNSFW": "ZonlyNSFW",
   "ZonlyPerms": "ZonlyPerms"
-}
+};
+
+export default meta;

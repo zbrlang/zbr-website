@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZisInVoice": "ZisInVoice",
   "ZuserSelfDeafened": "ZuserSelfDeafened",
   "ZuserSelfMuted": "ZuserSelfMuted",
@@ -11,4 +11,6 @@ export default {
   "ZvoiceMemberCount": "ZvoiceMemberCount",
   "ZvoiceMembers": "ZvoiceMembers",
   "ZvoiceMove": "ZvoiceMove"
-}
+};
+
+export default meta;

@@ -1,3 +1,5 @@
-export default {
+const meta = {
   "Zeval": "Zeval"
-}
+};
+
+export default meta;

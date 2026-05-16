@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZargsCheck": "ZargsCheck",
   "ZcheckCondition": "ZcheckCondition",
   "Zif": "Zif",
@@ -9,4 +9,6 @@ export default {
   "ZisValidHex": "ZisValidHex",
   "Znot": "Znot",
   "ZonlyIf": "ZonlyIf"
-}
+};
+
+export default meta;

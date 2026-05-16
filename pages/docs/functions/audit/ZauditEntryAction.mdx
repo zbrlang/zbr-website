@@ -1,0 +1,26 @@
+# ZauditEntryAction
+
+Returns the action name for the selected audit log entry.
+
+## Syntax
+
+```zbr
+ZauditEntryAction{guildID?;entrySelector?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| guildID | snowflake | No | current guild |
+| entrySelector | string | No | most recent entry |
+
+
+
+## Example
+
+```zbr
+ZauditEntryAction{}
+```
+

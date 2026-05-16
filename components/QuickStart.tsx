@@ -11,9 +11,9 @@ const terminalSteps = [
     output: [
       "added 1 package in 0.8s",
       "zbr --version",
-      "zbr v1.0.1 (rust-engine 1.0.1)"
+      "zbr v1.0.0"
     ],
-    description: "Install the high-performance ZBR execution engine directly from npm. Built in Rust for maximum gateway efficiency."
+    description: "Install ZBR, the high-performance runtime engine built in Rust, directly from npm."
   },
   {
     title: "Initialize Project",
@@ -22,7 +22,7 @@ const terminalSteps = [
       "Creating commands/ folder...",
       "Creating zbr.json config...",
       "Creating .env template...",
-      "Done! Ready to write scripts."
+      "Done! Ready to write commands."
     ],
     description: "Set up your workspace instantly. No framework knowledge or boilerplate handlers required. Just logic."
   },
@@ -35,7 +35,7 @@ const terminalSteps = [
       "Bot is live: ZBR-Bot#1234",
       "Hot reloading active."
     ],
-    description: "Launch your bot. ZBR watches your files—save a script and the changes are live instantly on Discord."
+    description: "Launch your bot. ZBR watches your files, save a command and the changes are live instantly on Discord."
   }
 ];
 

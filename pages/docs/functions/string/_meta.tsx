@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZargCount": "ZargCount",
   "ZbyteCount": "ZbyteCount",
   "ZcharCount": "ZcharCount",
@@ -22,4 +22,6 @@ export default {
   "ZtrimSpace": "ZtrimSpace",
   "Zuppercase": "Zuppercase",
   "Zurl": "Zurl"
-}
+};
+
+export default meta;

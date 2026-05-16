@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZafkTimeout": "ZafkTimeout",
   "ZboostCount": "ZboostCount",
   "ZboostLevel": "ZboostLevel",
@@ -11,4 +11,6 @@ export default {
   "ZserverName": "ZserverName",
   "ZserverOwner": "ZserverOwner",
   "ZserverVerificationLevel": "ZserverVerificationLevel"
-}
+};
+
+export default meta;

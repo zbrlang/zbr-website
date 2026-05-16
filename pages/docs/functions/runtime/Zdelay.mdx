@@ -8,6 +8,7 @@ Executes a block of code after a specified duration (e.g., 10s, 1m).
 Zdelay{duration;code}
 ```
 
+
 ## Arguments
 
 | Name | Type | Required | Default |
@@ -15,8 +16,11 @@ Zdelay{duration;code}
 | duration | string | Yes | - |
 | code | string | Yes | - |
 
+
+
 ## Example
 
 ```zbr
 Zdelay{10s;ZsendMessage{Hello after 10 seconds!}}
 ```
+

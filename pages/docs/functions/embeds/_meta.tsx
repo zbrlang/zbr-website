@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZaddField": "ZaddField",
   "Zauthor": "Zauthor",
   "ZauthorIcon": "ZauthorIcon",
@@ -16,4 +16,6 @@ export default {
   "ZtitleURL": "ZtitleURL",
   "ZwebhookCreate": "ZwebhookCreate",
   "ZwebhookDelete": "ZwebhookDelete"
-}
+};
+
+export default meta;

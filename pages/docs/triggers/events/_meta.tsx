@@ -1,6 +1,10 @@
 const meta = {
   "onBanAdd": "onBanAdd",
   "onBanRemove": "onBanRemove",
+  "onBoostAdd": "onBoostAdd",
+  "onBoostRemove": "onBoostRemove",
+  "onBotJoin": "onBotJoin",
+  "onBotLeave": "onBotLeave",
   "onChannelCreate": "onChannelCreate",
   "onChannelDelete": "onChannelDelete",
   "onChannelUpdate": "onChannelUpdate",

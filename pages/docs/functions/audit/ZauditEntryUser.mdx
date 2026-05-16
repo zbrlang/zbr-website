@@ -1,0 +1,26 @@
+# ZauditEntryUser
+
+Returns the user ID of the actor who created the selected audit log entry.
+
+## Syntax
+
+```zbr
+ZauditEntryUser{guildID?;entrySelector?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| guildID | snowflake | No | current guild |
+| entrySelector | string | No | most recent entry |
+
+
+
+## Example
+
+```zbr
+ZauditEntryUser{}
+```
+

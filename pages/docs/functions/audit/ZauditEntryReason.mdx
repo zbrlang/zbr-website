@@ -1,0 +1,26 @@
+# ZauditEntryReason
+
+Returns the reason attached to the selected audit log entry.
+
+## Syntax
+
+```zbr
+ZauditEntryReason{guildID?;entrySelector?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| guildID | snowflake | No | current guild |
+| entrySelector | string | No | most recent entry |
+
+
+
+## Example
+
+```zbr
+ZauditEntryReason{}
+```
+

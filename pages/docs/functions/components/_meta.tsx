@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZaddButton": "ZaddButton",
   "ZaddMentionableSelect": "ZaddMentionableSelect",
   "ZaddRoleSelect": "ZaddRoleSelect",
@@ -25,4 +25,6 @@ export default {
   "ZremoveAllComponents": "ZremoveAllComponents",
   "ZremoveButtons": "ZremoveButtons",
   "ZremoveComponent": "ZremoveComponent"
-}
+};
+
+export default meta;

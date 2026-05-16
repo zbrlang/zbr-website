@@ -19,9 +19,9 @@ const config: DocsThemeConfig = {
       <meta name="twitter:card" content="summary" />
       <meta property="og:title" content="ZBR Documentation" />
       <meta property="og:description" content="Master the ZBR DSL with our comprehensive function and trigger references." />
-      <meta property="og:image" content="/images/ZBR_logo.png" />
+      <meta property="og:image" content="/images/ZBR_logo.png?v=1" />
       <meta name="apple-mobile-web-app-title" content="ZBR Docs" />
-      <link rel="icon" type="image/png" href="/images/ZBR_logo.png" />
+      <link rel="icon" type="image/png" href="/images/ZBR_logo.png?v=1" />
     </>
   ),
   docsRepositoryBase: 'https://github.com/zbrlang/zbr-website/tree/main',

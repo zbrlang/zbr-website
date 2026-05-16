@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "Zdate": "Zdate",
   "Zday": "Zday",
   "ZfromTimestamp": "ZfromTimestamp",
@@ -10,4 +10,6 @@ export default {
   "Ztime": "Ztime",
   "ZtimeDiff": "ZtimeDiff",
   "Zyear": "Zyear"
-}
+};
+
+export default meta;

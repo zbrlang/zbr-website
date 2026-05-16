@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZcreateForumTag": "ZcreateForumTag",
   "ZcreatePost": "ZcreatePost",
   "ZdeleteForumTag": "ZdeleteForumTag",
@@ -11,4 +11,6 @@ export default {
   "ZforumTags": "ZforumTags",
   "ZpostTags": "ZpostTags",
   "ZsetPostTags": "ZsetPostTags"
-}
+};
+
+export default meta;

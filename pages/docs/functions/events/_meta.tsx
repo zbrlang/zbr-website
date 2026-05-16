@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZcreateEvent": "ZcreateEvent",
   "ZdeleteEvent": "ZdeleteEvent",
   "ZeditEvent": "ZeditEvent",
@@ -11,4 +11,6 @@ export default {
   "ZeventStatus": "ZeventStatus",
   "ZeventSubscribers": "ZeventSubscribers",
   "ZserverEvents": "ZserverEvents"
-}
+};
+
+export default meta;

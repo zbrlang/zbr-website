@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "Zabs": "Zabs",
   "Zcalculate": "Zcalculate",
   "Zceil": "Zceil",
@@ -14,4 +14,6 @@ export default {
   "Zsqrt": "Zsqrt",
   "Zsub": "Zsub",
   "Zsum": "Zsum"
-}
+};
+
+export default meta;

@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZdeleteSticker": "ZdeleteSticker",
   "ZserverStickers": "ZserverStickers",
   "ZstickerCount": "ZstickerCount",
@@ -7,4 +7,6 @@ export default {
   "ZstickerExists": "ZstickerExists",
   "ZstickerID": "ZstickerID",
   "ZstickerName": "ZstickerName"
-}
+};
+
+export default meta;

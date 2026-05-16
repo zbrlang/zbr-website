@@ -21,8 +21,7 @@ export default function Footer() {
           <div className="max-w-sm space-y-6">
             <div className="text-3xl font-bold tracking-tighter text-foreground font-['Hubot-Sans']">ZBR</div>
             <p className="text-secondary/60 leading-relaxed text-sm">
-              A high-performance Discord bot framework built with Rust. Powering the next generation of automation with speed and safety.
-            </p>
+            ZBR is a scripting language for Discord bots powered by a high-performance Rust runtime engine.</p>
             <div className="flex gap-4">
               <Link href="https://github.com/zbrlang/zbr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-secondary/40 hover:text-primary hover:border-primary/50 transition-all">
                 <Github size={18} />
@@ -51,7 +50,7 @@ export default function Footer() {
               <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/40">Legal</h4>
               <ul className="space-y-3">
                 <li><Link href="/privacy" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">Privacy Policy</Link></li>
-                <li><Link href="/tos" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">Terms of Service</Link></li>
+                <li><Link href="/terms" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">Terms of Service</Link></li>
                 <li><Link href="/contact" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">Support</Link></li>
               </ul>
             </div>

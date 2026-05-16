@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZafkChannelID": "ZafkChannelID",
   "ZcategoryChannels": "ZcategoryChannels",
   "ZcategoryCount": "ZcategoryCount",
@@ -27,4 +27,6 @@ export default {
   "ZslowMode": "ZslowMode",
   "ZsystemChannelID": "ZsystemChannelID",
   "ZvoiceUserLimit": "ZvoiceUserLimit"
-}
+};
+
+export default meta;

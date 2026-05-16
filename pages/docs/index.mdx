@@ -1,21 +1,25 @@
 # Introduction
 
-ZBR is a powerful, high-performance Discord bot framework built with Rust. It provides a unique scripting language that allows users to write bot logic using a concise, function-based syntax (e.g., `ZfunctionName{args}`).
+ZBR is a scripting language for Discord bots. You write commands as plain `.zbr` files using ZBR functions, no boilerplate, no event handlers, no framework knowledge required.
 
 ## Core Architecture
 
-The project is structured as a Rust-based runtime that parses and executes `.zbr` scripts.
+ZBR is a high-performance execution engine built in Rust, packaged as a convenient npm CLI. 
 
-- **The Scripting Runtime**: Converts ZBR script text into an AST and evaluates it recursively.
-- **Discord Integration**: Powered by the `serenity` library, handling events and slash commands automatically.
-- **Hot-Reloading**: Watch your `commands/` directory and see changes instantly without restarts.
-- **Native Persistence**: Built-in SQLite support for reliable state management.
+- **The CLI (`zbr`)**: Acts as your project manager and binary launcher.
+- **The Engine**: A bundled Rust binary that handles the Discord gateway, parses your `.zbr` files, and executes logic in real-time.
+- **Hot Reloading**: The engine watches your `commands/` folder. Save a `.zbr` file, and the changes are live instantly without restarting.
+
+Commands are plain text files. Each file has a header section (lines starting with `#`) that defines the trigger, name, and type, followed by the ZBR code that runs when the command is invoked.
 
 ## Quick Start
 
 Get started with ZBR in seconds:
 
 ```bash
+# Install ZBR
+npm install -g @zbrlang/zbr
+
 # Initialize a new project
 zbr init my-bot
 cd my-bot

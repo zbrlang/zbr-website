@@ -35,12 +35,6 @@ const endpoints = [
 export default function ApiContent() {
   return (
     <div className="min-h-screen text-foreground font-['Hubot-Sans'] selection:bg-primary/30">
-      {/* Background decoration */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/5 rounded-full blur-[120px] animate-pulse" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-secondary/5 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: '1s' }} />
-      </div>
-
       <main className="max-w-5xl mx-auto px-6 pt-32 pb-24 relative z-10">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -53,11 +47,17 @@ export default function ApiContent() {
             <span className="text-[10px] font-bold uppercase tracking-[0.3em]">ZBR Web API</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-[0.9]">
-            The Backbone of <span className="text-gradient">Automation</span>
+            The Public API
           </h1>
           <p className="text-secondary/60 text-lg md:text-xl max-w-2xl leading-relaxed">
-            Real-time access to the ZBR engine&apos;s internal function and trigger definitions. Powering your own documentation, CLI tools, and integrations.
+          Public access to ZBR function and trigger definitions used across the documentation, CLI, and developer tooling.
           </p>
+          <div className="flex items-center gap-2 pt-2">
+            <span className="text-[10px] font-bold text-secondary/40 uppercase tracking-widest">Base URL</span>
+            <code className="px-2 py-1 bg-white/[0.03] border border-white/[0.08] rounded text-primary text-xs font-mono">
+              https://api.zbrlang.org
+            </code>
+          </div>
         </motion.div>
 
         <div className="grid gap-4">

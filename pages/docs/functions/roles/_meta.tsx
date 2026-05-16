@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZcolorRole": "ZcolorRole",
   "ZcreateRole": "ZcreateRole",
   "ZdeleteRole": "ZdeleteRole",
@@ -23,4 +23,6 @@ export default {
   "ZrolePosition": "ZrolePosition",
   "ZsetUserRoles": "ZsetUserRoles",
   "ZuserRoles": "ZuserRoles"
-}
+};
+
+export default meta;

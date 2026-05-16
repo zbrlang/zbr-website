@@ -18,6 +18,15 @@ ZallowUserMentions - context
 ZargCount - string
 ZargsCheck - control
 Zasync - runtime
+ZauditCount - audit
+ZauditEntries - audit
+ZauditEntryAction - audit
+ZauditEntryChanges - audit
+ZauditEntryID - audit
+ZauditEntryReason - audit
+ZauditEntryTarget - audit
+ZauditEntryUser - audit
+ZauditLatest - audit
 Zauthor - embeds
 ZauthorIcon - embeds
 ZauthorURL - embeds

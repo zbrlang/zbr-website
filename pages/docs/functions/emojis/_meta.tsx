@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZaddEmoji": "ZaddEmoji",
   "ZcustomEmoji": "ZcustomEmoji",
   "ZemojiExists": "ZemojiExists",
@@ -6,4 +6,6 @@ export default {
   "ZemoteCount": "ZemoteCount",
   "ZisEmojiAnimated": "ZisEmojiAnimated",
   "ZremoveEmoji": "ZremoveEmoji"
-}
+};
+
+export default meta;

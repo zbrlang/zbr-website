@@ -60,7 +60,7 @@ export default function DetailedReadme() {
             <span className="text-primary font-bold uppercase tracking-widest text-xs">The Engine</span>
             <h2 className="text-5xl font-bold leading-tight">High performance.<br />Low friction.</h2>
             <p className="text-xl text-secondary/40 leading-relaxed">
-              ZBR is a Rust-based scripting runtime that parses and executes high-performance bot logic. Built on <a href="https://github.com/serenity-rs/serenity" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Serenity</a> and <a href="https://tokio.rs" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Tokio</a>, it handles the Discord gateway with native speed.
+              ZBR is a high-performace runtime engine built in Rust that parses and executes bot logic. Built on <a href="https://github.com/serenity-rs/serenity" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Serenity</a> and <a href="https://tokio.rs" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Tokio</a>, it handles the Discord gateway with native speed.
             </p>
             <div className="flex gap-12 pt-4">
               <div className="space-y-3">

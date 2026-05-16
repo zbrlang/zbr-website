@@ -1,0 +1,26 @@
+# ZauditEntryTarget
+
+Returns the target ID for the selected audit log entry.
+
+## Syntax
+
+```zbr
+ZauditEntryTarget{guildID?;entrySelector?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| guildID | snowflake | No | current guild |
+| entrySelector | string | No | most recent entry |
+
+
+
+## Example
+
+```zbr
+ZauditEntryTarget{}
+```
+

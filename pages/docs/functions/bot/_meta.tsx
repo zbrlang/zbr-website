@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZallMembersCount": "ZallMembersCount",
   "ZbotCommands": "ZbotCommands",
   "ZbotID": "ZbotID",
@@ -15,4 +15,6 @@ export default {
   "ZslashCommandsCount": "ZslashCommandsCount",
   "ZslashID": "ZslashID",
   "Zuptime": "Zuptime"
-}
+};
+
+export default meta;

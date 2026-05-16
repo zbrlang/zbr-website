@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "Zban": "Zban",
   "Zclear": "Zclear",
   "Zdeafen": "Zdeafen",
@@ -12,4 +12,6 @@ export default {
   "Zundeafen": "Zundeafen",
   "Zunmute": "Zunmute",
   "ZuntimeOut": "ZuntimeOut"
-}
+};
+
+export default meta;

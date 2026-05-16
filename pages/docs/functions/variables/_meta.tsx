@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZgetChannelVar": "ZgetChannelVar",
   "ZgetServerVar": "ZgetServerVar",
   "ZgetUserVar": "ZgetUserVar",
@@ -14,4 +14,6 @@ export default {
   "Zvar": "Zvar",
   "ZvarExistError": "ZvarExistError",
   "ZvarExists": "ZvarExists"
-}
+};
+
+export default meta;

@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     question: "Is it faster than JavaScript?",
-    answer: "ZBR runs on a Rust backend so the execution engine itself is fast, but speed isn't really the point, simplicity is. You don't write Rust or JS, you write ZBR syntax like Zban{userID} and the engine handles everything."
+    answer: "ZBR runs on a high-performance Rust backend so the runtime engine itself is fast, but speed isn't really the point, simplicity is. You don't write Rust or JS, you write ZBR syntax like Zban{userID} and the engine handles everything."
   },
   {
     question: "Can I use it with existing projects?",

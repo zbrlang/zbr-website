@@ -1,0 +1,26 @@
+# ZauditEntryChanges
+
+Returns the change details for the selected audit log entry as JSON.
+
+## Syntax
+
+```zbr
+ZauditEntryChanges{guildID?;entrySelector?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| guildID | snowflake | No | current guild |
+| entrySelector | string | No | most recent entry |
+
+
+
+## Example
+
+```zbr
+ZauditEntryChanges{}
+```
+

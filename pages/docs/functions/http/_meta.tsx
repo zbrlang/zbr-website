@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZhttpAddHeader": "ZhttpAddHeader",
   "ZhttpDelete": "ZhttpDelete",
   "ZhttpGet": "ZhttpGet",
@@ -9,4 +9,6 @@ export default {
   "ZhttpRemoveHeader": "ZhttpRemoveHeader",
   "ZhttpResult": "ZhttpResult",
   "ZhttpStatus": "ZhttpStatus"
-}
+};
+
+export default meta;

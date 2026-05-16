@@ -1,0 +1,26 @@
+# ZauditEntries
+
+Fetches the latest guild audit log entries and returns them as a JSON array.
+
+## Syntax
+
+```zbr
+ZauditEntries{guildID?;limit?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| guildID | snowflake | No | current guild |
+| limit | integer | No | 20 |
+
+
+
+## Example
+
+```zbr
+ZauditEntries{}
+```
+

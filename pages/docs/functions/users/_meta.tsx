@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZchangeNickname": "ZchangeNickname",
   "ZcreationDate": "ZcreationDate",
   "ZdisplayName": "ZdisplayName",
@@ -17,4 +17,6 @@ export default {
   "ZuserPerms": "ZuserPerms",
   "ZuserServerAvatar": "ZuserServerAvatar",
   "ZuserStatus": "ZuserStatus"
-}
+};
+
+export default meta;

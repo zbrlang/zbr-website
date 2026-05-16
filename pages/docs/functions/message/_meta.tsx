@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "ZdeleteMessage": "ZdeleteMessage",
   "Zdm": "Zdm",
   "ZeditMessage": "ZeditMessage",
@@ -16,4 +16,6 @@ export default {
   "ZrepliedMessageID": "ZrepliedMessageID",
   "ZunpinMessage": "ZunpinMessage",
   "ZuseChannel": "ZuseChannel"
-}
+};
+
+export default meta;
