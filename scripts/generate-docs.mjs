@@ -77,11 +77,11 @@ ${fn.example}
   });
 
   // Create functions meta
-  fs.writeFileSync(path.join(functionsDir, '_meta.tsx'), `export default ${JSON.stringify(categories, null, 2)}`);
+  fs.writeFileSync(path.join(functionsDir, '_meta.tsx'), `const meta = ${JSON.stringify(categories, null, 2)};\n\nexport default meta;`);
 
   // Create meta files for each category
   Object.entries(categoryMetas).forEach(([dirName, meta]) => {
-    fs.writeFileSync(path.join(functionsDir, dirName, '_meta.tsx'), `export default ${JSON.stringify(meta, null, 2)}`);
+    fs.writeFileSync(path.join(functionsDir, dirName, '_meta.tsx'), `const meta = ${JSON.stringify(meta, null, 2)};\n\nexport default meta;`);
   });
 
   // Generate triggers
@@ -141,12 +141,12 @@ Triggered on any component interaction.
   fs.writeFileSync(path.join(interactionDir, 'onInteraction.mdx'), interactionContent);
 
   // Create triggers meta
-  fs.writeFileSync(path.join(eventsDir, '_meta.tsx'), `export default ${JSON.stringify(eventsMeta, null, 2)}`);
-  fs.writeFileSync(path.join(interactionDir, '_meta.tsx'), `export default { "onInteraction": "onInteraction" }`);
-  fs.writeFileSync(path.join(triggersDir, '_meta.tsx'), `export default {
+  fs.writeFileSync(path.join(eventsDir, '_meta.tsx'), `const meta = ${JSON.stringify(eventsMeta, null, 2)};\n\nexport default meta;`);
+  fs.writeFileSync(path.join(interactionDir, '_meta.tsx'), `const meta = { "onInteraction": "onInteraction" };\n\nexport default meta;`);
+  fs.writeFileSync(path.join(triggersDir, '_meta.tsx'), `const meta = {
   "events": "Events",
   "interactions": "Interactions"
-}`);
+};\n\nexport default meta;`);
 
   console.log('✅ Documentation generated successfully!');
 }

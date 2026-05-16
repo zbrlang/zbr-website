@@ -1,1 +1,3 @@
-export default { "onInteraction": "onInteraction" }
+const meta = { "onInteraction": "onInteraction" };
+
+export default meta;

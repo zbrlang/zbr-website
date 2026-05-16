@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "index": "Introduction",
   "changelog": "Changelog",
   "settings": "Settings",
@@ -6,4 +6,6 @@ export default {
   "resources": "Resources",
   "functions": "Functions",
   "triggers": "Triggers"
-}
+};
+
+export default meta;

@@ -218,7 +218,7 @@ export default function DetailedReadme() {
                 <div className="text-secondary/60">#trigger !ping</div>
                 <div className="text-secondary/60">#name Ping</div>
                 <div className="text-secondary/60">#type prefix</div>
-                <div className="text-secondary/60">// This is a comment</div>
+                <div className="text-secondary/60">{"// This is a comment"}</div>
                 <div className="pt-2 text-primary">Zreply{"{Pong! Latency: Zping{}ms}"}</div>
               </div>
               <div className="pt-6 space-y-2">

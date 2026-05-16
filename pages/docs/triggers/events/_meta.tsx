@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "onBanAdd": "onBanAdd",
   "onBanRemove": "onBanRemove",
   "onChannelCreate": "onChannelCreate",
@@ -17,4 +17,6 @@ export default {
   "onRoleDelete": "onRoleDelete",
   "onRoleUpdate": "onRoleUpdate",
   "onVoiceStateUpdate": "onVoiceStateUpdate"
-}
+};
+
+export default meta;

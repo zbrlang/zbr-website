@@ -1,4 +1,4 @@
-export default {
+const meta = {
   "math": "Math",
   "components": "Components",
   "reactions": "Reactions",
@@ -36,4 +36,6 @@ export default {
   "random": "Random",
   "actions": "Actions",
   "stage": "Stage"
-}
+};
+
+export default meta;
