@@ -2,22 +2,33 @@
 
 Configuration options for your ZBR projects.
 
-## Project Configuration
+## Project Configuration (`zbr.json`)
 
-The `zbr.json` file in your project root controls how the engine behaves.
+The `zbr.json` file in your project root controls project-level metadata and engine intents.
 
 ```json
 {
-  "name": "my-bot",
-  "token": "YOUR_DISCORD_TOKEN",
-  "prefix": "!",
-  "intents": ["Guilds", "GuildMessages", "MessageContent"]
-}
+status: "online",
+activity: 
+  {
+  name: "ZBR Scripting",
+  type: "playing"
+  }
+}    
+```
+
+## Environment Variables (`.env`)
+
+Sensitive credentials and environment-specific IDs are stored in the `.env` file.
+
+```env
+DISCORD_TOKEN=your_bot_token
+DATABASE_URL=sqlite://data.db
+GUILD_ID=876543210987654321
 ```
 
 ### Options
 
-- `name`: The name of your project.
-- `token`: Your Discord bot token.
-- `prefix`: The default prefix for command triggers.
-- `intents`: Array of Discord gateway intents required for your bot.
+- `DISCORD_TOKEN`: Your Discord bot token.
+- `DATABASE_URL`: The connection string for the SQLite database.
+- `GUILD_ID`: The ID of your primary development guild.

@@ -1,0 +1,22 @@
+# Zdelay
+
+Executes a block of code after a specified duration (e.g., 10s, 1m).
+
+## Syntax
+
+```zbr
+Zdelay{duration;code}
+```
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| duration | string | Yes | - |
+| code | string | Yes | - |
+
+## Example
+
+```zbr
+Zdelay{10s;ZsendMessage{Hello after 10 seconds!}}
+```

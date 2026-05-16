@@ -8,8 +8,13 @@ Helpful links and resources for ZBR developers.
 - [npm Package](https://www.npmjs.com/package/@zbrlang/zbr)
 - [Discord Support](https://discord.gg/zbr)
 
-## Community Resources
+## Web API
 
-- [ZBR Snippets](#)
-- [Example Bots](#)
-- [Third-party Plugins](#)
+These endpoints provide real-time access to the ZBR engine's internal function and trigger definitions.
+
+| Endpoint | Data Source | Description |
+| :--- | :--- | :--- |
+| `GET /functions_list` | `functions.json` | Returns the full list of available ZBR functions. |
+| `GET /functions_tag_list` | `functions_tag.json` | Returns function metadata organized by tags. |
+| `GET /triggers_list` | `triggers.json` | Returns the list of all supported event triggers. |
+| `GET /triggers_tag_list` | `triggers_tag.json` | Returns trigger metadata organized by tags. |

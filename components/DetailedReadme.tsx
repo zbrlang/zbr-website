@@ -14,6 +14,7 @@ const examples = [
  
 Zvar{xp;ZgetUserVar{xp}} 
 Zvar{level;ZgetUserVar{level}} 
+Zvar{rank;1} 
  
 Ztitle{Zusername{}'s Rank} 
 Zdescription{Level: Zvar{level} 
@@ -133,7 +134,7 @@ export default function DetailedReadme() {
                       left: i % 2 === 0 ? '10%' : '70%' 
                     }}
                   >
-                    {["MEM_ALLOC", "GW_SHARD", "V8_JIT", "RUST_FFI"][i]}
+                    {["MEM_ALLOC", "GW_SHARD", "AST_PARSER", "TOKIO_ASYNC"][i]}
                   </motion.div>
                 ))}
               </div>
@@ -208,7 +209,7 @@ export default function DetailedReadme() {
             className="glass-panel rounded-3xl p-8 bg-black/40 relative overflow-hidden group"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-            <div className="font-mono text-sm space-y-4 relative z-10">
+              <div className="font-mono text-sm space-y-4 relative z-10">
               <div className="flex gap-3 text-white/20 border-b border-white/5 pb-4 mb-4">
                 <span className="text-primary/60">#syntax</span>
                 <span>example.zbr</span>
@@ -217,13 +218,15 @@ export default function DetailedReadme() {
                 <div className="text-secondary/60">#trigger !ping</div>
                 <div className="text-secondary/60">#name Ping</div>
                 <div className="text-secondary/60">#type prefix</div>
+                <div className="text-secondary/60">// This is a comment</div>
                 <div className="pt-2 text-primary">Zreply{"{Pong! Latency: Zping{}ms}"}</div>
               </div>
               <div className="pt-6 space-y-2">
                 <div className="text-secondary/60">#trigger /userinfo</div>
                 <div className="text-secondary/60">#type slash</div>
+                <div className="text-secondary/60">#description Get info about a user</div>
                 <div className="text-primary">Ztitle{"{Zusername{Zoption{user}}}"}</div>
-                <div className="text-primary">Zdescription{"{Joined: ZjoinedAt{Zoption{user}}}"}</div>
+                <div className="text-primary">Zdescription{"{Joined: ZuserJoined{Zoption{user}}}"}</div>
               </div>
             </div>
           </motion.div>

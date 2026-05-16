@@ -18,6 +18,7 @@ export default {
   "invites": "Invites",
   "permissions": "Permissions",
   "roles": "Roles",
+  "runtime": "Runtime",
   "events": "Events",
   "forums": "Forums",
   "time": "Time",

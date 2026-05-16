@@ -1,0 +1,22 @@
+# Zasync
+
+Spawns a named background task that runs the provided code block concurrently.
+
+## Syntax
+
+```zbr
+Zasync{name;code}
+```
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+| code | string | Yes | - |
+
+## Example
+
+```zbr
+Zasync{my_task;Zdelay{5s;ZsendMessage{Task complete!}}}
+```

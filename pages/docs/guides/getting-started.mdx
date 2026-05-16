@@ -25,21 +25,46 @@ npm install -g @zbrlang/zbr
    ```bash
    cd my-awesome-bot
    ```
-3. Open `zbr.json` and paste your bot token:
-   ```json
-   {
-     "name": "my-awesome-bot",
-     "token": "YOUR_TOKEN_HERE",
-     "prefix": "!"
-   }
+3. Open `.env` and paste your configuration:
+   ```env
+   DISCORD_TOKEN=your_token_here
+   DATABASE_URL=sqlite://data.db
+   BOT_ID=your_bot_id
+   GUILD_ID=your_guild_id
    ```
 
 ## Running the Bot
 
-Start the bot in development mode with hot-reloading enabled:
+Start the bot with the unified runner:
 
 ```bash
-zbr dev
+zbr run
 ```
 
-Your bot is now online! Try typing `!ping` in your Discord server.
+You can also use `zbr help` to see all available commands.
+
+## Command Headers
+
+Every `.zbr` file must start with a header section that defines how the command is triggered and configured. Header lines always start with `#`.
+
+### Valid Keywords
+- `trigger`: The activation keyword or event name.
+- `name`: Internal identifier for the command.
+- `description`: A short description (used in slash commands).
+- `type`: Command mode: `prefix`, `slash`, `sub-slash`, `interaction`, or `event`.
+- `scope`: Where to register: `guild`, `global`, or `both`.
+- `option`: Defines slash command options.
+
+### Example Command
+
+```zbr
+#trigger !hello
+#name Hello Command
+#type prefix
+#description A simple greeting command
+
+// This is a comment
+Hello, Zusername{}!
+```
+
+Your bot is now online! Try typing `!hello` in your Discord server.
