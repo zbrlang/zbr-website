@@ -42,6 +42,7 @@ export default function Footer() {
               <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/40">Product</h4>
               <ul className="space-y-3">
                 <li><Link href="/docs" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">Documentation</Link></li>
+                <li><Link href="/api" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">API</Link></li>
                 <li><Link href="https://github.com/zbrlang/zbr/releases" target="_blank" rel="noopener noreferrer" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">Releases</Link></li>
                 <li><Link href="https://www.npmjs.com/package/@zbrlang/zbr" target="_blank" rel="noopener noreferrer" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">CLI</Link></li>
               </ul>
