@@ -1,0 +1,30 @@
+# Web API
+
+Use the ZBR Web API to retrieve live function and trigger metadata for editor integrations, docs generation, and tooling.
+
+## Base URL
+
+Base URL: `https://zbr-website.vercel.app/api`
+
+## Endpoints
+
+| Endpoint | Data Source | Description |
+| :--- | :--- | :--- |
+| `GET /functions_list` | `functions.json` | Returns the full list of available ZBR functions. |
+| `GET /functions/{name}` | `functions.json` | Returns a specific function by name (for example `/functions/Zabs`). |
+| `GET /functions_tag_list` | `functions_tag.json` | Returns function metadata organized by tags. |
+| `GET /triggers_list` | `triggers.json` | Returns the list of all supported event triggers. |
+| `GET /triggers/{name}` | `triggers.json` | Returns a specific trigger by name (for example `/triggers/onBanAdd`). |
+| `GET /triggers_tag_list` | `triggers_tag.json` | Returns trigger metadata organized by tags. |
+
+## Usage
+
+These endpoints are useful for building editor support, documentation tooling, and integration helpers that need up-to-date ZBR function or trigger definitions.
+
+- `functions_list` returns every function available in the current runtime.
+- `functions/{name}` returns a single function definition by name.
+- `functions_tag_list` groups functions by category/tag.
+- `triggers_list` returns every supported trigger event.
+- `triggers/{name}` returns a single trigger definition by name.
+- `triggers_tag_list` groups trigger metadata by tag for easier discovery.
+

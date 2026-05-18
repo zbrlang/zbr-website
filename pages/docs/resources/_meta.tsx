@@ -1,5 +1,6 @@
 const meta = {
-  "index": "Web API"
+  "web-api": "Web API",
+  "extensions": "IDE Extensions"
 };
 
 export default meta;

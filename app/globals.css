@@ -32,6 +32,10 @@
 
 @import url('https://fonts.cdnfonts.com/css/hubot-sans');
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
