@@ -13,6 +13,12 @@ const endpoints = [
     method: 'GET'
   },
   {
+    path: '/functions/{name}',
+    source: 'functions.json',
+    description: 'Returns a specific function by name (e.g., /functions/Zabs).',
+    method: 'GET'
+  },
+  {
     path: '/functions_tag_list',
     source: 'functions_tag.json',
     description: 'Returns function metadata organized by tags.',
@@ -22,6 +28,12 @@ const endpoints = [
     path: '/triggers_list',
     source: 'triggers.json',
     description: 'Returns the list of all supported event triggers.',
+    method: 'GET'
+  },
+  {
+    path: '/triggers/{name}',
+    source: 'triggers.json',
+    description: 'Returns a specific trigger by name (e.g., /triggers/onBanAdd).',
     method: 'GET'
   },
   {
@@ -55,7 +67,7 @@ export default function ApiContent() {
           <div className="flex items-center gap-2 pt-2">
             <span className="text-[10px] font-bold text-secondary/40 uppercase tracking-widest">Base URL</span>
             <code className="px-2 py-1 bg-white/[0.03] border border-white/[0.08] rounded text-primary text-xs font-mono">
-              https://api.zbrlang.org
+              https://zbr-website.vercel.app/api
             </code>
           </div>
         </motion.div>

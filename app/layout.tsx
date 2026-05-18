@@ -8,16 +8,16 @@ export const metadata: Metadata = {
     default: "ZBR",
     template: "%s | ZBR",
   },
-  description: "A high-performance Discord bot framework built with Rust. Write complex bot logic with a concise, function-based scripting engine and native SQLite persistence.",
+  description: "The scripting language for Discord bots powered by a high-performance Rust runtime engine. You write commands as plain .zbr files using ZBR functions, no boilerplate, no event handlers, no framework knowledge required.",
   icons: {
-    icon: "/images/ZBR_logo.png?v=1",
-    shortcut: "/images/ZBR_logo.png?v=1",
-    apple: "/images/ZBR_logo.png?v=1",
+    icon: "/images/ZBR_logo.png",
+    shortcut: "/images/ZBR_logo.png",
+    apple: "/images/ZBR_logo.png",
   },
   openGraph: {
     title: "ZBR",
-    description: "High-performance Discord bot framework built with Rust.",
-    url: "https://zbr-website.vercel.app?v=1",
+    description: "The scripting language for Discord bots powered by a high-performance Rust runtime engine.",
+    url: "https://zbr-website.vercel.app",
     siteName: "ZBR",
     images: [
       {
@@ -28,13 +28,7 @@ export const metadata: Metadata = {
     ],
     locale: "en_US",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "ZBR",
-    description: "High-performance Discord bot framework built with Rust.",
-    images: ["/images/ZBR_logo.png?v=1"],
-  },
+  }
 };
 
 import Navbar from "@/components/Navbar";

@@ -15,16 +15,16 @@ const config: DocsThemeConfig = {
     <>
       <title>ZBR Documentation</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="description" content="Official documentation for ZBR, a high-performance Discord bot framework built with Rust." />
+      <meta name="description" content="Official documentation for ZBR, a high-performance Discord scripting language built with Rust." />
       <meta name="twitter:card" content="summary" />
       <meta property="og:title" content="ZBR Documentation" />
-      <meta property="og:description" content="Master the ZBR DSL with our comprehensive function and trigger references." />
+      <meta property="og:description" content="Official documentation for ZBR, a high-performance Discord scripting language built with Rust." />
       <meta property="og:image" content="/images/ZBR_logo.png?v=1" />
-      <meta name="apple-mobile-web-app-title" content="ZBR Docs" />
+      <meta name="apple-mobile-web-app-title" content="ZBR Documentation" />
       <link rel="icon" type="image/png" href="/images/ZBR_logo.png?v=1" />
     </>
   ),
-  docsRepositoryBase: 'https://github.com/zbrlang/zbr-website/tree/main',
+  docsRepositoryBase: 'https://github.com/zbrlang/zbr-website/',
   footer: {
     content: (
       <span>

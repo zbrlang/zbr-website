@@ -17,12 +17,12 @@ You write commands as plain `.zbr` files using ZBR functions, no boilerplate, no
 
 ## Links
 
-- [ZBR website](https://zbrlang.org)
-- [ZBR support](https://zbrlang.org/contact)
-- [ZBR terms](https://zbrlang.org/terms)
-- [ZBR privacy](https://zbrlang.org/privacy)
-- [ZBR documentation](https://docs.zbrlang.org) 
-- [ZBR api](https://api.zbrlang.org)
+- [ZBR website](https://zbr-website.vercel.app)
+- [ZBR support](https://zbr-website.vercel.app/contact)
+- [ZBR terms](https://zbr-website.vercel.app/terms)
+- [ZBR privacy](https://zbr-website.vercel.app/privacy)
+- [ZBR documentation](https://zbr-website.vercel.app/docs) 
+- [ZBR api](https://zbr-website.vercel.app/api)
 
 ## License
 

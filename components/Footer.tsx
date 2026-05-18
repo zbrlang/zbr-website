@@ -23,7 +23,7 @@ export default function Footer() {
             <p className="text-secondary/60 leading-relaxed text-sm">
             ZBR is a scripting language for Discord bots powered by a high-performance Rust runtime engine.</p>
             <div className="flex gap-4">
-              <Link href="https://github.com/zbrlang/zbr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-secondary/40 hover:text-primary hover:border-primary/50 transition-all">
+              <Link href="https://github.com/zbrlang" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-secondary/40 hover:text-primary hover:border-primary/50 transition-all">
                 <Github size={18} />
               </Link>
               <Link href="#" className="w-10 h-10 rounded-full bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-secondary/40 hover:text-primary hover:border-primary/50 transition-all">

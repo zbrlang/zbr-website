@@ -23,7 +23,7 @@ export default function Navbar() {
       {/* Right: GitHub + Get Started (Responsive) */}
       <div className="flex-1 flex justify-end items-center gap-3 md:gap-6">
         <Link 
-          href="https://github.com/zbrlang/zbr" 
+          href="https://github.com/zbrlang" 
           target="_blank"
           rel="noopener noreferrer"
           className="relative group flex items-center justify-center"
