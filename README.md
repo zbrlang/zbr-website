@@ -29,4 +29,4 @@ This repository provides the central platform for ZBR, offering the main landing
 
 ## License
 
-The ZBR website and documentation are All Rights Reserved.
+ARR, see [LICENSE](LICENSE)

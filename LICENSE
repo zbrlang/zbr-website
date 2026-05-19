@@ -1,7 +1,19 @@
-All Rights Reserved
+Copyright © 2026 ZBRLang. All Rights Reserved.
 
-Copyright (c) 2026 zbrlang
+This repository and its contents are publicly visible for documentation, educational, reference, and community support purposes only.
 
-The ZBR website and its associated documentation are the property of zbrlang. No part of this project, including its design, layout, and content, may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the owner.
+You may:
+- View and access the website and documentation
+- Reference documentation or API responses for integration purposes
+- Share links to official ZBR resources
+- Submit pull requests or suggested improvements
 
-The ZBR engine and CLI are licensed under the MIT License.
+You may not:
+- Copy, redistribute, or mirror this website or its contents in whole or in substantial part
+- Rehost, reproduce, or commercially distribute the documentation, assets, or API data
+- Use the ZBR name, branding, design, or visual identity without explicit written permission
+- Create derivative websites or documentation intended to replicate or compete with ZBR
+
+All rights to the website, documentation, API content, branding, assets, design, and related materials remain exclusively owned by ZBRLang unless otherwise stated.
+
+Unauthorized redistribution, replication, or commercial use of this repository or its contents is strictly prohibited.
