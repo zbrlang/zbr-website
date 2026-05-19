@@ -1,11 +1,13 @@
 # ZBR Website
 
-The official website and documentation for **ZBR**, a scripting language and high-performance runtime engine built in Rust for Discord bots.
+The official website and documentation for **ZBR**, a scripting language for Discord bots.
 
 ## Overview
 
 ZBR is a scripting language for Discord bots powered by a high-performance Rust runtime engine.<br>
 You write commands as plain `.zbr` files using ZBR functions, no boilerplate, no event handlers, no framework knowledge required.
+
+This repository provides the central platform for ZBR, offering the main landing page, full documentation for functions & triggers, a web API, and other resources for developers.
 
 ## Project Structure
 
@@ -23,6 +25,7 @@ You write commands as plain `.zbr` files using ZBR functions, no boilerplate, no
 - [ZBR privacy](https://zbr-website.vercel.app/privacy)
 - [ZBR documentation](https://zbr-website.vercel.app/docs) 
 - [ZBR api](https://zbr-website.vercel.app/api)
+- [ZBR extensions](https://zbr-website.vercel.app/extensions)
 
 ## License
 

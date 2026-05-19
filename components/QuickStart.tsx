@@ -13,7 +13,7 @@ const terminalSteps = [
       "zbr --version",
       "zbr v1.0.0"
     ],
-    description: "Install ZBR, the high-performance runtime engine built in Rust, directly from npm."
+    description: "Install ZBR CLI, directly from npm."
   },
   {
     title: "Initialize Project",
@@ -35,7 +35,7 @@ const terminalSteps = [
       "Bot is live: ZBR-Bot#1234",
       "Hot reloading active."
     ],
-    description: "Launch your bot. ZBR watches your files, save a command and the changes are live instantly on Discord."
+    description: "Launch your bot. ZBR Runtime Engine watches your files, save a command and the changes are live instantly on Discord."
   }
 ];
 

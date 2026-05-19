@@ -20,11 +20,6 @@ export default function ExtensionsContent() {
       ],
       links: [
         {
-          label: 'View on Marketplace',
-          url: 'https://marketplace.visualstudio.com/items?itemName=zbrlang.zbr',
-          icon: ExternalLink
-        },
-        {
           label: 'GitHub Repository',
           url: 'https://github.com/zbrlang/zbr-extensions/tree/main/vscode',
           icon: Github
@@ -36,7 +31,7 @@ export default function ExtensionsContent() {
       name: 'Zed',
       status: 'In Development',
       statusColor: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
-      description: 'High-performance Zed extension powered by Tree-sitter grammar.',
+      description: 'Official Zed extension powered by Tree-sitter grammar.',
       features: [
         'Tree-sitter powered parsing',
         'Lightning-fast performance',
@@ -69,7 +64,7 @@ export default function ExtensionsContent() {
             Extensions
           </h1>
           <p className="text-secondary/60 text-lg mb-16 max-w-2xl">
-            Write ZBR code with full editor support. Syntax highlighting, snippets, and smart completions across your favorite IDEs.
+            Write ZBR commands with full editor support. Syntax highlighting, snippets, and smart completions across your favorite IDEs.
           </p>
         </motion.div>
 

@@ -19,13 +19,6 @@ export const metadata: Metadata = {
     description: "The scripting language for Discord bots powered by a high-performance Rust runtime engine.",
     url: "https://zbr-website.vercel.app",
     siteName: "ZBR",
-    images: [
-      {
-        url: "/images/ZBR_logo.png?v=1",
-        width: 512,
-        height: 512,
-      },
-    ],
     locale: "en_US",
     type: "website",
   }
