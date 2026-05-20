@@ -3,7 +3,21 @@ import ExtensionsContent from "./ExtensionsContent";
 
 export const metadata: Metadata = {
   title: "Extensions",
-  description: "Official IDE extensions for ZBR. Full editor support with syntax highlighting, snippets, and smart completions for VS Code and Zed.",
+  description:
+    "Write ZBR commands with full editor support. Syntax highlighting, snippets, and smart completions across your favorite IDEs.",
+  openGraph: {
+    title: "ZBR Extensions",
+    description:
+      "Write ZBR commands with full editor support. Syntax highlighting, snippets, and smart completions across your favorite IDEs.",
+    url: "https://zbr-website.vercel.app/extensions",
+    siteName: "ZBR",
+    locale: "en_US",
+    type: "website",
+    images: [{ url: "/images/ZBR_logo.png?v=1" }],
+  },
+  twitter: {
+    card: "summary",
+  },
 };
 
 export default function ExtensionsPage() {

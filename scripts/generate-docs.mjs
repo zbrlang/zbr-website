@@ -3,7 +3,7 @@ import path from 'path';
 
 const FUNCTIONS_PATH = './context/functions.json';
 const TRIGGERS_PATH = './context/triggers.json';
-const CATEGORY_FILE_PATH = './context/category.txt';
+const CATEGORY_FILE_PATH = './context/categories.txt';
 const PAGES_DOCS_PATH = './pages/docs';
 
 async function generateDocs() {
