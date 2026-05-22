@@ -11,22 +11,22 @@ This repository provides the central platform for ZBR, offering the main landing
 
 ## Project Structure
 
-- app/: Next.js App Router for the main landing page and legal pages.
-- pages/docs/: Documentation content powered by Nextra.
-- context/: Documentation source data (functions, triggers, categories).
-- scripts/: Automation scripts for documentation generation.
-- components/: Shared UI components.
+- `app/`: Next.js App Router for the main landing page and legal pages.
+- `pages/docs/`: Documentation content powered by Nextra.
+- `context/`: Documentation source data (functions, triggers, categories).
+- `scripts/`: Automation scripts for documentation generation.
+- `components/`: Shared UI components.
 
 ## Links
 
-- [ZBR website](https://zbr-website.vercel.app)
-- [ZBR support](https://zbr-website.vercel.app/contact)
-- [ZBR terms](https://zbr-website.vercel.app/terms)
-- [ZBR privacy](https://zbr-website.vercel.app/privacy)
-- [ZBR documentation](https://zbr-website.vercel.app/docs) 
-- [ZBR api](https://zbr-website.vercel.app/api)
-- [ZBR extensions](https://zbr-website.vercel.app/extensions)
+- [Website](https://zbr-website.vercel.app)
+- [Documentation](https://zbr-website.vercel.app/docs)
+- [API](https://zbr-website.vercel.app/api)
+- [Extensions](https://zbr-website.vercel.app/extensions)
+- [Support](https://zbr-website.vercel.app/contact)
+- [Terms](https://zbr-website.vercel.app/terms)
+- [Privacy](https://zbr-website.vercel.app/privacy)
 
 ## License
 
-ARR, see [LICENSE](LICENSE)
+All Rights Reserved, see [LICENSE](LICENSE).

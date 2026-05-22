@@ -29,8 +29,8 @@ export default function ExtensionsContent() {
     {
       id: 'zed',
       name: 'Zed',
-      status: 'In Development',
-      statusColor: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
+      status: 'Ready',
+      statusColor: 'bg-green-500/20 text-green-400 border-green-500/30',
       description: 'Official Zed extension powered by Tree-sitter grammar.',
       features: [
         'Tree-sitter powered parsing',
