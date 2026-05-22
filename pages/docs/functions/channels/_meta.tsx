@@ -24,6 +24,7 @@ const meta = {
   "ZmodifyChannel": "ZmodifyChannel",
   "ZparentID": "ZparentID",
   "ZrulesChannelID": "ZrulesChannelID",
+  "ZserverChannels": "ZserverChannels",
   "ZslowMode": "ZslowMode",
   "ZsystemChannelID": "ZsystemChannelID",
   "ZvoiceUserLimit": "ZvoiceUserLimit"

@@ -41,6 +41,32 @@ zbr run
 
 You can also use `zbr help` to see all available commands.
 
+## ZBR CLI commands
+
+Use `zbr help` to list the available CLI commands. Common commands include:
+
+```bash
+zbr init <folder>     Initialize a new ZBR project in the specified folder (defaults to current directory)
+zbr run               Start the ZBR runtime engine and bring your bot online
+zbr update            Download and install the latest ZBR runtime engine
+zbr version           Show the current ZBR version
+zbr list              List all commands in your commands/ folder
+zbr new <type>        Scaffold a new command file (prefix, slash, sub-slash, interaction, event)
+zbr help              Show this help message
+```
+
+The `zbr new <type>` command creates a starter command file using the selected type. For example:
+
+```bash
+zbr new prefix
+zbr new slash
+zbr new sub-slash
+zbr new interaction
+zbr new event
+```
+
+This is a quick way to get a basic `.zbr` command file scaffolded so you can start building faster.
+
 ## Command Headers
 
 Every `.zbr` file must start with a header section that defines how the command is triggered and configured. Header lines always start with `#`.

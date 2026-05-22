@@ -21,6 +21,7 @@ const meta = {
   "ZroleNames": "ZroleNames",
   "ZrolePerms": "ZrolePerms",
   "ZrolePosition": "ZrolePosition",
+  "ZserverRoles": "ZserverRoles",
   "ZsetUserRoles": "ZsetUserRoles",
   "ZuserRoles": "ZuserRoles"
 };
