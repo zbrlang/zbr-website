@@ -11,7 +11,7 @@ const terminalSteps = [
     output: [
       "added 1 package in 0.8s",
       "zbr version",
-      "zbr v1.2.0"
+      "zbr v1.3.0"
     ],
     description: "Install ZBR CLI, directly from npm."
   },

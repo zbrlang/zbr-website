@@ -20,7 +20,7 @@ export default function TosContent() {
           <h1 className="text-5xl md:text-7xl font-bold mb-8 tracking-tighter text-white font-['Hubot-Sans']">
             Terms of Service
           </h1>
-          <p className="text-secondary/60 text-lg mb-12">Last updated: May 15, 2026</p>
+          <p className="text-secondary/60 text-lg mb-12">Last updated: May 26, 2026</p>
         </motion.div>
 
         <motion.div 
@@ -46,7 +46,12 @@ export default function TosContent() {
               <li><strong>Moderate Members</strong>: Including kicking, banning, and timing out users (via Zkick, Zban, Ztimeout).</li>
               <li><strong>Manage Roles</strong>: Creating, deleting, and assigning roles (via ZcreateRole, ZroleGrant).</li>
               <li><strong>Manage Channels</strong>: Creating and modifying channels (via ZcreateChannel, ZmodifyChannel).</li>
+              <li><strong>Manage Server</strong>: Server-wide modifications including lockdown, welcome screen, and server settings (via ZserverModify, ZserverLockdown, ZeditWelcomeScreen).</li>
+              <li><strong>Manage Automod</strong>: Creating, editing, and deleting automod rules (via ZautomodRuleCreate, ZautomodRuleEdit, ZautomodRuleDelete).</li>
               <li><strong>Manage Webhooks</strong>: Creating and deleting webhooks for advanced notifications.</li>
+              <li><strong>Manage Voice</strong>: Controlling stage channel voice states, including suppressing and allowing speakers (via ZvoiceSuppress, ZvoiceRequestToSpeak).</li>
+              <li><strong>Manage Soundboard</strong>: Uploading, editing, and deleting soundboard sounds (via ZsoundboardCreate, ZsoundboardEdit, ZsoundboardDelete).</li>
+              <li><strong>Manage Polls</strong>: Creating and ending polls (via ZpollCreate, ZpollEnd).</li>
               <li><strong>Interact with Components</strong>: Handling buttons, select menus, and modals.</li>
             </ul>
           </section>
@@ -61,6 +66,8 @@ export default function TosContent() {
               <li>Spamming, harassment, or spreading malicious software.</li>
               <li>Bypassing Discord&apos;s own Terms of Service or Developer Policy.</li>
               <li>Making excessive or abusive external HTTP requests using our scripting functions.</li>
+              <li>Creating automod rules that discriminate against protected groups or violate Discord&apos;s community guidelines.</li>
+              <li>Uploading prohibited content via sticker or soundboard functions.</li>
             </ul>
           </section>
 
@@ -73,13 +80,15 @@ export default function TosContent() {
               <li>The content or consequences of scripts executed by the engine.</li>
               <li>Data loss or server damage resulting from poorly written or malicious scripts.</li>
               <li>Unexpected bot behavior due to script logic.</li>
+              <li>The content of files uploaded via sticker or soundboard functions.</li>
+              <li>The configuration or enforcement of automod rules created through the engine.</li>
             </ul>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">5. External Communications</h2>
             <p className="text-secondary/60 leading-relaxed">
-              ZBR scripts have the capability to make external HTTP requests (ZhttpGet, ZhttpPost, etc.). You are responsible for ensuring that these requests comply with the terms of the receiving services and do not transmit sensitive data insecurely.
+              ZBR scripts have the capability to make external HTTP requests (ZhttpGet, ZhttpPost, etc.). The engine includes built-in SSRF protection that blocks requests to private, reserved, or known-dangerous IP addresses. You remain responsible for ensuring that your requests comply with the terms of the receiving services and do not transmit sensitive data insecurely.
             </p>
           </section>
 

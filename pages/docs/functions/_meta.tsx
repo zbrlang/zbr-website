@@ -12,7 +12,9 @@ const meta = {
   "control": "Control",
   "runtime": "Runtime",
   "audit": "Audit",
+  "automod": "Automod",
   "moderation": "Moderation",
+  "utility": "Utility",
   "blacklists": "Blacklists",
   "cooldown": "Cooldown",
   "users": "Users",
@@ -34,8 +36,10 @@ const meta = {
   "http": "Http",
   "voice": "Voice",
   "json": "Json",
+  "polls": "Polls",
   "random": "Random",
   "actions": "Actions",
+  "soundboard": "Soundboard",
   "stage": "Stage"
 };
 

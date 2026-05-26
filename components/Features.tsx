@@ -7,7 +7,7 @@ const featureList = [
   { title: "Rust Core", icon: Zap },
   { title: "Hot Reload", icon: Sparkles },
   { title: "SQLite Native", icon: Shield },
-  { title: "HTTP Server", icon: Globe },
+  { title: "In-Process", icon: Zap },
   { title: "Slash Commands", icon: LinkIcon },
   { title: "Event Driven", icon: Lock },
 ];

@@ -1,0 +1,31 @@
+# ZautomodRuleCreate
+
+Creates a new automod rule. trigger and actions are JSON strings.
+
+## Syntax
+
+```zbr
+ZautomodRuleCreate{name;trigger;actions;eventType?;enabled?;exemptRoles?;exemptChannels?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+| trigger | json | Yes | - |
+| actions | json | Yes | - |
+| eventType | string | No | 1 |
+| enabled | boolean | No | true |
+| exemptRoles | string | No | - |
+| exemptChannels | string | No | - |
+
+
+
+## Example
+
+```zbr
+ZautomodRuleCreate{No;{"keyword_filter":["bad"]};[{"type":1}]}
+```
+

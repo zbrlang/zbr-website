@@ -11,6 +11,7 @@ const meta = {
   "Zmentioned": "Zmentioned",
   "ZmessageID": "ZmessageID",
   "ZmessageLink": "ZmessageLink",
+  "ZpinList": "ZpinList",
   "ZpinMessage": "ZpinMessage",
   "ZpublishMessage": "ZpublishMessage",
   "ZrepliedMessageID": "ZrepliedMessageID",

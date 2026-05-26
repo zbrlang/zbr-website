@@ -4,6 +4,8 @@ const meta = {
   "ZdeleteForumTag": "ZdeleteForumTag",
   "ZeditForumTag": "ZeditForumTag",
   "ZforumPostCount": "ZforumPostCount",
+  "ZforumPostLock": "ZforumPostLock",
+  "ZforumPostPin": "ZforumPostPin",
   "ZforumPosts": "ZforumPosts",
   "ZforumTagEmoji": "ZforumTagEmoji",
   "ZforumTagID": "ZforumTagID",

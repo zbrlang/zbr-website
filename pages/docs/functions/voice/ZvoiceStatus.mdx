@@ -1,0 +1,26 @@
+# ZvoiceStatus
+
+Gets or sets the status of a voice channel. Returns the current status if no status arg is given.
+
+## Syntax
+
+```zbr
+ZvoiceStatus{channelID;status?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| status | string | No | - |
+
+
+
+## Example
+
+```zbr
+ZvoiceStatus{123456789012345678;Welcome to the club!}
+```
+

@@ -1,0 +1,26 @@
+# ZserverLockdown
+
+Enables or disables guild raid protection (incident actions) with an optional duration.
+
+## Syntax
+
+```zbr
+ZserverLockdown{enabled;duration?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| enabled | boolean | Yes | - |
+| duration | string | No | 1h |
+
+
+
+## Example
+
+```zbr
+ZserverLockdown{true;30m}
+```
+

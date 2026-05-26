@@ -5,7 +5,7 @@ Creates a new thread in the specified channel, optionally attaching it to an exi
 ## Syntax
 
 ```zbr
-ZstartThread{name;channelID;messageID?;archiveDuration?;returnID?}
+ZstartThread{name;channelID;messageID?;archiveDuration?;returnID?;private?}
 ```
 
 
@@ -18,12 +18,13 @@ ZstartThread{name;channelID;messageID?;archiveDuration?;returnID?}
 | messageID | snowflake | No | - |
 | archiveDuration | integer | No | 60 |
 | returnID | boolean | No | false |
+| private | boolean | No | - |
 
 
 
 ## Example
 
 ```zbr
-ZstartThread{My Thread;123456789012345678;;;true}
+ZstartThread{My Thread;123456789012345678;;;;false}
 ```
 

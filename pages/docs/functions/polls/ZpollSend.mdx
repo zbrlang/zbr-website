@@ -1,0 +1,26 @@
+# ZpollSend
+
+Sends the configured poll to the specified channel.
+
+## Syntax
+
+```zbr
+ZpollSend{channelID?;returnID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | No | current channel |
+| returnID | boolean | No | false |
+
+
+
+## Example
+
+```zbr
+ZpollSend{123456789012345678;true}
+```
+

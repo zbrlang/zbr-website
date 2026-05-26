@@ -1,0 +1,27 @@
+# ZvoiceSuppress
+
+Suppress or unsuppress a user in a stage channel.
+
+## Syntax
+
+```zbr
+ZvoiceSuppress{userID;suppress;channelID}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | Yes | - |
+| suppress | boolean | Yes | - |
+| channelID | snowflake | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZvoiceSuppress{123456789012345678;true;987654321098765432}
+```
+

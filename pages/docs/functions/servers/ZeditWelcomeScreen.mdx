@@ -1,0 +1,28 @@
+# ZeditWelcomeScreen
+
+Edits the guild's welcome screen settings.
+
+## Syntax
+
+```zbr
+ZeditWelcomeScreen{guildID;enabled;description?;welcomeChannelsJSON?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| guildID | snowflake | Yes | - |
+| enabled | boolean | Yes | - |
+| description | string | No | - |
+| welcomeChannelsJSON | json | No | - |
+
+
+
+## Example
+
+```zbr
+ZeditWelcomeScreen{123456789012345678;true;Welcome!;[{"channel_id":"123","description":"Chat here"}]}
+```
+

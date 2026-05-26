@@ -1,0 +1,26 @@
+# ZvoiceRequestToSpeak
+
+Requests to speak in a stage channel, or cancels the request if cancel=true.
+
+## Syntax
+
+```zbr
+ZvoiceRequestToSpeak{channelID;cancel?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| cancel | boolean | No | false |
+
+
+
+## Example
+
+```zbr
+ZvoiceRequestToSpeak{123456789012345678;true}
+```
+

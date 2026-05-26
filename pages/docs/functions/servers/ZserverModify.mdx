@@ -1,0 +1,34 @@
+# ZserverModify
+
+Edits guild settings such as name, icon, banner, splash, description, and verification level.
+
+## Syntax
+
+```zbr
+ZserverModify{guildID?;name?;icon?;banner?;splash?;description?;afkChannelID?;afkTimeout?;systemChannelID?;verificationLevel?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| guildID | snowflake | No | current guild |
+| name | string | No | !unchanged |
+| icon | string | No | !unchanged |
+| banner | string | No | !unchanged |
+| splash | string | No | !unchanged |
+| description | string | No | !unchanged |
+| afkChannelID | snowflake | No | !unchanged |
+| afkTimeout | integer | No | !unchanged |
+| systemChannelID | snowflake | No | !unchanged |
+| verificationLevel | string | No | !unchanged |
+
+
+
+## Example
+
+```zbr
+ZserverModify{}
+```
+

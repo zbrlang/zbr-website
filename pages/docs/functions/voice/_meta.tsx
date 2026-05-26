@@ -10,11 +10,14 @@ const meta = {
   "ZvoiceEmpty": "ZvoiceEmpty",
   "ZvoiceFull": "ZvoiceFull",
   "ZvoiceKick": "ZvoiceKick",
-  "ZvoiceNew": "ZvoiceNew",
   "ZvoiceMemberCount": "ZvoiceMemberCount",
-  "ZvoiceOld": "ZvoiceOld",
   "ZvoiceMembers": "ZvoiceMembers",
-  "ZvoiceMove": "ZvoiceMove"
+  "ZvoiceMove": "ZvoiceMove",
+  "ZvoiceNew": "ZvoiceNew",
+  "ZvoiceOld": "ZvoiceOld",
+  "ZvoiceRequestToSpeak": "ZvoiceRequestToSpeak",
+  "ZvoiceStatus": "ZvoiceStatus",
+  "ZvoiceSuppress": "ZvoiceSuppress"
 };
 
 export default meta;

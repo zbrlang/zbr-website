@@ -13,10 +13,10 @@ const meta = {
   "ZuserBannerColor": "ZuserBannerColor",
   "ZuserExists": "ZuserExists",
   "ZuserJoined": "ZuserJoined",
-  "Zusername": "Zusername",
   "ZuserPerms": "ZuserPerms",
   "ZuserServerAvatar": "ZuserServerAvatar",
-  "ZuserStatus": "ZuserStatus"
+  "ZuserStatus": "ZuserStatus",
+  "Zusername": "Zusername"
 };
 
 export default meta;

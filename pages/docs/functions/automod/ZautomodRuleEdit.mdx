@@ -1,0 +1,32 @@
+# ZautomodRuleEdit
+
+Edits an existing automod rule. Use !unchanged for fields to skip.
+
+## Syntax
+
+```zbr
+ZautomodRuleEdit{ruleID;name?;trigger?;actions?;eventType?;enabled?;exemptRoles?;exemptChannels?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| ruleID | snowflake | Yes | - |
+| name | string | No | !unchanged |
+| trigger | json | No | !unchanged |
+| actions | json | No | !unchanged |
+| eventType | string | No | !unchanged |
+| enabled | boolean | No | !unchanged |
+| exemptRoles | string | No | !unchanged |
+| exemptChannels | string | No | !unchanged |
+
+
+
+## Example
+
+```zbr
+ZautomodRuleEdit{123456789012345678;New Name}
+```
+

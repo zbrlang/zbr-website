@@ -1,0 +1,28 @@
+# ZstickerCreate
+
+Creates a new guild sticker from a file URL.
+
+## Syntax
+
+```zbr
+ZstickerCreate{name;fileUrl;tags;description?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| name | string | Yes | - |
+| fileUrl | url | Yes | - |
+| tags | string | Yes | - |
+| description | string | No | - |
+
+
+
+## Example
+
+```zbr
+ZstickerCreate{wave;https://example.com/sticker.png;wave,hello;A waving sticker}
+```
+

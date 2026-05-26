@@ -1,0 +1,28 @@
+# ZstickerEdit
+
+Edits a guild sticker's metadata. Use !unchanged for fields to skip.
+
+## Syntax
+
+```zbr
+ZstickerEdit{stickerID;name?;tags?;description?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| stickerID | snowflake | Yes | - |
+| name | string | No | !unchanged |
+| tags | string | No | !unchanged |
+| description | string | No | !unchanged |
+
+
+
+## Example
+
+```zbr
+ZstickerEdit{123456789012345678;New Name}
+```
+

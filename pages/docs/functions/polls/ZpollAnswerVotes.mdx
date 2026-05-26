@@ -1,0 +1,27 @@
+# ZpollAnswerVotes
+
+Returns the vote count for a specific poll answer.
+
+## Syntax
+
+```zbr
+ZpollAnswerVotes{messageID;answerID;channelID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| messageID | snowflake | Yes | - |
+| answerID | integer | Yes | - |
+| channelID | snowflake | No | current channel |
+
+
+
+## Example
+
+```zbr
+ZpollAnswerVotes{987654321098765432;1}
+```
+

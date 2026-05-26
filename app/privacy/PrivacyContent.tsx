@@ -20,7 +20,7 @@ export default function PrivacyContent() {
           <h1 className="text-5xl md:text-7xl font-bold mb-8 tracking-tighter text-white font-['Hubot-Sans']">
             Privacy Policy
           </h1>
-          <p className="text-secondary/60 text-lg mb-12">Last updated: May 15, 2026</p>
+          <p className="text-secondary/60 text-lg mb-12">Last updated: May 26, 2026</p>
         </motion.div>
 
         <motion.div 
@@ -59,14 +59,17 @@ export default function PrivacyContent() {
               <li><strong>SQLite Database</strong>: All persistent data is stored in a local SQLite database.</li>
               <li><strong>Encryption</strong>: We recommend securing the environment where the bot is hosted, as the database itself is stored in plain text by default.</li>
               <li><strong>Data Retention</strong>: Data in variables is stored until explicitly deleted by a script (e.g., ZresetUserVar) or until the database is cleared.</li>
+              <li><strong>SSRF Protection</strong>: HTTP functions include built-in URL validation that blocks requests to private, reserved, or known-dangerous IP addresses to prevent server-side request forgery attacks.</li>
+              <li><strong>Header Filtering</strong>: Dangerous HTTP headers (cookie, host, connection, etc.) are blocked from being set by scripts to prevent request smuggling and header injection.</li>
             </ul>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">4. Third-Party Sharing</h2>
             <ul className="list-disc list-inside text-secondary/60 space-y-2 mt-2">
-              <li><strong>Discord</strong>: Data is shared with Discord as part of standard bot operations (sending messages, managing roles).</li>
-              <li><strong>External APIs</strong>: If a script uses ZBR&apos;s HTTP functions (ZhttpPost, ZhttpGet, etc.), data may be sent to external URLs specified in the script. Users should be aware of where their scripts are sending data.</li>
+              <li><strong>Discord</strong>: Data is shared with Discord as part of standard bot operations (sending messages, managing roles, modifying automod rules, managing polls, soundboard sounds, and stickers).</li>
+              <li><strong>External APIs</strong>: If a script uses ZBR&apos;s HTTP functions (ZhttpPost, ZhttpGet, etc.), data may be sent to external URLs specified in the script. All URLs are validated against an SSRF blocklist before requests are made. Users should still be aware of where their scripts are sending data.</li>
+              <li><strong>File Uploads</strong>: Functions that accept file URLs (ZstickerCreate, ZsoundboardCreate) will download content from the specified URL and relay it to Discord. The content itself is not stored by the ZBR engine.</li>
               <li><strong>No Sale of Data</strong>: We do not sell, trade, or otherwise transfer your personal information to outside parties for marketing purposes.</li>
             </ul>
           </section>

@@ -1,0 +1,27 @@
+# ZpollAnswerVoters
+
+Returns a list of users who voted for a specific poll answer.
+
+## Syntax
+
+```zbr
+ZpollAnswerVoters{messageID;answerID;channelID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| messageID | snowflake | Yes | - |
+| answerID | integer | Yes | - |
+| channelID | snowflake | No | current channel |
+
+
+
+## Example
+
+```zbr
+ZpollAnswerVoters{987654321098765432;1}
+```
+

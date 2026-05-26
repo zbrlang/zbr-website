@@ -1,0 +1,28 @@
+# ZsoundboardEdit
+
+Edits a soundboard sound's name, volume, or emoji.
+
+## Syntax
+
+```zbr
+ZsoundboardEdit{soundId;name?;volume?;emoji?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| soundId | snowflake | Yes | - |
+| name | string | No | - |
+| volume | number | No | - |
+| emoji | emoji | No | - |
+
+
+
+## Example
+
+```zbr
+ZsoundboardEdit{123456789012345678;New Name;50;🔔}
+```
+

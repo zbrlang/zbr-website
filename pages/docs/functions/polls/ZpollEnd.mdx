@@ -1,0 +1,26 @@
+# ZpollEnd
+
+Ends a poll early by message ID.
+
+## Syntax
+
+```zbr
+ZpollEnd{messageID;channelID?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| messageID | snowflake | Yes | - |
+| channelID | snowflake | No | current channel |
+
+
+
+## Example
+
+```zbr
+ZpollEnd{987654321098765432}
+```
+

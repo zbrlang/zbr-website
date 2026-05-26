@@ -188,7 +188,7 @@ export default function DetailedReadme() {
               {[
                 { type: "Functional Syntax", desc: "Concise function-based logic like Ztitle{args}." },
                 { type: "SQLite Persistence", desc: "Native state management with ZsetVar and ZgetVar." },
-                { type: "API Server", desc: "Axum-based HTTP server with a dedicated /run endpoint." }
+                { type: "In-Process Engine", desc: "Code executes directly in the gateway process, no separate server needed." }
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 items-center p-4 rounded-2xl bg-white/[0.02] border border-white/[0.05]">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary/40" />

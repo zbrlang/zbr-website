@@ -1,0 +1,27 @@
+# ZthreadList
+
+Lists threads in a channel. active: true/false. private: true=private archived, false=public archived.
+
+## Syntax
+
+```zbr
+ZthreadList{channelID;active;private?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| active | boolean | Yes | - |
+| private | boolean | No | false |
+
+
+
+## Example
+
+```zbr
+ZthreadList{123456789012345678;true}
+```
+
