@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const terminalSteps = [
   {
     title: "Install the CLI",
-    command: "npm install -g @zbrlang/zbr",
+    command: "npm i @zbrlang/zbr",
     output: [
       "added 1 package in 0.8s",
       "zbr version",
@@ -47,8 +47,8 @@ export default function QuickStart() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         {/* Left: How it works / Steps */}
         <motion.div 
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
           className="space-y-12"
@@ -102,8 +102,8 @@ export default function QuickStart() {
 
         {/* Right: Interactive Terminal */}
         <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
           className="relative group"

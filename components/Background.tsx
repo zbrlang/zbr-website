@@ -18,7 +18,7 @@ export default function Background() {
     setSize();
 
     let particles: any[] = [];
-    const calculateParticleCount = () => Math.floor((window.innerWidth * window.innerHeight) / 4000);
+    const calculateParticleCount = () => Math.floor((window.innerWidth * window.innerHeight) / 2000);
     
     class Particle {
       x: number = 0;

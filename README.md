@@ -19,13 +19,13 @@ This repository provides the central platform for ZBR, offering the main landing
 
 ## Links
 
-- [Website](https://zbr-website.vercel.app)
-- [Documentation](https://zbr-website.vercel.app/docs)
-- [API](https://zbr-website.vercel.app/api)
-- [Extensions](https://zbr-website.vercel.app/extensions)
-- [Support](https://zbr-website.vercel.app/contact)
-- [Terms](https://zbr-website.vercel.app/terms)
-- [Privacy](https://zbr-website.vercel.app/privacy)
+- [Website](https://zbrlang.vercel.app)
+- [Documentation](https://zbrlang.vercel.app/docs)
+- [API](https://zbrlang.vercel.app/api)
+- [Extensions](https://zbrlang.vercel.app/extensions)
+- [Support](https://zbrlang.vercel.app/contact)
+- [Terms](https://zbrlang.vercel.app/terms)
+- [Privacy](https://zbrlang.vercel.app/privacy)
 
 ## License
 

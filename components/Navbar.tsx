@@ -1,7 +1,8 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
-import { Github, Code2, Zap } from 'lucide-react';
+import { Github, Zap } from 'lucide-react';
 
 export default function Navbar() {
   return (
@@ -16,7 +17,7 @@ export default function Navbar() {
       {/* Center: Middle Icon */}
       <div className="flex-none absolute left-1/2 -translate-x-1/2">
         <div className="group relative flex items-center justify-center w-10 h-10 rounded-xl bg-white/[0.03] border border-white/[0.08] backdrop-blur-md transition-all duration-500 hover:bg-white/[0.08] hover:border-white/[0.15] cursor-default">
-          <Code2 size={20} strokeWidth={1.5} className="text-[#9dc3f7] drop-shadow-[0_0_8px_rgba(157,195,247,0.4)] group-hover:text-white transition-colors" />
+          <Image src="/images/ZBR_icon.png" alt="ZBR Logo" width={28} height={28} className="object-contain opacity-80 group-hover:opacity-100 transition-opacity" />
         </div>
       </div>
 

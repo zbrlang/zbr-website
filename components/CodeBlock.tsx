@@ -1,3 +1,7 @@
+'use client';
+
+import { motion } from 'framer-motion';
+
 export default function CodeBlock() {
   const code = `// ZBR Rank Command Example
 #trigger !rank 
@@ -14,8 +18,16 @@ Zcolor{#5865F2}
 ZaddField{Server Rank;#Zvar{rank};true}`;
 
   return (
-    <div className="w-full max-w-4xl mx-auto">
-      <div className="glass-panel rounded-xl overflow-hidden shadow-2xl">
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="w-full max-w-4xl mx-auto relative"
+        >
+      <div className="absolute -top-12 -left-12 w-48 h-48 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="glass-panel rounded-xl overflow-hidden shadow-2xl relative">
         <div className="px-6 py-3 border-b border-border/50 flex items-center justify-between bg-white/[0.02]">
           <div className="flex gap-1.5">
             <div className="w-2.5 h-2.5 rounded-full bg-border" />
@@ -45,6 +57,6 @@ ZaddField{Server Rank;#Zvar{rank};true}`;
           </pre>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

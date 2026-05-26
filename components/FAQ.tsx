@@ -28,19 +28,31 @@ export default function FAQ() {
 
   return (
     <section className="py-0 px-4 relative overflow-hidden">
+      <div className="absolute top-1/4 -left-12 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-1/4 -right-12 w-48 h-48 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
       <div className="max-w-3xl mx-auto relative z-10">
-        <div className="text-center mb-20">
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-20"
+        >
           <span className="text-primary font-bold uppercase tracking-[0.3em] text-[10px] mb-4 block">Questions</span>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white font-['Hubot-Sans'] mb-6">
             Frequently Asked
           </h2>
           <p className="text-secondary/40 text-lg">Everything you need to know about ZBR.</p>
-        </div>
+        </motion.div>
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div 
+            <motion.div
               key={index}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group border border-white/5 rounded-2xl bg-white/[0.02] overflow-hidden hover:border-white/10 transition-colors"
             >
               <button
@@ -69,7 +81,7 @@ export default function FAQ() {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

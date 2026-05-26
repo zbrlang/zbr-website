@@ -4,18 +4,18 @@ Use the ZBR Web API to retrieve live function and trigger metadata for editor in
 
 ## Base URL
 
-Base URL: `https://zbr-website.vercel.app/api`
+Base URL: `https://zbrlang.vercel.app/api`
 
 ## Endpoints
 
 | Endpoint | Data Source | Description |
 | :--- | :--- | :--- |
-| `GET /functions_list` | `functions.json` | Returns the full list of available ZBR functions. |
-| `GET /functions/{name}` | `functions.json` | Returns a specific function by name (for example `/functions/Zabs`). |
-| `GET /functions_tag_list` | `functions_tag.json` | Returns function metadata organized by tags. |
-| `GET /triggers_list` | `triggers.json` | Returns the list of all supported event triggers. |
-| `GET /triggers/{name}` | `triggers.json` | Returns a specific trigger by name (for example `/triggers/onBanAdd`). |
-| `GET /triggers_tag_list` | `triggers_tag.json` | Returns trigger metadata organized by tags. |
+| `/functions_list` | `functions.json` | Returns the full list of available ZBR functions. |
+| `/functions/{name}` | `functions.json` | Returns a specific function by name (for example `/functions/Zabs`). |
+| `/functions_tag_list` | `functions_tag.json` | Returns function metadata organized by tags. |
+| `/triggers_list` | `triggers.json` | Returns the list of all supported event triggers. |
+| `/triggers/{name}` | `triggers.json` | Returns a specific trigger by name (for example `/triggers/onBanAdd`). |
+| `/triggers_tag_list` | `triggers_tag.json` | Returns trigger metadata organized by tags. |
 
 ## Usage
 

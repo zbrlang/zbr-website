@@ -67,7 +67,7 @@ export default function ApiContent() {
           <div className="flex items-center gap-2 pt-2">
             <span className="text-[10px] font-bold text-secondary/40 uppercase tracking-widest">Base URL</span>
             <code className="px-2 py-1 bg-white/[0.03] border border-white/[0.08] rounded text-primary text-xs font-mono">
-              https://zbr-website.vercel.app/api
+              https://zbrlang.vercel.app/api
             </code>
           </div>
         </motion.div>
