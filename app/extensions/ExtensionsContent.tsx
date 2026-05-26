@@ -45,6 +45,126 @@ export default function ExtensionsContent() {
           icon: Github
         }
       ]
+    },
+    {
+      id: 'neovim',
+      name: 'Neovim',
+      status: 'Ready',
+      statusColor: 'bg-green-500/20 text-green-400 border-green-500/30',
+      description: 'Official Neovim extension powered by Tree-sitter grammar.',
+      features: [
+        'Tree-sitter powered highlighting',
+        'Smart indentation and folding',
+        'Filetype detection',
+        '400+ code snippets'
+      ],
+      links: [
+        {
+          label: 'GitHub Repository',
+          url: 'https://github.com/zbrlang/zbr-extensions/tree/main/neovim',
+          icon: Github
+        }
+      ]
+    },
+    {
+      id: 'helix',
+      name: 'Helix',
+      status: 'Ready',
+      statusColor: 'bg-green-500/20 text-green-400 border-green-500/30',
+      description: 'Official Helix extension powered by Tree-sitter grammar.',
+      features: [
+        'Tree-sitter powered highlighting',
+        'Smart indentation and folding',
+        'Native Helix integration',
+        '400+ code snippets'
+      ],
+      links: [
+        {
+          label: 'GitHub Repository',
+          url: 'https://github.com/zbrlang/zbr-extensions/tree/main/helix',
+          icon: Github
+        }
+      ]
+    },
+    {
+      id: 'sublime',
+      name: 'Sublime Text',
+      status: 'Ready',
+      statusColor: 'bg-green-500/20 text-green-400 border-green-500/30',
+      description: 'Official Sublime Text extension with custom syntax highlighting.',
+      features: [
+        'Custom .sublime-syntax definition',
+        'Smart bracket matching',
+        'Comment toggling',
+        '400+ function completions'
+      ],
+      links: [
+        {
+          label: 'GitHub Repository',
+          url: 'https://github.com/zbrlang/zbr-extensions/tree/main/sublime',
+          icon: Github
+        }
+      ]
+    },
+    {
+      id: 'intellij',
+      name: 'JetBrains',
+      status: 'Ready',
+      statusColor: 'bg-green-500/20 text-green-400 border-green-500/30',
+      description: 'Official JetBrains IDE extension with TextMate grammar and live templates.',
+      features: [
+        'TextMate grammar highlighting',
+        '400+ live templates',
+        'Smart bracket matching',
+        'Comment toggling'
+      ],
+      links: [
+        {
+          label: 'GitHub Repository',
+          url: 'https://github.com/zbrlang/zbr-extensions/tree/main/intellij',
+          icon: Github
+        }
+      ]
+    },
+    {
+      id: 'bat',
+      name: 'bat',
+      status: 'Ready',
+      statusColor: 'bg-green-500/20 text-green-400 border-green-500/30',
+      description: 'Syntax highlighting for ZBR scripts in bat, a cat(1) clone with wings.',
+      features: [
+        'Terminal syntax highlighting',
+        'Sublime syntax definition',
+        'bat cache integration',
+        'Git integration support'
+      ],
+      links: [
+        {
+          label: 'GitHub Repository',
+          url: 'https://github.com/zbrlang/zbr-extensions/tree/main/bat',
+          icon: Github
+        }
+      ]
+    },
+    {
+      id: 'highlightjs',
+      name: 'highlight.js',
+      status: 'Ready',
+      statusColor: 'bg-green-500/20 text-green-400 border-green-500/30',
+      description: 'Language definition for ZBR in highlight.js, a syntax highlighter for the web.',
+      features: [
+        'Web syntax highlighting',
+        'ESM module format',
+        'Function and trigger highlighting',
+        'Easy integration'
+      ],
+      links: [
+        {
+          label: 'GitHub Repository',
+          url: 'https://github.com/zbrlang/zbr-extensions/tree/main/highlightjs',
+          icon: Github
+        }
+      ]
     }
   ];
 
