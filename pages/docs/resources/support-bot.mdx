@@ -1,0 +1,51 @@
+# Support Bot
+
+The **ZBR Support Bot** is the official Discord utility for the ZBR scripting language, built entirely using the ZBR engine. It serves as both a utility for the community and a production-ready example of ZBR's capabilities.
+
+## Key Features
+
+- **Function Discovery**: Instant access to syntax, arguments, and examples for any ZBR function.
+- **Categorized Reference**: Interactive browsing of functions by categories (e.g., Moderation, Embeds, HTTP).
+- **Event Triggers**: A complete reference for all Discord gateway event triggers supported by ZBR.
+- **Production Ready**: Demonstrates advanced ZBR features like hot reloading and SQLite-based persistent caching.
+
+## Interactive Commands
+
+| Command | Description |
+| :--- | :--- |
+| `!help` | Displays all available commands. |
+| `!find <fn>` | Provides detailed documentation for a specific function. |
+| `!search <query>` | Searches for functions by name or description. |
+| `!category` | Opens an interactive menu to browse functions by category. |
+| `!random` | Displays a random ZBR function. |
+| `!related <fn>` | Lists other functions within the same category. |
+| `!triggers` | Lists all supported ZBR event triggers. |
+| `!stats` | Shows statistics about the ZBR language. |
+| `!links` | Provides important links related to ZBRLang and ZBR. |
+
+## Quick Start
+
+If you want to run your own instance of the support bot or contribute to its development:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/zbrlang/zbr-bot.git
+   cd zbr-bot
+   ```
+
+2. **Configuration**:
+   Create a `.env` file in the root directory:
+   ```env
+   DISCORD_TOKEN=your_token_here
+   BOT_ID=your_bot_id
+   GUILD_ID=your_guild_id
+   ```
+
+3. **Run the Bot**:
+   ```bash
+   zbr run
+   ```
+
+## Visual Overview
+
+For a visual overview of the bot's features, you can also check out the [Support Bot Page](/support-bot).

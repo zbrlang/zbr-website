@@ -1,0 +1,28 @@
+# ZspliceText
+
+Modifies a string by removing a specified number of characters starting at a 1-based position and inserting a replacement string in their place.
+
+## Syntax
+
+```zbr
+ZspliceText{text;start;length;replacement}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| text | string | Yes | - |
+| start | integer | Yes | - |
+| length | integer | Yes | - |
+| replacement | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZspliceText{Hello World;7;5;Universe}
+```
+

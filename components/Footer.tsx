@@ -43,6 +43,7 @@ export default function Footer() {
                 <li><Link href="/docs" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">Documentation</Link></li>
                 <li><Link href="/api" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">API</Link></li>
                 <li><Link href="/extensions" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">Extensions</Link></li>
+                <li><Link href="/support-bot" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">Support Bot</Link></li>
                 <li><Link href="https://github.com/zbrlang/zbr/releases" target="_blank" rel="noopener noreferrer" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">Releases</Link></li>
                 <li><Link href="https://www.npmjs.com/package/@zbrlang/zbr" target="_blank" rel="noopener noreferrer" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">CLI</Link></li>
               </ul>

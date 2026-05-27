@@ -24,7 +24,8 @@ const meta = {
   "ZnewSelectMenu": "ZnewSelectMenu",
   "ZremoveAllComponents": "ZremoveAllComponents",
   "ZremoveButtons": "ZremoveButtons",
-  "ZremoveComponent": "ZremoveComponent"
+  "ZremoveComponent": "ZremoveComponent",
+  "Zupdate": "Zupdate"
 };
 
 export default meta;

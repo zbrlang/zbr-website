@@ -15,6 +15,7 @@ const meta = {
   "ZregexReplace": "ZregexReplace",
   "ZremoveLinks": "ZremoveLinks",
   "ZreplaceText": "ZreplaceText",
+  "ZspliceText": "ZspliceText",
   "ZstartsWith": "ZstartsWith",
   "Zsubstring": "Zsubstring",
   "Ztitlecase": "Ztitlecase",

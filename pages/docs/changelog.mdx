@@ -4,6 +4,19 @@ All notable changes to the ZBR project are documented here.
 
 ---
 
+## v1.4.1 - Parser fix and Zupdate interaction
+
+This release addresses a critical parser bug and introduces a new interaction feature for better message management in Discord.
+
+### Core
+- **Fixed Parser Data Loss** — Resolved a bug in `parse_arg` where arguments containing multiple function calls (e.g., inside `Zif`) were being truncated.
+
+### New Functions
+- `Zupdate{}` — Signals that an interaction (button/select menu) should update the original message instead of sending a new reply.
+- `ZspliceText{text;start;length;replacement}` — Modifies a string by removing a specified number of characters and inserting new text.
+
+---
+
 ## v1.4.0 - Centralized error handling across all functions
 
 All 390+ ZBR functions now share a single centralized error system in `src/error_messages.rs`. Every `FnOutput::error()` call uses the same formatting helpers, producing consistent `Line N: Zfunction - message` output everywhere.
