@@ -16,6 +16,7 @@ Base URL: `https://zbrlang.vercel.app/api`
 | `/triggers_list` | `triggers.json` | Returns the list of all supported event triggers. |
 | `/triggers/{name}` | `triggers.json` | Returns a specific trigger by name (for example `/triggers/onBanAdd`). |
 | `/triggers_tag_list` | `triggers_tag.json` | Returns trigger metadata organized by tags. |
+| `/stats` | `Dynamic` | Returns total function, category, trigger counts, and ZBR version. |
 
 ## Usage
 
@@ -27,4 +28,8 @@ These endpoints are useful for building editor support, documentation tooling, a
 - `triggers_list` returns every supported trigger event.
 - `triggers/{name}` returns a single trigger definition by name.
 - `triggers_tag_list` groups trigger metadata by tag for easier discovery.
+- `stats` returns live counts of functions, categories, triggers, and the latest ZBR version.
 
+## Visual Overview
+
+For a visual overview of the web API, you can also check out the [Web API Page](/api).

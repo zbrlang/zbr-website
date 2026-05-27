@@ -41,6 +41,12 @@ const endpoints = [
     source: 'triggers_tag.json',
     description: 'Returns trigger metadata organized by tags.',
     method: 'GET'
+  },
+  {
+    path: '/stats',
+    source: 'Dynamic',
+    description: 'Returns total function, category, trigger counts, and ZBR version.',
+    method: 'GET'
   }
 ];
 
