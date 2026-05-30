@@ -2,9 +2,16 @@
 
 ZBR is a scripting language for Discord bots. You write commands as plain `.zbr` files using ZBR functions, no boilerplate, no event handlers, no framework knowledge required.
 
+## Choose Your Development Path
+
+ZBR provides two ways to build your bot:
+
+- **Webapp Editor (Beta):** A visual, web-based environment. Ideal for rapid prototyping, managing variables, and testing command logic without needing a local setup. Export your bot as a project ZIP to run it locally.
+- **CLI (`zbr`):** The primary tool for development, production hosting, and managing your bot's lifecycle. Bots created with either method can be deployed to any hosting platform of your choice.
+
 ## Core Architecture
 
-ZBR is powered by a high-performance runtime engine built in Rust, packaged as a convenient npm CLI. 
+ZBR is powered by a high-performance runtime engine built in Rust.
 
 - **The CLI (`zbr`)**: Acts as your project manager and binary launcher.
 - **The Engine**: A bundled Rust binary that handles the Discord gateway, parses your `.zbr` files, and executes logic in real-time.
@@ -14,6 +21,13 @@ Commands are plain text files. Each file has a header section (lines starting wi
 
 ## Quick Start
 
+### Option 1: Webapp Editor (Beta)
+1. Head over to the [ZBR Webapp](https://zbr-webapp.vercel.app).
+2. Create or import your bot project.
+3. Build your commands, manage variables, and tweak settings visually.
+4. Export your project as a ZIP, then follow the local CLI instructions below to host it.
+
+### Option 2: CLI (Recommended)
 Get started with ZBR in seconds:
 
 ```bash

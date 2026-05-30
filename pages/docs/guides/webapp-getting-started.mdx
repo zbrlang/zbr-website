@@ -1,0 +1,45 @@
+# Webapp Getting Started (Beta)
+
+Welcome to the ZBR Webapp! This guide helps you get started with visual bot development.
+
+> **Note:** The Webapp is currently in **Beta**. It is a visual editor only and does not provide any hosting or runtime capabilities. You must export your bot as a project ZIP and use the ZBR CLI (`zbr run`) to host it locally for testing.
+
+## Development Workflow
+
+1. **Access the Webapp:** Visit [https://zbr-webapp.vercel.app](https://zbr-webapp.vercel.app).
+2. **Create or Import:**
+   - Create a new project from scratch.
+   - Import an existing ZBR project folder.
+3. **Build Your Bot:**
+   - Add/edit commands using the visual editor.
+   - Configure bot variables and change statuses.
+4. **Export:**
+   - Once finished, export your project as a ZIP file.
+   - This ZIP contains your `src/` code, `zbr.json`, `commands/` folder, and the populated `.env` file with your configuration.
+
+## Running Your Bot
+After extracting your ZIP:
+
+1. Ensure the ZBR CLI is installed:
+   ```bash
+   npm i -g @zbrlang/zbr
+   ```
+2. Navigate to the extracted folder.
+3. Run the bot:
+   ```bash
+   zbr run
+   ```
+
+## Writing Your Code
+
+When using the Webapp editor, you only need to write the raw ZBR code logic. The Webapp's UI handles all necessary command configurations (triggers, names, types, etc.) for you.
+
+When you export your project, the Webapp automatically generates the appropriate header sections in your `.zbr` files so they work perfectly with the ZBR engine.
+
+### Example Code
+Focus purely on your logic:
+
+```zbr
+// Simply write your code here
+Hello, Zusername{}!
+```

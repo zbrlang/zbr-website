@@ -42,8 +42,14 @@ export default function Footer() {
               <ul className="space-y-3">
                 <li><Link href="/docs" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">Documentation</Link></li>
                 <li><Link href="/api" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">API</Link></li>
-                <li><Link href="/extensions" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">Extensions</Link></li>
                 <li><Link href="/support-bot" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">Support Bot</Link></li>
+              </ul>
+            </div>
+            <div className="space-y-6">
+              <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/40">Ecosystem</h4>
+              <ul className="space-y-3">
+                <li><Link href="/extensions" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">Extensions</Link></li>
+                <li><Link href="https://zbr-webapp.vercel.app" target="_blank" rel="noopener noreferrer" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">Webapp</Link></li>
                 <li><Link href="https://github.com/zbrlang/zbr/releases" target="_blank" rel="noopener noreferrer" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">Releases</Link></li>
                 <li><Link href="https://www.npmjs.com/package/@zbrlang/zbr" target="_blank" rel="noopener noreferrer" className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium">CLI</Link></li>
               </ul>
@@ -67,8 +73,8 @@ export default function Footer() {
             <span>ALL RIGHTS RESERVED</span>
           </div>
           <div className="flex items-center gap-2">
-            <span>BUILT WITH</span>
-            <span className="text-foreground/40 font-black">ZBR</span>
+            <span>BUILT BY</span>
+            <a href="https://zubariel.is-a.dev"><span className="text-foreground/40 font-black" >Zubariel</span></a>
           </div>
         </div>
       </div>
