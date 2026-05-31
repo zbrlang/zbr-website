@@ -1,7 +1,7 @@
 const meta = {
   "web-api": "Web API",
   "webapp": "Webapp (Beta)",
-  "extensions": "IDE Extensions",
+  "extensions": "Extensions",
   "support-bot": "Support Bot"
 };
 

@@ -165,6 +165,206 @@ export default function ExtensionsContent() {
           icon: Github
         }
       ]
+    },
+    {
+      id: 'pygments',
+      name: 'Pygments',
+      status: 'Ready',
+      statusColor: 'bg-green-500/20 text-green-400 border-green-500/30',
+      description: 'Python lexer for Sphinx, GitHub, and GitHub Linguist integration.',
+      features: [
+        'Sphinx documentation support',
+        'GitHub Linguist compatibility',
+        'Easy Python integration',
+        'Standard lexer format'
+      ],
+      links: [
+        {
+          label: 'GitHub Repository',
+          url: 'https://github.com/zbrlang/zbr-extensions/tree/main/pygments',
+          icon: Github
+        }
+      ]
+    },
+    {
+      id: 'rouge',
+      name: 'Rouge',
+      status: 'Ready',
+      statusColor: 'bg-green-500/20 text-green-400 border-green-500/30',
+      description: 'Ruby lexer for Jekyll and GitHub Pages.',
+      features: [
+        'Jekyll site support',
+        'GitHub Pages compatible',
+        'Native Ruby implementation',
+        'High performance'
+      ],
+      links: [
+        {
+          label: 'GitHub Repository',
+          url: 'https://github.com/zbrlang/zbr-extensions/tree/main/rouge',
+          icon: Github
+        }
+      ]
+    },
+    {
+      id: 'chroma',
+      name: 'Chroma',
+      status: 'Ready',
+      statusColor: 'bg-green-500/20 text-green-400 border-green-500/30',
+      description: 'Go-based XML lexer for Hugo.',
+      features: [
+        'Hugo static site support',
+        'Fast Go implementation',
+        'XML-based definitions',
+        'Easy to extend'
+      ],
+      links: [
+        {
+          label: 'GitHub Repository',
+          url: 'https://github.com/zbrlang/zbr-extensions/tree/main/chroma',
+          icon: Github
+        }
+      ]
+    },
+    {
+      id: 'prism',
+      name: 'Prism.js',
+      status: 'Ready',
+      statusColor: 'bg-green-500/20 text-green-400 border-green-500/30',
+      description: 'JavaScript language definition for web highlighting.',
+      features: [
+        'Web-based syntax highlighting',
+        'Lightweight and fast',
+        'Easy plugin support',
+        'Standard Prism API'
+      ],
+      links: [
+        {
+          label: 'GitHub Repository',
+          url: 'https://github.com/zbrlang/zbr-extensions/tree/main/prism',
+          icon: Github
+        }
+      ]
+    },
+    {
+      id: 'kate',
+      name: 'Kate',
+      status: 'Ready',
+      statusColor: 'bg-green-500/20 text-green-400 border-green-500/30',
+      description: 'XML syntax definition for KDE\'s Kate editor and Pandoc PDF output.',
+      features: [
+        'Native Kate support',
+        'Pandoc PDF highlighting',
+        'XML syntax definition',
+        'Rich theme support'
+      ],
+      links: [
+        {
+          label: 'GitHub Repository',
+          url: 'https://github.com/zbrlang/zbr-extensions/tree/main/kate',
+          icon: Github
+        }
+      ]
+    },
+    {
+      id: 'emacs',
+      name: 'Emacs',
+      status: 'Ready',
+      statusColor: 'bg-green-500/20 text-green-400 border-green-500/30',
+      description: 'Major mode (zbr-mode.el) with automated keyword loading.',
+      features: [
+        'zbr-mode.el support',
+        'Auto-load keywords from JSON',
+        'Native Emacs experience',
+        'Customizable settings'
+      ],
+      links: [
+        {
+          label: 'GitHub Repository',
+          url: 'https://github.com/zbrlang/zbr-extensions/tree/main/emacs',
+          icon: Github
+        }
+      ]
+    },
+    {
+      id: 'vim',
+      name: 'Vim',
+      status: 'Ready',
+      statusColor: 'bg-green-500/20 text-green-400 border-green-500/30',
+      description: 'Traditional syntax/zbr.vim with filetype detection.',
+      features: [
+        'Classic Vim support',
+        'Automatic filetype detection',
+        'Standard syntax highlighting',
+        'Lightweight'
+      ],
+      links: [
+        {
+          label: 'GitHub Repository',
+          url: 'https://github.com/zbrlang/zbr-extensions/tree/main/vim',
+          icon: Github
+        }
+      ]
+    },
+    {
+      id: 'micro',
+      name: 'Micro',
+      status: 'Ready',
+      statusColor: 'bg-green-500/20 text-green-400 border-green-500/30',
+      description: 'YAML syntax definition for the Micro terminal editor.',
+      features: [
+        'Micro terminal editor support',
+        'YAML-based definition',
+        'Easy installation',
+        'Lightweight'
+      ],
+      links: [
+        {
+          label: 'GitHub Repository',
+          url: 'https://github.com/zbrlang/zbr-extensions/tree/main/micro',
+          icon: Github
+        }
+      ]
+    },
+    {
+      id: 'monaco',
+      name: 'Monaco',
+      status: 'Ready',
+      statusColor: 'bg-green-500/20 text-green-400 border-green-500/30',
+      description: 'TextMate grammar registration for web-based VS Code instances.',
+      features: [
+        'Monaco editor support',
+        'TextMate grammar registration',
+        'Web IDE ready',
+        'High compatibility'
+      ],
+      links: [
+        {
+          label: 'GitHub Repository',
+          url: 'https://github.com/zbrlang/zbr-extensions/tree/main/monaco',
+          icon: Github
+        }
+      ]
+    },
+    {
+      id: 'tree-sitter-wasm',
+      name: 'Tree-sitter WASM',
+      status: 'Ready',
+      statusColor: 'bg-green-500/20 text-green-400 border-green-500/30',
+      description: 'Compiled WASM build of the Tree-sitter grammar for browser use.',
+      features: [
+        'Browser-ready Tree-sitter',
+        'WASM performance',
+        'Includes build script',
+        'Includes web demo'
+      ],
+      links: [
+        {
+          label: 'GitHub Repository',
+          url: 'https://github.com/zbrlang/zbr-extensions/tree/main/tree-sitter-wasm',
+          icon: Github
+        }
+      ]
     }
   ];
 
@@ -184,15 +384,14 @@ export default function ExtensionsContent() {
             Extensions
           </h1>
           <p className="text-secondary/60 text-lg mb-16 max-w-2xl">
-            Write ZBR commands with full editor support. Syntax highlighting, snippets, and smart completions across your favorite IDEs.
-          </p>
+           Write ZBR commands with full editor support. Syntax highlighting, snippets, and completions everywhere you code, from your editor to the terminal to the web.</p>
         </motion.div>
 
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20"
         >
           {extensions.map((ext, idx) => (
             <motion.div
