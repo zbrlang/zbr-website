@@ -1,5 +1,6 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import CommandPalette from './components/CommandPalette'
 
 const config: DocsThemeConfig = {
   logo: (
@@ -8,6 +9,9 @@ const config: DocsThemeConfig = {
       <span style={{ opacity: 0.5, fontWeight: 400 }}>Documentation</span>
     </div>
   ),
+  search: {
+    component: <CommandPalette isInline />
+  },
   project: {
     link: 'https://github.com/zbrlang/zbr',
   },
