@@ -148,7 +148,24 @@ Triggered on any component interaction.
   "interactions": "Interactions"
 };\n\nexport default meta;`);
 
-  console.log('✅ Documentation generated successfully!');
+  // Generate Search Index for Command Palette
+  const searchIndex = [
+    ...functions.map(fn => ({
+      name: fn.name,
+      description: fn.description,
+      type: 'function',
+      url: `/docs/functions/${(functionToCategory[fn.name] || fn.category || 'General').toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}/${fn.name}`
+    })),
+    ...triggers.map(t => ({
+      name: t.name,
+      description: t.description,
+      type: 'trigger',
+      url: `/docs/triggers/events/${t.name}`
+    }))
+  ];
+  fs.writeFileSync('./context/search-index.json', JSON.stringify(searchIndex, null, 2));
+
+  console.log('✅ Documentation and search index generated successfully!');
 }
 
 generateDocs().catch(console.error);
