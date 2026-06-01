@@ -4,6 +4,34 @@ All notable changes to the ZBR project are documented here.
 
 ---
 
+## v1.4.3 - Performance and Error Handling Improvements
+
+This release focuses on improving bot performance and robustness by caching execution data and surfacing critical database errors.
+
+### Core
+- **AST Caching** — Pre-parses ZBR scripts into an AST on load, eliminating redundant parsing on every execution.
+- **Variable Caching** — Implemented a per-execution variable cache in `DiscordContext` to eliminate redundant database reads for the same variable within a single command execution.
+- **Regex Optimization** — Moved trigger regex compilation to a `static` initializer, eliminating repeated compilation on every incoming message.
+
+### Error Handling
+- **Structured Error Reporting** — Refactored command loading to produce detailed, context-aware error messages (file, line number) when command files fail to parse.
+- **Database Error Propagation** — Database write failures are no longer silently ignored and now surface as error messages in Discord.
+- **Standardized Error Messages** — Aligned database failure messages with the centralized `error_messages.rs` formatting system (`action_failed_reason`).
+
+---
+
+## v1.4.2 - Mobile support and version fix
+
+### Distribution
+- **Android support** — Added `aarch64-linux-android` binary target; ZBR now runs on Android via Termux.
+- **iOS support** — Added `aarch64-apple-ios` binary target; ZBR now runs on iOS via iSH.
+
+### CLI
+- **Fixed `zbr version`** — Now reports the actual binary version instead of the stale npm package version.
+- **Fixed `zbr update`** — Version is now always accurate after updating.
+
+---
+
 ## v1.4.1 - Parser fix and Zupdate interaction
 
 This release addresses a critical parser bug and introduces a new interaction feature for better message management in Discord.

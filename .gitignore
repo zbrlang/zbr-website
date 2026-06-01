@@ -23,6 +23,7 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+next-env.d.ts
 
 # OS
 .DS_Store
@@ -36,3 +37,4 @@ Thumbs.db
 .eslintcache
 .turbo/
 todo.txt
+next-env.d.ts
