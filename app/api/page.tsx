@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     siteName: "ZBR",
     locale: "en_US",
     type: "website",
-    images: [{ url: "/images/ZBR_logo.png?v=1" }],
+    images: [{ url: "/images/zbr.png" }],
   },
   twitter: {
     card: "summary",

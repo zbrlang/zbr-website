@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     "The scripting language for Discord bots powered by a high-performance Rust runtime engine. You write commands as plain .zbr files using ZBR functions, no boilerplate, no event handlers, no framework knowledge required.",
   authors: [{ name: "ZBRLang", url: "https://zbr-website.vercel.app" }],
   icons: {
-    icon: "/images/ZBR_logo.png?v=1",
-    shortcut: "/images/ZBR_logo.png?v=1",
-    apple: "/images/ZBR_logo.png?v=1",
+    icon: "/images/zbr.png",
+    shortcut: "/images/zbr.png",
+    apple: "/images/zbr.png",
   },
   openGraph: {
     title: "ZBR",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "ZBR",
     locale: "en_US",
     type: "website",
-    images: [{ url: "/images/ZBR_logo.png?v=1" }],
+    images: [{ url: "/images/zbr.png" }],
   },
   twitter: {
     card: "summary",

@@ -17,7 +17,7 @@ export default function Navbar() {
       {/* Center: Middle Icon */}
       <div className="flex-none absolute left-1/2 -translate-x-1/2">
         <div className="group relative flex items-center justify-center w-10 h-10 rounded-xl bg-white/[0.03] border border-white/[0.08] backdrop-blur-md transition-all duration-500 hover:bg-white/[0.08] hover:border-white/[0.15] cursor-default">
-          <Image src="/images/ZBR_icon.png" alt="ZBR Logo" width={28} height={28} className="object-contain opacity-80 group-hover:opacity-100 transition-opacity" />
+          <Image src="/images/zbr-icon.png" alt="ZBR Logo" width={28} height={28} className="object-contain opacity-80 group-hover:opacity-100 transition-opacity" />
         </div>
       </div>
 

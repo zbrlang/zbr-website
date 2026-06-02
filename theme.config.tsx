@@ -23,13 +23,13 @@ const config: DocsThemeConfig = {
       <meta name="description" content="Official documentation for ZBR, a high-performance Discord scripting language built with Rust." />
       <meta property="og:title" content="ZBR Documentation" />
       <meta property="og:description" content="Official documentation for ZBR, a high-performance Discord scripting language built with Rust." />
-      <meta property="og:image" content="/images/ZBR_logo.png?v=1" />
+      <meta property="og:image" content="/images/zbr.png" />
       <meta property="og:url" content="https://zbr-website.vercel.app/docs" />
       <meta property="og:site_name" content="ZBR" />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_US" />
       <meta name="apple-mobile-web-app-title" content="ZBR Documentation" />
-      <link rel="icon" type="image/png" href="/images/ZBR_logo.png?v=1" />
+      <link rel="icon" type="image/png" href="/images/zbr.png" />
     </>
   ),
   docsRepositoryBase: 'https://github.com/zbrlang/zbr-website/',
