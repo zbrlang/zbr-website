@@ -1,0 +1,26 @@
+# Zalias
+
+Registers an alias that substitutes and evaluates the stored AST node when called. Aliases are local to the command execution.
+
+## Syntax
+
+```zbr
+Zalias{expression;alias_name}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| expression | string | Yes | - |
+| alias_name | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+Zalias{ZguildID{};ZGI}
+```
+

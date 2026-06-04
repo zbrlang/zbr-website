@@ -1,4 +1,5 @@
 const meta = {
+  "Zalias": "Zalias",
   "Zeval": "Zeval"
 };
 

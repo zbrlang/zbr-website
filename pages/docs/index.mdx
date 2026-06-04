@@ -6,8 +6,8 @@ ZBR is a scripting language for Discord bots. You write commands as plain `.zbr`
 
 ZBR provides two ways to build your bot:
 
-- **Webapp Editor (Beta):** A visual, web-based environment. Ideal for rapid prototyping, managing variables, and testing command logic without needing a local setup. Export your bot as a project ZIP to run it locally.
-- **CLI (`zbr`):** The primary tool for development, production hosting, and managing your bot's lifecycle. Bots created with either method can be deployed to any hosting platform of your choice.
+- **Webapp Editor (Recommended):** A visual, web-based environment. Ideal for rapid prototyping and instant testing with zero local setup. Press the **Run** button to launch your bot instantly in the cloud.
+- **CLI (`zbr`):** A streamlined tool for technical users and production hosting. Manage your entire bot engine, initialize projects, and run code locally or on your own servers.
 
 ## Core Architecture
 
@@ -15,19 +15,22 @@ ZBR is powered by a high-performance runtime engine built in Rust.
 
 - **The CLI (`zbr`)**: Acts as your project manager and binary launcher.
 - **The Engine**: A bundled Rust binary that handles the Discord gateway, parses your `.zbr` files, and executes logic in real-time.
+- **Cloud Runner**: The same high-performance engine running in the ZBR cloud, powering the Webapp's instant execution feature.
 - **Hot Reloading**: The engine watches your `commands/` folder. Save a `.zbr` file, and the changes are live instantly without restarting.
 
 Commands are plain text files. Each file has a header section (lines starting with `#`) that defines the trigger, name, and type, followed by the ZBR code that runs when the command is invoked.
 
 ## Quick Start
 
-### Option 1: Webapp Editor (Beta)
+### Option 1: Webapp Editor (Recommended)
 1. Head over to the [ZBR Webapp](https://zbr-webapp.vercel.app).
 2. Create or import your bot project.
 3. Build your commands, manage variables, and tweak settings visually.
-4. Export your project as a ZIP, then follow the local CLI instructions below to host it.
+4. Press **Run** to launch your bot instantly in the cloud for rapid prototyping and interactive testing.
 
-### Option 2: CLI (Recommended)
+> **Note:** The Webapp "Run" button is strictly for rapid prototyping and interactive testing. For 24/7 permanent production hosting, you must export your project as a ZIP and use the CLI.
+
+### Option 2: CLI (For Technical Users)
 Get started with ZBR in seconds:
 
 ```bash

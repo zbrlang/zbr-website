@@ -68,7 +68,7 @@ export default function QuickStart() {
                     mode === 'webapp' ? 'bg-primary text-neutral' : 'bg-white/[0.03] text-white border border-white/[0.08] hover:bg-white/[0.08]'
                 }`}
               >
-                Webapp Editor (Visual)
+                Webapp Editor (Recommended)
               </button>
               <button 
                 onClick={() => setMode('cli')}
@@ -204,8 +204,9 @@ export default function QuickStart() {
                     <div className="space-y-6">
                         <h3 className="text-2xl font-bold text-white">Visual Webapp Editor</h3>
                         <p className="text-secondary/60 max-w-sm">
-                            Build commands, manage variables, and configure your bot visually in the browser. 
-                            Export your project as a ZIP, then host locally with the CLI.
+                            Build commands and manage variables visually in the browser. 
+                            Use the <b>Run</b> button for rapid cloud testing, 
+                            or export as ZIP to host yourself for 24/7 production.
                         </p>
                         <a 
                             href="https://zbr-webapp.vercel.app" 

@@ -1,8 +1,6 @@
-# Webapp Getting Started (Beta)
+# Webapp Getting Started
 
-Welcome to the ZBR Webapp! This guide helps you get started with visual bot development.
-
-> **Note:** The Webapp is currently in **Beta**. It is a visual editor only and does not provide any hosting or runtime capabilities. You must export your bot as a project ZIP and use the ZBR CLI (`zbr run`) to host it locally for testing.
+Welcome to the ZBR Webapp! This guide helps you get started with visual bot development and instant cloud hosting.
 
 ## Development Workflow
 
@@ -13,28 +11,24 @@ Welcome to the ZBR Webapp! This guide helps you get started with visual bot deve
 3. **Build Your Bot:**
    - Add/edit commands using the visual editor.
    - Configure bot variables and change statuses.
-4. **Export:**
-   - Once finished, export your project as a ZIP file.
-   - This ZIP contains your `src/` code, `zbr.json`, `commands/` folder, and the populated `.env` file with your configuration.
+4. **Launch Instantly:**
+   - Press the **Run** button to launch your bot in the ZBR cloud.
+   - Your bot is now live and ready for testing!
 
-## Running Your Bot
-After extracting your ZIP:
+## 24/7 Hosting
 
-1. Ensure the ZBR CLI is installed:
+The Webapp "Run" button is perfect for rapid prototyping and testing. If you want to host your bot permanently:
+
+1. **Export:** Export your project as a ZIP file.
+2. **Install CLI:** Ensure the ZBR CLI is installed on your server:
    ```bash
    npm i -g @zbrlang/zbr
    ```
-2. Navigate to the extracted folder.
-3. Run the bot:
-   ```bash
-   zbr run
-   ```
+3. **Run:** Extract the ZIP and run `zbr run` to host it yourself.
 
 ## Writing Your Code
 
 When using the Webapp editor, you only need to write the raw ZBR code logic. The Webapp's UI handles all necessary command configurations (triggers, names, types, etc.) for you.
-
-When you export your project, the Webapp automatically generates the appropriate header sections in your `.zbr` files so they work perfectly with the ZBR engine.
 
 ### Example Code
 Focus purely on your logic:

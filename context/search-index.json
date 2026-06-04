@@ -24,6 +24,12 @@
     "url": "/docs/functions/emojis/ZaddEmoji"
   },
   {
+    "name": "Zalias",
+    "description": "Registers an alias that substitutes and evaluates the stored AST node when called. Aliases are local to the command execution.",
+    "type": "function",
+    "url": "/docs/functions/special/Zalias"
+  },
+  {
     "name": "ZaddField",
     "description": "Adds a named field with a value to the specified embed slot, with an optional inline layout flag.",
     "type": "function",
