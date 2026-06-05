@@ -16,7 +16,7 @@ Zvar{xp;ZgetUserVar{xp}}
 Zvar{level;ZgetUserVar{level}} 
 Zvar{rank;1} 
  
-Ztitle{Zusername{}'s Rank} 
+Ztitle{Zusername's Rank} 
 Zdescription{Level: Zvar{level} 
 XP: Zvar{xp}} 
 Zcolor{#5865F2} 
@@ -31,7 +31,7 @@ ZaddField{Server Rank;#Zvar{rank};true}`
 #description Ban a user 
 #option user|User to ban|user|required 
  
-ZonlyIf{ZisAdmin{}==true;No permissions} 
+ZonlyIf{ZisAdmin==true;No permissions} 
 Zban{Zoption{user}} 
 Banned Zoption{user}.`
   }
@@ -219,7 +219,7 @@ export default function DetailedReadme() {
                 <div className="text-secondary/60">#name Ping</div>
                 <div className="text-secondary/60">#type prefix</div>
                 <div className="text-secondary/60">{"// This is a comment"}</div>
-                <div className="pt-2 text-primary">Zreply{"{Pong! Latency: Zping{}ms}"}</div>
+                <div className="pt-2 text-primary">Zreply{"{Pong! Latency: Zpingms}"}</div>
               </div>
               <div className="pt-6 space-y-2">
                 <div className="text-secondary/60">#trigger /userinfo</div>

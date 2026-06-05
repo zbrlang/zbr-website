@@ -25,7 +25,7 @@
   },
   {
     "name": "Zalias",
-    "description": "Registers an alias that substitutes and evaluates the stored AST node when called. Aliases are local to the command execution.",
+    "description": "Creates a runtime alias for a ZBR function. The alias can be called using Z+alias_name+{} syntax.",
     "type": "function",
     "url": "/docs/functions/special/Zalias"
   },

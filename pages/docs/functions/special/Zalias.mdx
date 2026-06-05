@@ -1,11 +1,11 @@
 # Zalias
 
-Registers an alias that substitutes and evaluates the stored AST node when called. Aliases are local to the command execution.
+Creates a runtime alias for a ZBR function. The alias can be called using Z+alias_name+{} syntax.
 
 ## Syntax
 
 ```zbr
-Zalias{expression;alias_name}
+Zalias{function;alias_name}
 ```
 
 
@@ -13,7 +13,7 @@ Zalias{expression;alias_name}
 
 | Name | Type | Required | Default |
 | :--- | :--- | :--- | :--- |
-| expression | string | Yes | - |
+| function | function | Yes | - |
 | alias_name | string | Yes | - |
 
 
@@ -21,6 +21,6 @@ Zalias{expression;alias_name}
 ## Example
 
 ```zbr
-Zalias{ZguildID{};ZGI}
+Zalias{Zusername;greet} Zgreet{}
 ```
 

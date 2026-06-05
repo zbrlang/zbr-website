@@ -11,7 +11,7 @@ export default function CodeBlock() {
 Zvar{xp;ZgetUserVar{xp}} 
 Zvar{level;ZgetUserVar{level}} 
  
-Ztitle{Zusername{}'s Rank} 
+Ztitle{Zusername's Rank} 
 Zdescription{Level: Zvar{level} 
 XP: Zvar{xp}} 
 Zcolor{#5865F2} 
