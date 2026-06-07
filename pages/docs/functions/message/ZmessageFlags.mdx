@@ -1,0 +1,26 @@
+# ZmessageFlags
+
+Returns true or false whether a message has the specified flag set. Supported flags: SUPPRESS_EMBEDS, EPHEMERAL, HAS_THREAD, LOADING, SUPPRESS_NOTIFICATIONS.
+
+## Syntax
+
+```zbr
+ZmessageFlags{messageID;flagName}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| messageID | snowflake | Yes | - |
+| flagName | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZmessageFlags{123456789012345678;EPHEMERAL}
+```
+

@@ -1,0 +1,26 @@
+# ZmemberFlags
+
+Returns true or false whether a guild member has the specified flag set. Supported flags: BYPASSES_VERIFICATION, DID_REJOIN, COMPLETED_ONBOARDING, STARTED_ONBOARDING.
+
+## Syntax
+
+```zbr
+ZmemberFlags{userID;flagName}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | Yes | - |
+| flagName | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZmemberFlags{123456789012345678;DID_REJOIN}
+```
+

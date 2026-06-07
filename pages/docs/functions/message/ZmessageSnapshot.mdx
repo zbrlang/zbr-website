@@ -1,0 +1,26 @@
+# ZmessageSnapshot
+
+Accesses snapshot data inside a forwarded message. Fields: content, author, attachments, embeds.
+
+## Syntax
+
+```zbr
+ZmessageSnapshot{messageID;fieldName}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| messageID | snowflake | Yes | - |
+| fieldName | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZmessageSnapshot{123456789012345678;content}
+```
+

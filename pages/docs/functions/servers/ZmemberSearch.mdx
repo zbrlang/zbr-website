@@ -1,0 +1,26 @@
+# ZmemberSearch
+
+Searches guild members by username or nickname query string. Returns a comma-separated list of user IDs.
+
+## Syntax
+
+```zbr
+ZmemberSearch{query;limit?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| query | string | Yes | - |
+| limit | integer | No | 100 |
+
+
+
+## Example
+
+```zbr
+ZmemberSearch{John;10}
+```
+

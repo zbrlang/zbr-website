@@ -1,11 +1,11 @@
 # ZisTimedOut
 
-Returns true if the specified user currently has an active communication timeout.
+Returns true if the specified user currently has an active communication timeout. If returnTimestamp is true, returns the expiry timestamp as a Unix string instead of a boolean.
 
 ## Syntax
 
 ```zbr
-ZisTimedOut{userID?}
+ZisTimedOut{userID?;returnTimestamp?}
 ```
 
 
@@ -14,12 +14,13 @@ ZisTimedOut{userID?}
 | Name | Type | Required | Default |
 | :--- | :--- | :--- | :--- |
 | userID | snowflake | No | author |
+| returnTimestamp | boolean | No | false |
 
 
 
 ## Example
 
 ```zbr
-ZisTimedOut{123456789012345678}
+ZisTimedOut{123456789012345678;true}
 ```
 

@@ -1,0 +1,27 @@
+# ZgetWebhookMessage
+
+Fetches the content of a previously sent webhook message by ID using its token.
+
+## Syntax
+
+```zbr
+ZgetWebhookMessage{webhookID;webhookToken;messageID}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| webhookID | snowflake | Yes | - |
+| webhookToken | string | Yes | - |
+| messageID | snowflake | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZgetWebhookMessage{123;abc;456}
+```
+

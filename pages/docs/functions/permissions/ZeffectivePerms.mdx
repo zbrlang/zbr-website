@@ -1,0 +1,26 @@
+# ZeffectivePerms
+
+Computes the final permission bitfield for a user in a channel after all role and channel overwrites are applied.
+
+## Syntax
+
+```zbr
+ZeffectivePerms{userID;channelID}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | Yes | - |
+| channelID | snowflake | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZeffectivePerms{123456789012345678;987654321098765432}
+```
+

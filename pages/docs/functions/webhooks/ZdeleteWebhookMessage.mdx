@@ -1,0 +1,27 @@
+# ZdeleteWebhookMessage
+
+Deletes a message sent by a webhook via its token.
+
+## Syntax
+
+```zbr
+ZdeleteWebhookMessage{webhookID;webhookToken;messageID}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| webhookID | snowflake | Yes | - |
+| webhookToken | string | Yes | - |
+| messageID | snowflake | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZdeleteWebhookMessage{123;abc;456}
+```
+

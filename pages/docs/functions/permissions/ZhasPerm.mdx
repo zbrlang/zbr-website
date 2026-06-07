@@ -1,0 +1,27 @@
+# ZhasPerm
+
+Checks if a user has a specific permission in a channel (includes channel overwrites).
+
+## Syntax
+
+```zbr
+ZhasPerm{userID;channelID;permissionName}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | Yes | - |
+| channelID | snowflake | Yes | - |
+| permissionName | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZhasPerm{123456789012345678;987654321098765432;manageMessages}
+```
+

@@ -9,13 +9,10 @@ const meta = {
   "ZfooterIcon": "ZfooterIcon",
   "Zimage": "Zimage",
   "ZsendEmbed": "ZsendEmbed",
-  "ZsendWebhook": "ZsendWebhook",
   "Zthumbnail": "Zthumbnail",
   "Ztimestamp": "Ztimestamp",
   "Ztitle": "Ztitle",
-  "ZtitleURL": "ZtitleURL",
-  "ZwebhookCreate": "ZwebhookCreate",
-  "ZwebhookDelete": "ZwebhookDelete"
+  "ZtitleURL": "ZtitleURL"
 };
 
 export default meta;

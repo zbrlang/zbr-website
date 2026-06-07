@@ -1,0 +1,28 @@
+# ZeditWebhookMessage
+
+Edits a message sent by a webhook using the webhook token.
+
+## Syntax
+
+```zbr
+ZeditWebhookMessage{webhookID;webhookToken;messageID;content}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| webhookID | snowflake | Yes | - |
+| webhookToken | string | Yes | - |
+| messageID | snowflake | Yes | - |
+| content | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZeditWebhookMessage{123;abc;456;New Content}
+```
+

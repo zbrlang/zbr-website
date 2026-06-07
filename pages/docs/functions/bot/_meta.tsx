@@ -7,6 +7,7 @@ const meta = {
   "ZcommandName": "ZcommandName",
   "ZcommandTrigger": "ZcommandTrigger",
   "ZcommandsCount": "ZcommandsCount",
+  "ZcurrentShard": "ZcurrentShard",
   "Zenabled": "Zenabled",
   "ZexecutionTime": "ZexecutionTime",
   "Zping": "Zping",
@@ -14,6 +15,7 @@ const meta = {
   "ZserverNames": "ZserverNames",
   "ZslashCommandsCount": "ZslashCommandsCount",
   "ZslashID": "ZslashID",
+  "ZtotalShards": "ZtotalShards",
   "Zuptime": "Zuptime"
 };
 

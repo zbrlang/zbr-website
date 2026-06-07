@@ -1,0 +1,27 @@
+# ZbulkBan
+
+Bans multiple users in one call. Returns the count of successfully banned users.
+
+## Syntax
+
+```zbr
+ZbulkBan{userIDs;deleteDays?;reason?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userIDs | string | Yes | - |
+| deleteDays | integer | No | 0 |
+| reason | string | No | - |
+
+
+
+## Example
+
+```zbr
+ZbulkBan{123,456;7;Spamming}
+```
+

@@ -24,12 +24,6 @@
     "url": "/docs/functions/emojis/ZaddEmoji"
   },
   {
-    "name": "Zalias",
-    "description": "Creates a runtime alias for a ZBR function. The alias can be called using Z+alias_name+{} syntax.",
-    "type": "function",
-    "url": "/docs/functions/special/Zalias"
-  },
-  {
     "name": "ZaddField",
     "description": "Adds a named field with a value to the specified embed slot, with an optional inline layout flag.",
     "type": "function",
@@ -88,6 +82,12 @@
     "description": "Returns the AFK timeout in seconds configured for the guild.",
     "type": "function",
     "url": "/docs/functions/servers/ZafkTimeout"
+  },
+  {
+    "name": "Zalias",
+    "description": "Creates a runtime alias for a ZBR function. The alias can be called using Z+alias_name+{} syntax.",
+    "type": "function",
+    "url": "/docs/functions/special/Zalias"
   },
   {
     "name": "ZallMembersCount",
@@ -342,6 +342,12 @@
     "url": "/docs/functions/bot/ZbotTyping"
   },
   {
+    "name": "ZbulkBan",
+    "description": "Bans multiple users in one call. Returns the count of successfully banned users.",
+    "type": "function",
+    "url": "/docs/functions/utility/ZbulkBan"
+  },
+  {
     "name": "ZbyteCount",
     "description": "Returns the number of UTF-8 bytes in the text.",
     "type": "function",
@@ -430,6 +436,12 @@
     "description": "Returns a sorted list of all channel names in the guild joined by the specified separator.",
     "type": "function",
     "url": "/docs/functions/channels/ZchannelNames"
+  },
+  {
+    "name": "ZchannelOverwrites",
+    "description": "Returns the full permission overwrite list on a channel as a JSON array.",
+    "type": "function",
+    "url": "/docs/functions/permissions/ZchannelOverwrites"
   },
   {
     "name": "ZchannelPosition",
@@ -552,6 +564,12 @@
     "url": "/docs/functions/invites/ZcreateInvite"
   },
   {
+    "name": "ZcreateInviteWithRoles",
+    "description": "Creates an invite that auto-assigns the given roles when someone joins through it.",
+    "type": "function",
+    "url": "/docs/functions/invites/ZcreateInviteWithRoles"
+  },
+  {
     "name": "ZcreatePost",
     "description": "Creates a new forum post in a forum channel and returns its thread ID.",
     "type": "function",
@@ -564,6 +582,12 @@
     "url": "/docs/functions/roles/ZcreateRole"
   },
   {
+    "name": "ZcreateServerTemplate",
+    "description": "Creates a new server template from the current guild's structure. Returns the template code.",
+    "type": "function",
+    "url": "/docs/functions/templates/ZcreateServerTemplate"
+  },
+  {
     "name": "ZcreationDate",
     "description": "Returns the creation date derived from any Discord snowflake ID, formatted according to the optional format string.",
     "type": "function",
@@ -574,6 +598,12 @@
     "description": "Crops text to a maximum number of characters and appends an ending string if the text was truncated.",
     "type": "function",
     "url": "/docs/functions/string/ZcropText"
+  },
+  {
+    "name": "ZcurrentShard",
+    "description": "Returns the shard ID the current guild is on.",
+    "type": "function",
+    "url": "/docs/functions/bot/ZcurrentShard"
   },
   {
     "name": "ZcustomEmoji",
@@ -660,10 +690,22 @@
     "url": "/docs/functions/roles/ZdeleteRole"
   },
   {
+    "name": "ZdeleteServerTemplate",
+    "description": "Deletes a server template from the guild by its code.",
+    "type": "function",
+    "url": "/docs/functions/templates/ZdeleteServerTemplate"
+  },
+  {
     "name": "ZdeleteSticker",
     "description": "Deletes a guild sticker from the current server by its sticker ID.",
     "type": "function",
     "url": "/docs/functions/stickers/ZdeleteSticker"
+  },
+  {
+    "name": "ZdeleteWebhookMessage",
+    "description": "Deletes a message sent by a webhook via its token.",
+    "type": "function",
+    "url": "/docs/functions/webhooks/ZdeleteWebhookMessage"
   },
   {
     "name": "Zdescription",
@@ -756,10 +798,22 @@
     "url": "/docs/functions/threads/ZeditThread"
   },
   {
+    "name": "ZeditWebhookMessage",
+    "description": "Edits a message sent by a webhook using the webhook token.",
+    "type": "function",
+    "url": "/docs/functions/webhooks/ZeditWebhookMessage"
+  },
+  {
     "name": "ZeditWelcomeScreen",
     "description": "Edits the guild's welcome screen settings.",
     "type": "function",
     "url": "/docs/functions/servers/ZeditWelcomeScreen"
+  },
+  {
+    "name": "ZeffectivePerms",
+    "description": "Computes the final permission bitfield for a user in a channel after all role and channel overwrites are applied.",
+    "type": "function",
+    "url": "/docs/functions/permissions/ZeffectivePerms"
   },
   {
     "name": "ZemojiExists",
@@ -948,6 +1002,12 @@
     "url": "/docs/functions/forums/ZforumTags"
   },
   {
+    "name": "ZforwardMessage",
+    "description": "Forwards a message to another channel using Discord's native message forward feature.",
+    "type": "function",
+    "url": "/docs/functions/message/ZforwardMessage"
+  },
+  {
     "name": "ZfromTimestamp",
     "description": "Formats a Unix timestamp into a human-readable date/time string using the active timezone and the specified format.",
     "type": "function",
@@ -1092,6 +1152,12 @@
     "url": "/docs/functions/variables/ZgetVar"
   },
   {
+    "name": "ZgetWebhookMessage",
+    "description": "Fetches the content of a previously sent webhook message by ID using its token.",
+    "type": "function",
+    "url": "/docs/functions/webhooks/ZgetWebhookMessage"
+  },
+  {
     "name": "ZglobalCooldown",
     "description": "Applies a per-user global cooldown across all servers, preventing the user from running the command until the duration expires.",
     "type": "function",
@@ -1114,6 +1180,12 @@
     "description": "Returns the ID of the current guild.",
     "type": "function",
     "url": "/docs/functions/id/ZguildID"
+  },
+  {
+    "name": "ZhasPerm",
+    "description": "Checks if a user has a specific permission in a channel (includes channel overwrites).",
+    "type": "function",
+    "url": "/docs/functions/permissions/ZhasPerm"
   },
   {
     "name": "ZhasRole",
@@ -1333,7 +1405,7 @@
   },
   {
     "name": "ZisTimedOut",
-    "description": "Returns true if the specified user currently has an active communication timeout.",
+    "description": "Returns true if the specified user currently has an active communication timeout. If returnTimestamp is true, returns the expiry timestamp as a Unix string instead of a boolean.",
     "type": "function",
     "url": "/docs/functions/moderation/ZisTimedOut"
   },
@@ -1536,6 +1608,24 @@
     "url": "/docs/functions/utility/Zmd5"
   },
   {
+    "name": "ZmemberFlags",
+    "description": "Returns true or false whether a guild member has the specified flag set. Supported flags: BYPASSES_VERIFICATION, DID_REJOIN, COMPLETED_ONBOARDING, STARTED_ONBOARDING.",
+    "type": "function",
+    "url": "/docs/functions/servers/ZmemberFlags"
+  },
+  {
+    "name": "ZmemberPending",
+    "description": "Returns true or false whether a guild member has not yet completed membership screening.",
+    "type": "function",
+    "url": "/docs/functions/servers/ZmemberPending"
+  },
+  {
+    "name": "ZmemberSearch",
+    "description": "Searches guild members by username or nickname query string. Returns a comma-separated list of user IDs.",
+    "type": "function",
+    "url": "/docs/functions/servers/ZmemberSearch"
+  },
+  {
     "name": "ZmembersCount",
     "description": "Returns the total number of members in the guild, or the count filtered by presence status.",
     "type": "function",
@@ -1554,6 +1644,12 @@
     "url": "/docs/functions/context/Zmessage"
   },
   {
+    "name": "ZmessageFlags",
+    "description": "Returns true or false whether a message has the specified flag set. Supported flags: SUPPRESS_EMBEDS, EPHEMERAL, HAS_THREAD, LOADING, SUPPRESS_NOTIFICATIONS.",
+    "type": "function",
+    "url": "/docs/functions/message/ZmessageFlags"
+  },
+  {
     "name": "ZmessageID",
     "description": "Returns the ID of the message that triggered the current command execution.",
     "type": "function",
@@ -1564,6 +1660,12 @@
     "description": "Builds and returns a Discord jump URL for the specified message, using the current channel if no channel ID is provided.",
     "type": "function",
     "url": "/docs/functions/message/ZmessageLink"
+  },
+  {
+    "name": "ZmessageSnapshot",
+    "description": "Accesses snapshot data inside a forwarded message. Fields: content, author, attachments, embeds.",
+    "type": "function",
+    "url": "/docs/functions/message/ZmessageSnapshot"
   },
   {
     "name": "Zmin",
@@ -1642,6 +1744,30 @@
     "description": "Formats a number string by inserting thousands separators, defaulting to a comma.",
     "type": "function",
     "url": "/docs/functions/string/ZnumberSeparator"
+  },
+  {
+    "name": "ZonboardingDefaultChannels",
+    "description": "Returns a comma-separated list of channel IDs members are auto-opted into via onboarding.",
+    "type": "function",
+    "url": "/docs/functions/onboarding/ZonboardingDefaultChannels"
+  },
+  {
+    "name": "ZonboardingEnabled",
+    "description": "Returns true or false whether onboarding is enabled on the guild.",
+    "type": "function",
+    "url": "/docs/functions/onboarding/ZonboardingEnabled"
+  },
+  {
+    "name": "ZonboardingMode",
+    "description": "Returns the onboarding mode of the guild: ONBOARDING_DEFAULT or ONBOARDING_ADVANCED.",
+    "type": "function",
+    "url": "/docs/functions/onboarding/ZonboardingMode"
+  },
+  {
+    "name": "ZonboardingPrompts",
+    "description": "Returns the guild's onboarding prompts as a pretty-printed JSON string.",
+    "type": "function",
+    "url": "/docs/functions/onboarding/ZonboardingPrompts"
   },
   {
     "name": "ZonlyAdmin",
@@ -1750,6 +1876,12 @@
     "description": "Returns the ID of the parent category of the given channel, or an empty string if the channel has no parent.",
     "type": "function",
     "url": "/docs/functions/channels/ZparentID"
+  },
+  {
+    "name": "ZpermNames",
+    "description": "Converts a permission bitfield integer to a comma-separated list of human-readable permission names.",
+    "type": "function",
+    "url": "/docs/functions/permissions/ZpermNames"
   },
   {
     "name": "ZpinList",
@@ -2091,7 +2223,7 @@
     "name": "ZsendWebhook",
     "description": "Sends the embed at the specified slot index via a Discord webhook URL, optionally returning the message ID.",
     "type": "function",
-    "url": "/docs/functions/embeds/ZsendWebhook"
+    "url": "/docs/functions/webhooks/ZsendWebhook"
   },
   {
     "name": "ZserverChannels",
@@ -2184,6 +2316,12 @@
     "url": "/docs/functions/stickers/ZserverStickers"
   },
   {
+    "name": "ZserverTemplates",
+    "description": "Returns a JSON array of all templates on the current guild, including code, name, and description.",
+    "type": "function",
+    "url": "/docs/functions/templates/ZserverTemplates"
+  },
+  {
     "name": "ZserverVerificationLevel",
     "description": "Returns the verification level of the current guild as a string such as none, low, medium, high, or very_high.",
     "type": "function",
@@ -2256,6 +2394,18 @@
     "url": "/docs/functions/channels/ZslowMode"
   },
   {
+    "name": "ZsnowflakeAge",
+    "description": "Returns a human-readable age from any snowflake like '3 days ago'.",
+    "type": "function",
+    "url": "/docs/functions/utility/ZsnowflakeAge"
+  },
+  {
+    "name": "ZsnowflakeTimestamp",
+    "description": "Extracts the Unix timestamp from any Discord snowflake ID.",
+    "type": "function",
+    "url": "/docs/functions/utility/ZsnowflakeTimestamp"
+  },
+  {
     "name": "Zsort",
     "description": "Sorts a variadic list of numbers in ascending or descending order and returns up to a specified count joined by a separator.",
     "type": "function",
@@ -2322,6 +2472,12 @@
     "url": "/docs/functions/math/Zsqrt"
   },
   {
+    "name": "ZstageAudience",
+    "description": "Returns a comma-separated list of user IDs who are in the audience of a stage channel.",
+    "type": "function",
+    "url": "/docs/functions/stage/ZstageAudience"
+  },
+  {
     "name": "ZstageCreate",
     "description": "Creates a new stage instance in the specified stage channel with the given topic.",
     "type": "function",
@@ -2338,6 +2494,12 @@
     "description": "Edits the topic of an existing stage instance in the specified stage channel.",
     "type": "function",
     "url": "/docs/functions/stage/ZstageEdit"
+  },
+  {
+    "name": "ZstageSpeakers",
+    "description": "Returns a comma-separated list of user IDs who are currently speaking in a stage channel.",
+    "type": "function",
+    "url": "/docs/functions/stage/ZstageSpeakers"
   },
   {
     "name": "ZstageTopic",
@@ -2430,6 +2592,12 @@
     "url": "/docs/functions/math/Zsum"
   },
   {
+    "name": "ZsuppressEmbeds",
+    "description": "Suppresses or un-suppresses link embeds on an existing message.",
+    "type": "function",
+    "url": "/docs/functions/message/ZsuppressEmbeds"
+  },
+  {
     "name": "ZsuppressErrors",
     "description": "Activates error suppression for the current execution, optionally showing a custom message or a specific embed slot instead of the real error.",
     "type": "function",
@@ -2442,10 +2610,22 @@
     "url": "/docs/functions/channels/ZsyncPerms"
   },
   {
+    "name": "ZsyncServerTemplate",
+    "description": "Syncs an existing server template to match the current guild state.",
+    "type": "function",
+    "url": "/docs/functions/templates/ZsyncServerTemplate"
+  },
+  {
     "name": "ZsystemChannelID",
     "description": "Returns the ID of the system messages channel in the current guild, or an empty string if none is configured.",
     "type": "function",
     "url": "/docs/functions/channels/ZsystemChannelID"
+  },
+  {
+    "name": "ZtemplateName",
+    "description": "Returns the display name of a server template by its code.",
+    "type": "function",
+    "url": "/docs/functions/templates/ZtemplateName"
   },
   {
     "name": "ZtextSplit",
@@ -2574,6 +2754,12 @@
     "url": "/docs/functions/string/Ztitlecase"
   },
   {
+    "name": "ZtotalShards",
+    "description": "Returns the total number of shards the bot is running.",
+    "type": "function",
+    "url": "/docs/functions/bot/ZtotalShards"
+  },
+  {
     "name": "ZtrimContent",
     "description": "Collapses multiple consecutive spaces into a single space and trims leading and trailing whitespace.",
     "type": "function",
@@ -2622,16 +2808,16 @@
     "url": "/docs/functions/moderation/ZuntimeOut"
   },
   {
-    "name": "Zuppercase",
-    "description": "Converts all characters in the text to uppercase.",
-    "type": "function",
-    "url": "/docs/functions/string/Zuppercase"
-  },
-  {
     "name": "Zupdate",
     "description": "Signals that the interaction response should update the original message instead of sending a new reply. Only valid inside interaction handlers (buttons, select menus).",
     "type": "function",
     "url": "/docs/functions/components/Zupdate"
+  },
+  {
+    "name": "Zuppercase",
+    "description": "Converts all characters in the text to uppercase.",
+    "type": "function",
+    "url": "/docs/functions/string/Zuppercase"
   },
   {
     "name": "Zuptime",
@@ -2838,6 +3024,18 @@
     "url": "/docs/functions/voice/ZvoiceOld"
   },
   {
+    "name": "ZvoiceQuality",
+    "description": "Returns the video quality mode of a voice channel (AUTO or FULL).",
+    "type": "function",
+    "url": "/docs/functions/voice/ZvoiceQuality"
+  },
+  {
+    "name": "ZvoiceRegion",
+    "description": "Returns the voice region of a voice channel (e.g., 'us-west', 'automatic').",
+    "type": "function",
+    "url": "/docs/functions/voice/ZvoiceRegion"
+  },
+  {
     "name": "ZvoiceRequestToSpeak",
     "description": "Requests to speak in a stage channel, or cancels the request if cancel=true.",
     "type": "function",
@@ -2865,13 +3063,13 @@
     "name": "ZwebhookCreate",
     "description": "Creates a webhook in the specified channel and returns its full URL.",
     "type": "function",
-    "url": "/docs/functions/embeds/ZwebhookCreate"
+    "url": "/docs/functions/webhooks/ZwebhookCreate"
   },
   {
     "name": "ZwebhookDelete",
     "description": "Deletes a webhook identified by its full Discord webhook URL.",
     "type": "function",
-    "url": "/docs/functions/embeds/ZwebhookDelete"
+    "url": "/docs/functions/webhooks/ZwebhookDelete"
   },
   {
     "name": "ZwelcomeScreen",

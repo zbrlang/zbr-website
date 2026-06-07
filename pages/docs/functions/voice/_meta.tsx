@@ -15,6 +15,8 @@ const meta = {
   "ZvoiceMove": "ZvoiceMove",
   "ZvoiceNew": "ZvoiceNew",
   "ZvoiceOld": "ZvoiceOld",
+  "ZvoiceQuality": "ZvoiceQuality",
+  "ZvoiceRegion": "ZvoiceRegion",
   "ZvoiceRequestToSpeak": "ZvoiceRequestToSpeak",
   "ZvoiceStatus": "ZvoiceStatus",
   "ZvoiceSuppress": "ZvoiceSuppress"

@@ -1,5 +1,8 @@
 const meta = {
+  "ZchannelOverwrites": "ZchannelOverwrites",
   "ZcheckUserPerms": "ZcheckUserPerms",
+  "ZeffectivePerms": "ZeffectivePerms",
+  "ZhasPerm": "ZhasPerm",
   "ZignoreChannels": "ZignoreChannels",
   "ZonlyAdmin": "ZonlyAdmin",
   "ZonlyBotChannelPerms": "ZonlyBotChannelPerms",
@@ -13,7 +16,8 @@ const meta = {
   "ZonlyForUsers": "ZonlyForUsers",
   "ZonlyIfMessageContains": "ZonlyIfMessageContains",
   "ZonlyNSFW": "ZonlyNSFW",
-  "ZonlyPerms": "ZonlyPerms"
+  "ZonlyPerms": "ZonlyPerms",
+  "ZpermNames": "ZpermNames"
 };
 
 export default meta;

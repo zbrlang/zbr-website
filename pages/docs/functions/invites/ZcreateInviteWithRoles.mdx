@@ -1,0 +1,27 @@
+# ZcreateInviteWithRoles
+
+Creates an invite that auto-assigns the given roles when someone joins through it.
+
+## Syntax
+
+```zbr
+ZcreateInviteWithRoles{channelID;roleIDs;maxAgeDays?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | Yes | - |
+| roleIDs | string | Yes | - |
+| maxAgeDays | integer | No | 0 |
+
+
+
+## Example
+
+```zbr
+ZcreateInviteWithRoles{123456789012345678;123,456;7}
+```
+

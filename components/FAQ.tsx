@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: "Is it free to use?",
-    answer: "Yes, ZBR is fully open source under the MIT license. Free for personal and commercial use forever. You self-host your own bot, we don't charge for hosting."
+    answer: "Yes, ZBR is fully open source under the ARR license. Free for personal and commercial use forever. You self-host your own bot, we don't charge for hosting."
   }
 ];
 
