@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const terminalSteps = [
   {
     title: "Install the CLI",
-    command: "npm i @zbrlang/zbr",
+    command: "npm i -g @zbrlang/zbr",
     output: [
       "added 1 package in 0.8s",
       "zbr version",
