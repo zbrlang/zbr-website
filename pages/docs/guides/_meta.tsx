@@ -1,6 +1,6 @@
 const meta = {
-  "cli-getting-started": "CLI Getting Started",
-  "webapp-getting-started": "Webapp Getting Started"
+  "cli-getting-started": "CLI",
+  "webapp-getting-started": "Webapp"
 };
 
 export default meta;
