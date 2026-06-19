@@ -1,4 +1,6 @@
 const meta = {
+  "ZcolorRandom": "ZcolorRandom",
+  "Zdice": "Zdice",
   "Zrandom": "Zrandom",
   "ZrandomCategoryID": "ZrandomCategoryID",
   "ZrandomChannelID": "ZrandomChannelID",
@@ -8,7 +10,8 @@ const meta = {
   "ZrandomString": "ZrandomString",
   "ZrandomText": "ZrandomText",
   "ZrandomUser": "ZrandomUser",
-  "ZrandomUserID": "ZrandomUserID"
+  "ZrandomUserID": "ZrandomUserID",
+  "ZweightedRandom": "ZweightedRandom"
 };
 
 export default meta;

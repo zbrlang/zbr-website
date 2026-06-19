@@ -13,6 +13,7 @@ const meta = {
   "ZuserBannerColor": "ZuserBannerColor",
   "ZuserExists": "ZuserExists",
   "ZuserJoined": "ZuserJoined",
+  "ZuserLocale": "ZuserLocale",
   "ZuserPerms": "ZuserPerms",
   "ZuserServerAvatar": "ZuserServerAvatar",
   "ZuserStatus": "ZuserStatus",

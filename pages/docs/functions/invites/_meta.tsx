@@ -3,6 +3,7 @@ const meta = {
   "ZcreateInvite": "ZcreateInvite",
   "ZcreateInviteWithRoles": "ZcreateInviteWithRoles",
   "ZdeleteInvite": "ZdeleteInvite",
+  "ZfetchInvite": "ZfetchInvite",
   "ZinviteInfo": "ZinviteInfo",
   "ZserverInvite": "ZserverInvite"
 };

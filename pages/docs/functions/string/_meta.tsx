@@ -1,20 +1,33 @@
 const meta = {
   "ZargCount": "ZargCount",
   "ZbyteCount": "ZbyteCount",
+  "ZcamelCase": "ZcamelCase",
+  "Zcensor": "Zcensor",
   "ZcharCount": "ZcharCount",
   "ZcheckContains": "ZcheckContains",
+  "Zclean": "Zclean",
   "ZcropText": "ZcropText",
   "ZendsWith": "ZendsWith",
+  "Zextract": "Zextract",
+  "ZfuzzyMatch": "ZfuzzyMatch",
   "ZindexOf": "ZindexOf",
+  "ZkebabCase": "ZkebabCase",
   "ZlinesCount": "ZlinesCount",
   "Zlowercase": "Zlowercase",
   "ZnumberSeparator": "ZnumberSeparator",
+  "Zpad": "Zpad",
   "ZpadLeft": "ZpadLeft",
   "ZpadRight": "ZpadRight",
+  "ZpascalCase": "ZpascalCase",
+  "ZrandomCase": "ZrandomCase",
   "ZregexMatch": "ZregexMatch",
   "ZregexReplace": "ZregexReplace",
   "ZremoveLinks": "ZremoveLinks",
+  "ZrepeatText": "ZrepeatText",
   "ZreplaceText": "ZreplaceText",
+  "ZreverseText": "ZreverseText",
+  "Zroman": "Zroman",
+  "ZsnakeCase": "ZsnakeCase",
   "ZspliceText": "ZspliceText",
   "ZstartsWith": "ZstartsWith",
   "Zsubstring": "Zsubstring",
@@ -22,7 +35,8 @@ const meta = {
   "ZtrimContent": "ZtrimContent",
   "ZtrimSpace": "ZtrimSpace",
   "Zuppercase": "Zuppercase",
-  "Zurl": "Zurl"
+  "Zurl": "Zurl",
+  "ZwordCount": "ZwordCount"
 };
 
 export default meta;

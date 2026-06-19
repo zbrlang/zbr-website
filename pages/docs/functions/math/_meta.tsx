@@ -1,19 +1,35 @@
 const meta = {
+  "Zabbreviate": "Zabbreviate",
   "Zabs": "Zabs",
+  "ZbaseConvert": "ZbaseConvert",
+  "ZbitWise": "ZbitWise",
   "Zcalculate": "Zcalculate",
   "Zceil": "Zceil",
+  "Zclamp": "Zclamp",
+  "ZdecimalToHex": "ZdecimalToHex",
   "Zdiv": "Zdiv",
+  "Zfactorial": "Zfactorial",
+  "Zfinancial": "Zfinancial",
   "Zfloor": "Zfloor",
+  "Zgcd": "Zgcd",
+  "ZhexToDecimal": "ZhexToDecimal",
+  "Zhypot": "Zhypot",
+  "Zlcm": "Zlcm",
+  "Zlerp": "Zlerp",
+  "ZlistMath": "ZlistMath",
   "Zmax": "Zmax",
   "Zmin": "Zmin",
   "Zmodulo": "Zmodulo",
   "Zmulti": "Zmulti",
+  "Zpercent": "Zpercent",
   "Zpow": "Zpow",
+  "Zroot": "Zroot",
   "Zround": "Zround",
   "Zsort": "Zsort",
   "Zsqrt": "Zsqrt",
   "Zsub": "Zsub",
-  "Zsum": "Zsum"
+  "Zsum": "Zsum",
+  "Ztruncate": "Ztruncate"
 };
 
 export default meta;

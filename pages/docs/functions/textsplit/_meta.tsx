@@ -3,6 +3,8 @@ const meta = {
   "ZgetTextSplitIndex": "ZgetTextSplitIndex",
   "ZgetTextSplitLength": "ZgetTextSplitLength",
   "ZjoinSplitText": "ZjoinSplitText",
+  "ZlistReverse": "ZlistReverse",
+  "ZlistShuffle": "ZlistShuffle",
   "ZremoveSplitTextElement": "ZremoveSplitTextElement",
   "ZsplitText": "ZsplitText",
   "ZtextSplit": "ZtextSplit"

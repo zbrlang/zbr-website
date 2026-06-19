@@ -2,7 +2,8 @@ const meta = {
   "ZallowRoleMentions": "ZallowRoleMentions",
   "ZallowUserMentions": "ZallowUserMentions",
   "Zmessage": "Zmessage",
-  "Zoption": "Zoption"
+  "Zoption": "Zoption",
+  "Ztype": "Ztype"
 };
 
 export default meta;

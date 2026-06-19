@@ -1,5 +1,11 @@
 [
   {
+    "name": "Zabbreviate",
+    "description": "Executes the Zabbreviate function.",
+    "type": "function",
+    "url": "/docs/functions/math/Zabbreviate"
+  },
+  {
     "name": "Zabs",
     "description": "Returns the absolute value of the given number.",
     "type": "function",
@@ -276,6 +282,18 @@
     "url": "/docs/functions/utility/Zbase64Encode"
   },
   {
+    "name": "ZbaseConvert",
+    "description": "Executes the ZbaseConvert function.",
+    "type": "function",
+    "url": "/docs/functions/math/ZbaseConvert"
+  },
+  {
+    "name": "ZbitWise",
+    "description": "Executes the ZbitWise function.",
+    "type": "function",
+    "url": "/docs/functions/math/ZbitWise"
+  },
+  {
     "name": "ZblackListIDs",
     "description": "Halts command execution if the triggering user's ID matches any of the provided user IDs.",
     "type": "function",
@@ -360,6 +378,12 @@
     "url": "/docs/functions/math/Zcalculate"
   },
   {
+    "name": "ZcamelCase",
+    "description": "Executes the ZcamelCase function.",
+    "type": "function",
+    "url": "/docs/functions/string/ZcamelCase"
+  },
+  {
     "name": "ZcategoryChannels",
     "description": "Returns the channels inside a category sorted by position, formatted as names, IDs, mentions, or a count, joined by the specified separator.",
     "type": "function",
@@ -382,6 +406,12 @@
     "description": "Returns the smallest integer greater than or equal to the given number.",
     "type": "function",
     "url": "/docs/functions/math/Zceil"
+  },
+  {
+    "name": "Zcensor",
+    "description": "Executes the Zcensor function.",
+    "type": "function",
+    "url": "/docs/functions/string/Zcensor"
   },
   {
     "name": "ZchangeCooldownTime",
@@ -468,6 +498,12 @@
     "url": "/docs/functions/channels/ZchannelWebhooks"
   },
   {
+    "name": "ZcharCode",
+    "description": "Executes the ZcharCode function.",
+    "type": "function",
+    "url": "/docs/functions/utility/ZcharCode"
+  },
+  {
     "name": "ZcharCount",
     "description": "Returns the number of Unicode characters in the text.",
     "type": "function",
@@ -492,6 +528,18 @@
     "url": "/docs/functions/permissions/ZcheckUserPerms"
   },
   {
+    "name": "Zclamp",
+    "description": "Executes the Zclamp function.",
+    "type": "function",
+    "url": "/docs/functions/math/Zclamp"
+  },
+  {
+    "name": "Zclean",
+    "description": "Executes the Zclean function.",
+    "type": "function",
+    "url": "/docs/functions/string/Zclean"
+  },
+  {
     "name": "Zclear",
     "description": "Bulk-deletes up to 100 recent messages in the current channel, with an optional user filter and configurable handling of pinned messages.",
     "type": "function",
@@ -508,6 +556,18 @@
     "description": "Sets the accent color of the specified embed slot using a hex color code.",
     "type": "function",
     "url": "/docs/functions/embeds/Zcolor"
+  },
+  {
+    "name": "ZcolorInvert",
+    "description": "Executes the ZcolorInvert function.",
+    "type": "function",
+    "url": "/docs/functions/utility/ZcolorInvert"
+  },
+  {
+    "name": "ZcolorRandom",
+    "description": "Executes the ZcolorRandom function.",
+    "type": "function",
+    "url": "/docs/functions/random/ZcolorRandom"
   },
   {
     "name": "ZcolorRole",
@@ -636,6 +696,12 @@
     "url": "/docs/functions/moderation/Zdeafen"
   },
   {
+    "name": "ZdecimalToHex",
+    "description": "Executes the ZdecimalToHex function.",
+    "type": "function",
+    "url": "/docs/functions/math/ZdecimalToHex"
+  },
+  {
     "name": "Zdefer",
     "description": "Defers the interaction response, showing a thinking indicator and extending the response window to 15 minutes.",
     "type": "function",
@@ -712,6 +778,12 @@
     "description": "Sets the description text on the specified embed slot.",
     "type": "function",
     "url": "/docs/functions/embeds/Zdescription"
+  },
+  {
+    "name": "Zdice",
+    "description": "Executes the Zdice function.",
+    "type": "function",
+    "url": "/docs/functions/random/Zdice"
   },
   {
     "name": "ZdisplayName",
@@ -852,6 +924,12 @@
     "url": "/docs/functions/utility/Zentitlements"
   },
   {
+    "name": "Zentropy",
+    "description": "Executes the Zentropy function.",
+    "type": "function",
+    "url": "/docs/functions/utility/Zentropy"
+  },
+  {
     "name": "Zephemeral",
     "description": "Marks the current slash command response as ephemeral so it is only visible to the invoking user.",
     "type": "function",
@@ -924,6 +1002,30 @@
     "url": "/docs/functions/bot/ZexecutionTime"
   },
   {
+    "name": "Zextract",
+    "description": "Executes the Zextract function.",
+    "type": "function",
+    "url": "/docs/functions/string/Zextract"
+  },
+  {
+    "name": "Zfactorial",
+    "description": "Executes the Zfactorial function.",
+    "type": "function",
+    "url": "/docs/functions/math/Zfactorial"
+  },
+  {
+    "name": "ZfetchInvite",
+    "description": "Executes the ZfetchInvite function.",
+    "type": "function",
+    "url": "/docs/functions/invites/ZfetchInvite"
+  },
+  {
+    "name": "Zfinancial",
+    "description": "Executes the Zfinancial function.",
+    "type": "function",
+    "url": "/docs/functions/math/Zfinancial"
+  },
+  {
     "name": "Zfloor",
     "description": "Returns the largest integer less than or equal to the given number.",
     "type": "function",
@@ -952,6 +1054,12 @@
     "description": "Iterates over the elements produced by a prior ZtextSplit call, executing the code block for each element with ZloopIndex and ZloopValue populated.",
     "type": "function",
     "url": "/docs/functions/loops/ZforSplit"
+  },
+  {
+    "name": "ZformatBytes",
+    "description": "Executes the ZformatBytes function.",
+    "type": "function",
+    "url": "/docs/functions/utility/ZformatBytes"
   },
   {
     "name": "ZforumPostCount",
@@ -1008,10 +1116,28 @@
     "url": "/docs/functions/message/ZforwardMessage"
   },
   {
+    "name": "ZfromCharCode",
+    "description": "Executes the ZfromCharCode function.",
+    "type": "function",
+    "url": "/docs/functions/utility/ZfromCharCode"
+  },
+  {
     "name": "ZfromTimestamp",
     "description": "Formats a Unix timestamp into a human-readable date/time string using the active timezone and the specified format.",
     "type": "function",
     "url": "/docs/functions/time/ZfromTimestamp"
+  },
+  {
+    "name": "ZfuzzyMatch",
+    "description": "Executes the ZfuzzyMatch function.",
+    "type": "function",
+    "url": "/docs/functions/string/ZfuzzyMatch"
+  },
+  {
+    "name": "Zgcd",
+    "description": "Executes the Zgcd function.",
+    "type": "function",
+    "url": "/docs/functions/math/Zgcd"
   },
   {
     "name": "ZgetAttachments",
@@ -1194,6 +1320,24 @@
     "url": "/docs/functions/roles/ZhasRole"
   },
   {
+    "name": "ZhexToDecimal",
+    "description": "Executes the ZhexToDecimal function.",
+    "type": "function",
+    "url": "/docs/functions/math/ZhexToDecimal"
+  },
+  {
+    "name": "ZhexToHsl",
+    "description": "Executes the ZhexToHsl function.",
+    "type": "function",
+    "url": "/docs/functions/utility/ZhexToHsl"
+  },
+  {
+    "name": "ZhexToRgb",
+    "description": "Executes the ZhexToRgb function.",
+    "type": "function",
+    "url": "/docs/functions/utility/ZhexToRgb"
+  },
+  {
     "name": "ZhighestRole",
     "description": "Returns the ID of the highest-position role held by the specified user, defaulting to the author.",
     "type": "function",
@@ -1210,6 +1354,12 @@
     "description": "Returns the current hour using the active timezone.",
     "type": "function",
     "url": "/docs/functions/time/Zhour"
+  },
+  {
+    "name": "ZhslToHex",
+    "description": "Executes the ZhslToHex function.",
+    "type": "function",
+    "url": "/docs/functions/utility/ZhslToHex"
   },
   {
     "name": "ZhttpAddHeader",
@@ -1270,6 +1420,12 @@
     "description": "Returns the HTTP status code of the last HTTP request made in the current execution.",
     "type": "function",
     "url": "/docs/functions/http/ZhttpStatus"
+  },
+  {
+    "name": "Zhypot",
+    "description": "Executes the Zhypot function.",
+    "type": "function",
+    "url": "/docs/functions/math/Zhypot"
   },
   {
     "name": "Zif",
@@ -1344,6 +1500,12 @@
     "url": "/docs/functions/emojis/ZisEmojiAnimated"
   },
   {
+    "name": "ZisEven",
+    "description": "Executes the ZisEven function.",
+    "type": "function",
+    "url": "/docs/functions/control/ZisEven"
+  },
+  {
     "name": "ZisHoisted",
     "description": "Returns true if the given role is displayed separately in the member list, defaulting to the author's top role if no ID is provided.",
     "type": "function",
@@ -1396,6 +1558,12 @@
     "description": "Returns true if the value parses as any numeric value including decimals, otherwise returns false.",
     "type": "function",
     "url": "/docs/functions/control/ZisNumber"
+  },
+  {
+    "name": "ZisOdd",
+    "description": "Executes the ZisOdd function.",
+    "type": "function",
+    "url": "/docs/functions/control/ZisOdd"
   },
   {
     "name": "ZisSlash",
@@ -1536,6 +1704,12 @@
     "url": "/docs/functions/json/ZjsonUnset"
   },
   {
+    "name": "ZkebabCase",
+    "description": "Executes the ZkebabCase function.",
+    "type": "function",
+    "url": "/docs/functions/string/ZkebabCase"
+  },
+  {
     "name": "Zkick",
     "description": "Kicks a user from the guild with an optional reason.",
     "type": "function",
@@ -1554,10 +1728,40 @@
     "url": "/docs/functions/channels/ZlastPinTimestamp"
   },
   {
+    "name": "Zlcm",
+    "description": "Executes the Zlcm function.",
+    "type": "function",
+    "url": "/docs/functions/math/Zlcm"
+  },
+  {
+    "name": "Zlerp",
+    "description": "Executes the Zlerp function.",
+    "type": "function",
+    "url": "/docs/functions/math/Zlerp"
+  },
+  {
     "name": "ZlinesCount",
     "description": "Returns the number of lines in the text, returning zero for an empty string.",
     "type": "function",
     "url": "/docs/functions/string/ZlinesCount"
+  },
+  {
+    "name": "ZlistMath",
+    "description": "Executes the ZlistMath function.",
+    "type": "function",
+    "url": "/docs/functions/math/ZlistMath"
+  },
+  {
+    "name": "ZlistReverse",
+    "description": "Executes the ZlistReverse function.",
+    "type": "function",
+    "url": "/docs/functions/textsplit/ZlistReverse"
+  },
+  {
+    "name": "ZlistShuffle",
+    "description": "Executes the ZlistShuffle function.",
+    "type": "function",
+    "url": "/docs/functions/textsplit/ZlistShuffle"
   },
   {
     "name": "ZlistVar",
@@ -1860,6 +2064,12 @@
     "url": "/docs/functions/context/Zoption"
   },
   {
+    "name": "Zpad",
+    "description": "Executes the Zpad function.",
+    "type": "function",
+    "url": "/docs/functions/string/Zpad"
+  },
+  {
     "name": "ZpadLeft",
     "description": "Pads the text on the left with a repeated character until it reaches the specified width, defaulting to a space.",
     "type": "function",
@@ -1876,6 +2086,18 @@
     "description": "Returns the ID of the parent category of the given channel, or an empty string if the channel has no parent.",
     "type": "function",
     "url": "/docs/functions/channels/ZparentID"
+  },
+  {
+    "name": "ZpascalCase",
+    "description": "Executes the ZpascalCase function.",
+    "type": "function",
+    "url": "/docs/functions/string/ZpascalCase"
+  },
+  {
+    "name": "Zpercent",
+    "description": "Executes the Zpercent function.",
+    "type": "function",
+    "url": "/docs/functions/math/Zpercent"
   },
   {
     "name": "ZpermNames",
@@ -1974,6 +2196,12 @@
     "url": "/docs/functions/random/Zrandom"
   },
   {
+    "name": "ZrandomCase",
+    "description": "Executes the ZrandomCase function.",
+    "type": "function",
+    "url": "/docs/functions/string/ZrandomCase"
+  },
+  {
     "name": "ZrandomCategoryID",
     "description": "Returns the ID of a randomly selected category channel in the current server.",
     "type": "function",
@@ -2040,6 +2268,12 @@
     "url": "/docs/functions/string/ZregexReplace"
   },
   {
+    "name": "ZrelativeTime",
+    "description": "Executes the ZrelativeTime function.",
+    "type": "function",
+    "url": "/docs/functions/time/ZrelativeTime"
+  },
+  {
     "name": "ZremoveAllComponents",
     "description": "Removes all components from a message, defaulting to the triggering message.",
     "type": "function",
@@ -2082,6 +2316,12 @@
     "url": "/docs/functions/loops/Zrepeat"
   },
   {
+    "name": "ZrepeatText",
+    "description": "Executes the ZrepeatText function.",
+    "type": "function",
+    "url": "/docs/functions/string/ZrepeatText"
+  },
+  {
     "name": "ZreplaceText",
     "description": "Replaces occurrences of a sample substring in text with a new string, with an optional limit on the number of replacements.",
     "type": "function",
@@ -2122,6 +2362,18 @@
     "description": "Deletes the given user variable for every user in the current server.",
     "type": "function",
     "url": "/docs/functions/variables/ZresetUserVar"
+  },
+  {
+    "name": "ZreverseText",
+    "description": "Executes the ZreverseText function.",
+    "type": "function",
+    "url": "/docs/functions/string/ZreverseText"
+  },
+  {
+    "name": "ZrgbToHex",
+    "description": "Executes the ZrgbToHex function.",
+    "type": "function",
+    "url": "/docs/functions/utility/ZrgbToHex"
   },
   {
     "name": "ZroleColor",
@@ -2188,6 +2440,18 @@
     "description": "Returns the hierarchy position of a role, defaulting to the author's top role if no ID is provided.",
     "type": "function",
     "url": "/docs/functions/roles/ZrolePosition"
+  },
+  {
+    "name": "Zroman",
+    "description": "Executes the Zroman function.",
+    "type": "function",
+    "url": "/docs/functions/string/Zroman"
+  },
+  {
+    "name": "Zroot",
+    "description": "Executes the Zroot function.",
+    "type": "function",
+    "url": "/docs/functions/math/Zroot"
   },
   {
     "name": "Zround",
@@ -2392,6 +2656,12 @@
     "description": "Sets the slowmode rate limit on a channel to the specified duration (0 or 0s disables it).",
     "type": "function",
     "url": "/docs/functions/channels/ZslowMode"
+  },
+  {
+    "name": "ZsnakeCase",
+    "description": "Executes the ZsnakeCase function.",
+    "type": "function",
+    "url": "/docs/functions/string/ZsnakeCase"
   },
   {
     "name": "ZsnowflakeAge",
@@ -2724,6 +2994,12 @@
     "url": "/docs/functions/time/ZtimeDiff"
   },
   {
+    "name": "ZtimeFormat",
+    "description": "Executes the ZtimeFormat function.",
+    "type": "function",
+    "url": "/docs/functions/time/ZtimeFormat"
+  },
+  {
     "name": "Ztimeout",
     "description": "Applies a communication timeout to a user for the specified duration, up to a maximum of 28 days.",
     "type": "function",
@@ -2772,10 +3048,22 @@
     "url": "/docs/functions/string/ZtrimSpace"
   },
   {
+    "name": "Ztruncate",
+    "description": "Executes the Ztruncate function.",
+    "type": "function",
+    "url": "/docs/functions/math/Ztruncate"
+  },
+  {
     "name": "ZtryRun",
     "description": "Evaluates the code block and falls back to the fallback block if any error occurs.",
     "type": "function",
     "url": "/docs/functions/errors/ZtryRun"
+  },
+  {
+    "name": "Ztype",
+    "description": "Executes the Ztype function.",
+    "type": "function",
+    "url": "/docs/functions/context/Ztype"
   },
   {
     "name": "Zunban",
@@ -2880,6 +3168,12 @@
     "url": "/docs/functions/users/ZuserJoined"
   },
   {
+    "name": "ZuserLocale",
+    "description": "Executes the ZuserLocale function.",
+    "type": "function",
+    "url": "/docs/functions/users/ZuserLocale"
+  },
+  {
     "name": "ZuserPerms",
     "description": "Returns the guild permissions held by the command author or specified user, up to the given amount, joined by the separator.",
     "type": "function",
@@ -2950,6 +3244,18 @@
     "description": "Returns the username of the command author, or of the specified user if a user ID is provided.",
     "type": "function",
     "url": "/docs/functions/users/Zusername"
+  },
+  {
+    "name": "Zuuid",
+    "description": "Executes the Zuuid function.",
+    "type": "function",
+    "url": "/docs/functions/utility/Zuuid"
+  },
+  {
+    "name": "Zvalidate",
+    "description": "Executes the Zvalidate function.",
+    "type": "function",
+    "url": "/docs/functions/utility/Zvalidate"
   },
   {
     "name": "Zvar",
@@ -3072,10 +3378,22 @@
     "url": "/docs/functions/webhooks/ZwebhookDelete"
   },
   {
+    "name": "ZweightedRandom",
+    "description": "Executes the ZweightedRandom function.",
+    "type": "function",
+    "url": "/docs/functions/random/ZweightedRandom"
+  },
+  {
     "name": "ZwelcomeScreen",
     "description": "Returns the guild's welcome screen as a JSON object.",
     "type": "function",
     "url": "/docs/functions/servers/ZwelcomeScreen"
+  },
+  {
+    "name": "ZwordCount",
+    "description": "Executes the ZwordCount function.",
+    "type": "function",
+    "url": "/docs/functions/string/ZwordCount"
   },
   {
     "name": "Zyear",
