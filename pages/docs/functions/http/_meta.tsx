@@ -3,6 +3,8 @@ const meta = {
   "ZhttpDelete": "ZhttpDelete",
   "ZhttpGet": "ZhttpGet",
   "ZhttpGetHeader": "ZhttpGetHeader",
+  "ZhttpHead": "ZhttpHead",
+  "ZhttpOptions": "ZhttpOptions",
   "ZhttpPatch": "ZhttpPatch",
   "ZhttpPost": "ZhttpPost",
   "ZhttpPut": "ZhttpPut",

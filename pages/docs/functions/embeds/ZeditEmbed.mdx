@@ -1,0 +1,27 @@
+# ZeditEmbed
+
+Edits the embed at the specified slot index into an existing message in the specified channel.
+
+## Syntax
+
+```zbr
+ZeditEmbed{channelID?;messageID;index?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| channelID | snowflake | No | current channel |
+| messageID | snowflake | Yes | - |
+| index | integer | No | 1 |
+
+
+
+## Example
+
+```zbr
+ZeditEmbed{123456789012345678;1}
+```
+

@@ -1,0 +1,26 @@
+# ZjsonMerge
+
+Deep-merges a JSON string into the value at the specified key path in the working JSON object. Objects are merged recursively; scalars and arrays overwrite.
+
+## Syntax
+
+```zbr
+ZjsonMerge{target;sourceJson}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| target | string | Yes | - |
+| sourceJson | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZjsonMerge{config;{"theme":"dark"}}
+```
+

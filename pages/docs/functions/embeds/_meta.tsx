@@ -5,6 +5,7 @@ const meta = {
   "ZauthorURL": "ZauthorURL",
   "Zcolor": "Zcolor",
   "Zdescription": "Zdescription",
+  "ZeditEmbed": "ZeditEmbed",
   "Zfooter": "Zfooter",
   "ZfooterIcon": "ZfooterIcon",
   "Zimage": "Zimage",

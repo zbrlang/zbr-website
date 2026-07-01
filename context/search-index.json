@@ -822,6 +822,12 @@
     "url": "/docs/functions/components/ZeditButton"
   },
   {
+    "name": "ZeditEmbed",
+    "description": "Edits the embed at the specified slot index into an existing message in the specified channel.",
+    "type": "function",
+    "url": "/docs/functions/embeds/ZeditEmbed"
+  },
+  {
     "name": "ZeditChannelPerms",
     "description": "Edits permission overwrites for a user or role on a channel, using + to allow, - to deny, and / to neutralize each named permission.",
     "type": "function",
@@ -1386,6 +1392,18 @@
     "url": "/docs/functions/http/ZhttpGetHeader"
   },
   {
+    "name": "ZhttpHead",
+    "description": "Sends an HTTP HEAD request to the specified URL and stores the response for access via ZhttpStatus and ZhttpResult.",
+    "type": "function",
+    "url": "/docs/functions/http/ZhttpHead"
+  },
+  {
+    "name": "ZhttpOptions",
+    "description": "Sends an HTTP OPTIONS request to the specified URL and stores the response for access via ZhttpStatus and ZhttpResult.",
+    "type": "function",
+    "url": "/docs/functions/http/ZhttpOptions"
+  },
+  {
     "name": "ZhttpPatch",
     "description": "Sends an HTTP PATCH request to the specified URL with an optional request body and stores the response.",
     "type": "function",
@@ -1672,6 +1690,12 @@
     "description": "Joins all elements of the array at the specified key path into a single string using the provided separator.",
     "type": "function",
     "url": "/docs/functions/json/ZjsonJoinArray"
+  },
+  {
+    "name": "ZjsonMerge",
+    "description": "Deep-merges a JSON string into the value at the specified key path in the working JSON object. Objects are merged recursively; scalars and arrays overwrite.",
+    "type": "function",
+    "url": "/docs/functions/json/ZjsonMerge"
   },
   {
     "name": "ZjsonParse",
@@ -2514,6 +2538,12 @@
     "url": "/docs/functions/servers/ZserverDescription"
   },
   {
+    "name": "ZserverDiscoverySplash",
+    "description": "Returns the discovery splash URL of the guild, or an empty string if none is set.",
+    "type": "function",
+    "url": "/docs/functions/servers/ZserverDiscoverySplash"
+  },
+  {
     "name": "ZserverEmojis",
     "description": "Returns the custom emojis of the guild as formatted emoji strings joined by the specified separator.",
     "type": "function",
@@ -2572,6 +2602,12 @@
     "description": "Returns a separator-joined list of role IDs for the specified server.",
     "type": "function",
     "url": "/docs/functions/roles/ZserverRoles"
+  },
+  {
+    "name": "ZserverSplash",
+    "description": "Returns the splash URL of the guild, or an empty string if no splash is set.",
+    "type": "function",
+    "url": "/docs/functions/servers/ZserverSplash"
   },
   {
     "name": "ZserverStickers",

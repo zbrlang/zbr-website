@@ -12,6 +12,7 @@ const meta = {
   "ZjsonExists": "ZjsonExists",
   "ZjsonGet": "ZjsonGet",
   "ZjsonJoinArray": "ZjsonJoinArray",
+  "ZjsonMerge": "ZjsonMerge",
   "ZjsonParse": "ZjsonParse",
   "ZjsonPretty": "ZjsonPretty",
   "ZjsonSet": "ZjsonSet",

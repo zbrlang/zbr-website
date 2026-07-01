@@ -10,12 +10,14 @@ const meta = {
   "ZmemberSearch": "ZmemberSearch",
   "ZmembersCount": "ZmembersCount",
   "ZserverDescription": "ZserverDescription",
+  "ZserverDiscoverySplash": "ZserverDiscoverySplash",
   "ZserverEmojis": "ZserverEmojis",
   "ZserverIcon": "ZserverIcon",
   "ZserverLockdown": "ZserverLockdown",
   "ZserverModify": "ZserverModify",
   "ZserverName": "ZserverName",
   "ZserverOwner": "ZserverOwner",
+  "ZserverSplash": "ZserverSplash",
   "ZserverVerificationLevel": "ZserverVerificationLevel",
   "ZwelcomeScreen": "ZwelcomeScreen"
 };
