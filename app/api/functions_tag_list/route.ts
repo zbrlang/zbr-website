@@ -1,8 +1,21 @@
 import { NextResponse } from 'next/server';
-import data from '../../../context/functions_tag.json';
+import rawData from '../../../context/functions_tag.json';
 
 export async function GET() {
-  return NextResponse.json(data, {
+  if (!Array.isArray(rawData)) {
+    return NextResponse.json(
+      { error: 'Internal server error: function tags data is malformed' },
+      { status: 500,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type',
+        },
+      }
+    );
+  }
+
+  return NextResponse.json(rawData, {
     headers: {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, OPTIONS',

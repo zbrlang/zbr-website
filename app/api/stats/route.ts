@@ -1,26 +1,57 @@
 import { NextResponse } from 'next/server';
-import functions from '@/context/functions.json';
-import triggers from '@/context/triggers.json';
+import rawFunctions from '@/context/functions.json';
+import rawTriggers from '@/context/triggers.json';
 import fs from 'node:fs';
 import path from 'node:path';
 
 export async function GET() {
+  if (!Array.isArray(rawFunctions)) {
+    return NextResponse.json(
+      { error: 'Internal server error: functions data is malformed' },
+      { status: 500,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type',
+        },
+      }
+    );
+  }
+
+  if (!Array.isArray(rawTriggers)) {
+    return NextResponse.json(
+      { error: 'Internal server error: triggers data is malformed' },
+      { status: 500,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type',
+        },
+      }
+    );
+  }
+
   // Functions count
-  const functionsCount = functions.length;
+  const functionsCount = rawFunctions.length;
 
   // Triggers count
-  const triggersCount = triggers.length;
+  const triggersCount = rawTriggers.length;
 
   // Categories count
-  const categoriesPath = path.join(process.cwd(), 'context', 'categories.txt');
-  const categoriesRaw = fs.readFileSync(categoriesPath, 'utf8');
-  const categoryLines = categoriesRaw.split('\n');
-  const uniqueCategories = new Set(
-    categoryLines
-      .filter(line => line.includes(' - '))
-      .map(line => line.split(' - ')[1].trim())
-  );
-  const categoriesCount = uniqueCategories.size;
+  let categoriesCount = 0;
+  try {
+    const categoriesPath = path.join(process.cwd(), 'context', 'categories.txt');
+    const categoriesRaw = fs.readFileSync(categoriesPath, 'utf8');
+    const categoryLines = categoriesRaw.split('\n');
+    const uniqueCategories = new Set(
+      categoryLines
+        .filter(line => line.includes(' - '))
+        .map(line => line.split(' - ')[1].trim())
+    );
+    categoriesCount = uniqueCategories.size;
+  } catch (e) {
+    console.error('Failed to read categories.txt', e);
+  }
 
   // Fetch Version from GitHub
   let version = 'unknown';
