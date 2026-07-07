@@ -28,8 +28,6 @@ export default function FAQ() {
 
   return (
     <section className="py-0 px-4 relative overflow-hidden">
-      <div className="absolute top-1/4 -left-12 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-1/4 -right-12 w-48 h-48 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
       <div className="max-w-3xl mx-auto relative z-10">
         <motion.div 
           initial={{ opacity: 0 }}
