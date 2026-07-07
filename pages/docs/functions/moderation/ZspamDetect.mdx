@@ -1,0 +1,27 @@
+# ZspamDetect
+
+Returns true if the user has exceeded the message count threshold within the time window. Best used inside an onMessage event.
+
+## Syntax
+
+```zbr
+ZspamDetect{userID;threshold?;windowSeconds?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | Yes | - |
+| threshold | number | No | 10 |
+| windowSeconds | number | No | 60 |
+
+
+
+## Example
+
+```zbr
+ZspamDetect{ZuserID;10;60}
+```
+

@@ -1,0 +1,26 @@
+# ZemojiSpamDetect
+
+Returns true if the number of emojis in the message meets or exceeds the threshold. Best used inside an onMessage event.
+
+## Syntax
+
+```zbr
+ZemojiSpamDetect{message?;threshold?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| message | string | No | current message |
+| threshold | number | No | 10 |
+
+
+
+## Example
+
+```zbr
+ZemojiSpamDetect{Zmessage;10}
+```
+

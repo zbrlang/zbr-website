@@ -1,0 +1,26 @@
+# ZcapsDetect
+
+Returns true if the ratio of uppercase letters in the message meets or exceeds the threshold. Best used inside an onMessage event.
+
+## Syntax
+
+```zbr
+ZcapsDetect{message?;threshold?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| message | string | No | current message |
+| threshold | number | No | 0.7 |
+
+
+
+## Example
+
+```zbr
+ZcapsDetect{Zmessage;0.7}
+```
+

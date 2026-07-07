@@ -1,0 +1,25 @@
+# ZmentionSpamDetect
+
+Returns true if the number of mentions (@user, @role, @everyone, @here) in the current message meets or exceeds the threshold. Best used inside an onMessage event.
+
+## Syntax
+
+```zbr
+ZmentionSpamDetect{threshold?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| threshold | number | No | 5 |
+
+
+
+## Example
+
+```zbr
+ZmentionSpamDetect{5}
+```
+

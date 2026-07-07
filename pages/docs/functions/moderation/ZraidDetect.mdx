@@ -1,0 +1,26 @@
+# ZraidDetect
+
+Returns true if the number of member joins in the guild within the time window meets or exceeds the threshold. Best used inside an onMemberJoin event.
+
+## Syntax
+
+```zbr
+ZraidDetect{joinCount;windowSeconds?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| joinCount | number | Yes | - |
+| windowSeconds | number | No | 60 |
+
+
+
+## Example
+
+```zbr
+ZraidDetect{5;30}
+```
+

@@ -1,0 +1,27 @@
+# ZlinkSpamDetect
+
+Returns true if the user has sent more messages containing URLs than the allowed limit within the time window. Best used inside an onMessage event.
+
+## Syntax
+
+```zbr
+ZlinkSpamDetect{userID;maxLinks?;windowSeconds?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | Yes | - |
+| maxLinks | number | No | 3 |
+| windowSeconds | number | No | 60 |
+
+
+
+## Example
+
+```zbr
+ZlinkSpamDetect{ZuserID;3;60}
+```
+

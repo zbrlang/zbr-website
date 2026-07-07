@@ -384,6 +384,12 @@
     "url": "/docs/functions/string/ZcamelCase"
   },
   {
+    "name": "ZcapsDetect",
+    "description": "Returns true if the ratio of uppercase letters in the message meets or exceeds the threshold. Best used inside an onMessage event.",
+    "type": "function",
+    "url": "/docs/functions/moderation/ZcapsDetect"
+  },
+  {
     "name": "ZcategoryChannels",
     "description": "Returns the channels inside a category sorted by position, formatted as names, IDs, mentions, or a count, joined by the specified separator.",
     "type": "function",
@@ -810,6 +816,12 @@
     "url": "/docs/functions/channels/ZdmChannelID"
   },
   {
+    "name": "ZduplicateDetect",
+    "description": "Returns true if the current message is similar to a recent message in the channel, using Levenshtein distance. Best used inside an onMessage event.",
+    "type": "function",
+    "url": "/docs/functions/moderation/ZduplicateDetect"
+  },
+  {
     "name": "Zduration",
     "description": "Converts a duration string (e.g. 1h, 30m, 5d) into seconds.",
     "type": "function",
@@ -904,6 +916,12 @@
     "description": "Returns the name of a custom emoji in the current server looked up by its ID.",
     "type": "function",
     "url": "/docs/functions/emojis/ZemojiName"
+  },
+  {
+    "name": "ZemojiSpamDetect",
+    "description": "Returns true if the number of emojis in the message meets or exceeds the threshold. Best used inside an onMessage event.",
+    "type": "function",
+    "url": "/docs/functions/moderation/ZemojiSpamDetect"
   },
   {
     "name": "ZemoteCount",
@@ -1770,6 +1788,12 @@
     "url": "/docs/functions/string/ZlinesCount"
   },
   {
+    "name": "ZlinkSpamDetect",
+    "description": "Returns true if the user has sent more messages containing URLs than the allowed limit within the time window. Best used inside an onMessage event.",
+    "type": "function",
+    "url": "/docs/functions/moderation/ZlinkSpamDetect"
+  },
+  {
     "name": "ZlistMath",
     "description": "Executes the ZlistMath function.",
     "type": "function",
@@ -1866,6 +1890,12 @@
     "url": "/docs/functions/message/Zmentioned"
   },
   {
+    "name": "ZmentionSpamDetect",
+    "description": "Returns true if the number of mentions (@user, @role, @everyone, @here) in the current message meets or exceeds the threshold. Best used inside an onMessage event.",
+    "type": "function",
+    "url": "/docs/functions/moderation/ZmentionSpamDetect"
+  },
+  {
     "name": "Zmessage",
     "description": "Returns the full message content after the command trigger, or the Nth space-separated word when an index is provided.",
     "type": "function",
@@ -1948,6 +1978,12 @@
     "description": "Server-mutes the specified user in all voice channels.",
     "type": "function",
     "url": "/docs/functions/moderation/Zmute"
+  },
+  {
+    "name": "ZnewAccountDetect",
+    "description": "Returns true if the account age of the specified user is less than the minimum age in days, calculated from their Discord snowflake ID. Best used inside an onMemberJoin event.",
+    "type": "function",
+    "url": "/docs/functions/moderation/ZnewAccountDetect"
   },
   {
     "name": "ZnewModal",
@@ -2212,6 +2248,12 @@
     "description": "Crossposts a message from an announcement channel to all subscribed channels.",
     "type": "function",
     "url": "/docs/functions/message/ZpublishMessage"
+  },
+  {
+    "name": "ZraidDetect",
+    "description": "Returns true if the number of member joins in the guild within the time window meets or exceeds the threshold. Best used inside an onMemberJoin event.",
+    "type": "function",
+    "url": "/docs/functions/moderation/ZraidDetect"
   },
   {
     "name": "Zrandom",
@@ -2758,6 +2800,12 @@
     "description": "Lists all soundboard sounds in the server.",
     "type": "function",
     "url": "/docs/functions/soundboard/ZsoundboardSounds"
+  },
+  {
+    "name": "ZspamDetect",
+    "description": "Returns true if the user has exceeded the message count threshold within the time window. Best used inside an onMessage event.",
+    "type": "function",
+    "url": "/docs/functions/moderation/ZspamDetect"
   },
   {
     "name": "ZspliceText",

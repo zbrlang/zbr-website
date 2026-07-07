@@ -1,0 +1,26 @@
+# ZnewAccountDetect
+
+Returns true if the account age of the specified user is less than the minimum age in days, calculated from their Discord snowflake ID. Best used inside an onMemberJoin event.
+
+## Syntax
+
+```zbr
+ZnewAccountDetect{userID;minAgeDays?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| userID | snowflake | Yes | - |
+| minAgeDays | number | No | 7 |
+
+
+
+## Example
+
+```zbr
+ZnewAccountDetect{ZuserID;7}
+```
+

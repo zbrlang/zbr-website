@@ -2,6 +2,26 @@
 
 All notable changes to the ZBR project are documented here.
 
+## v1.8.1 - Advanced Moderation Functions
+
+This release adds 8 new moderation detection functions. All use pure logic, math, or regex, no external APIs required.
+
+### New Functions
+
+- **`ZspamDetect{userID;threshold?;windowSeconds?}`**: Tracks message velocity for a user and returns `true` if they've exceeded the threshold within the time window. Defaults: 10 messages / 60 seconds.
+- **`ZraidDetect{joinCount;windowSeconds?}`**: Tracks member joins and returns `true` if the guild has exceeded the join threshold within the time window. Defaults: 60 seconds.
+- **`ZduplicateDetect{similarityThreshold?}`**: Compares the current message against the last 50 messages in the channel using Levenshtein distance. Returns `true` if a similar message is found. Default threshold: 0.85 (85%).
+- **`ZmentionSpamDetect{threshold?}`**: Counts `@user`, `@role`, `@everyone`, and `@here` mentions in the current message. Returns `true` if the count meets or exceeds the threshold. Default: 5.
+- **`ZlinkSpamDetect{userID;maxLinks?;windowSeconds?}`**: Tracks messages containing URLs for a user and returns `true` if they've exceeded the limit within the time window. Defaults: 3 links / 60 seconds.
+- **`ZcapsDetect{message?;threshold?}`**: Calculates the ratio of uppercase letters to total letters. Returns `true` if the ratio meets or exceeds the threshold. Default: 0.7 (70%).
+- **`ZemojiSpamDetect{message?;threshold?}`**: Counts Unicode and custom Discord emojis in a message. Returns `true` if the count meets or exceeds the threshold. Default: 10.
+- **`ZnewAccountDetect{userID;minAgeDays?}`**: Extracts the account creation date from the Discord snowflake ID and returns `true` if the account is younger than the minimum age. Default: 7 days.
+
+### Database
+
+- Added `spam_tracker` table, used by `ZspamDetect` and `ZlinkSpamDetect`.
+- Added `raid_tracker` table, used by `ZraidDetect`.
+
 ## v1.8.0 - Stability, Performance, and API Expansion
 
 This release delivers 11 bug fixes, 3 performance improvements, and 6 new ZBR functions for embeds, JSON, HTTP, and server metadata.

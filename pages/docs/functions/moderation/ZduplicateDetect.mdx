@@ -1,0 +1,25 @@
+# ZduplicateDetect
+
+Returns true if the current message is similar to a recent message in the channel, using Levenshtein distance. Best used inside an onMessage event.
+
+## Syntax
+
+```zbr
+ZduplicateDetect{similarityThreshold?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| similarityThreshold | number | No | 0.85 |
+
+
+
+## Example
+
+```zbr
+ZduplicateDetect{0.85}
+```
+
