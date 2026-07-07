@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Command, Zap, Activity, ArrowRight } from 'lucide-react';
-import { useRouter } from 'next/navigation';
-import searchIndex from '@/context/search-index.json';
+import React, { useState, useEffect, useCallback, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Search, Command, Zap, Activity, ArrowRight } from "lucide-react";
+import { useRouter } from "next/navigation";
+import searchIndex from "@/context/search-index.json";
 
 type SearchItem = {
   name: string;
@@ -13,30 +13,38 @@ type SearchItem = {
   url: string;
 };
 
-export default function CommandPalette({ isInline = false }: { isInline?: boolean }) {
+export default function CommandPalette({
+  isInline = false,
+}: {
+  isInline?: boolean;
+}) {
   const [isOpen, setIsOpen] = useState(false);
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
   const [selectedIndex, setSelectedIndex] = useState(0);
   const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const filteredItems = query === '' 
-    ? (searchIndex as SearchItem[]).slice(0, 5)
-    : (searchIndex as SearchItem[]).filter(item => 
-        item.name.toLowerCase().includes(query.toLowerCase()) || 
-        item.description.toLowerCase().includes(query.toLowerCase())
-      ).slice(0, 8);
+  const filteredItems =
+    query === ""
+      ? (searchIndex as SearchItem[]).slice(0, 5)
+      : (searchIndex as SearchItem[])
+          .filter(
+            (item) =>
+              item.name.toLowerCase().includes(query.toLowerCase()) ||
+              item.description.toLowerCase().includes(query.toLowerCase()),
+          )
+          .slice(0, 8);
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
-      if (e.key === 'k' && (e.metaKey || e.ctrlKey)) {
+      if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
         setIsOpen((open) => !open);
       }
     };
 
-    document.addEventListener('keydown', down);
-    return () => document.removeEventListener('keydown', down);
+    document.addEventListener("keydown", down);
+    return () => document.removeEventListener("keydown", down);
   }, []);
 
   useEffect(() => {
@@ -46,40 +54,45 @@ export default function CommandPalette({ isInline = false }: { isInline?: boolea
     }
   }, [isOpen]);
 
-  const handleSelect = useCallback((item: SearchItem) => {
-    setIsOpen(false);
-    setQuery('');
-    router.push(item.url);
-  }, [router]);
+  const handleSelect = useCallback(
+    (item: SearchItem) => {
+      setIsOpen(false);
+      setQuery("");
+      router.push(item.url);
+    },
+    [router],
+  );
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!isOpen) return;
 
-      if (e.key === 'ArrowDown') {
+      if (e.key === "ArrowDown") {
         e.preventDefault();
-        setSelectedIndex(i => (i + 1) % filteredItems.length);
-      } else if (e.key === 'ArrowUp') {
+        setSelectedIndex((i) => (i + 1) % filteredItems.length);
+      } else if (e.key === "ArrowUp") {
         e.preventDefault();
-        setSelectedIndex(i => (i - 1 + filteredItems.length) % filteredItems.length);
-      } else if (e.key === 'Enter') {
+        setSelectedIndex(
+          (i) => (i - 1 + filteredItems.length) % filteredItems.length,
+        );
+      } else if (e.key === "Enter") {
         e.preventDefault();
         if (filteredItems[selectedIndex]) {
           handleSelect(filteredItems[selectedIndex]);
         }
-      } else if (e.key === 'Escape') {
+      } else if (e.key === "Escape") {
         setIsOpen(false);
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen, filteredItems, selectedIndex, handleSelect]);
 
   return (
     <>
       {isInline ? (
-        <button 
+        <button
           onClick={() => setIsOpen(true)}
           className="relative w-full md:w-64 flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface border border-border/40 text-secondary/40 hover:bg-surface/80 hover:border-border transition-all text-sm group"
         >
@@ -91,12 +104,15 @@ export default function CommandPalette({ isInline = false }: { isInline?: boolea
           </div>
         </button>
       ) : (
-        <button 
+        <button
           onClick={() => setIsOpen(true)}
           className="fixed bottom-8 right-8 z-[150] w-12 h-12 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-md flex items-center justify-center text-primary hover:bg-primary/20 transition-all group shadow-lg shadow-primary/5"
           title="Search (Cmd+K)"
         >
-          <Search size={20} className="group-hover:scale-110 transition-transform" />
+          <Search
+            size={20}
+            className="group-hover:scale-110 transition-transform"
+          />
         </button>
       )}
 
@@ -110,7 +126,7 @@ export default function CommandPalette({ isInline = false }: { isInline?: boolea
               onClick={() => setIsOpen(false)}
               className="absolute inset-0 bg-background/40 backdrop-blur-sm"
             />
-            
+
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: -20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -141,18 +157,32 @@ export default function CommandPalette({ isInline = false }: { isInline?: boolea
                         onClick={() => handleSelect(item)}
                         onMouseEnter={() => setSelectedIndex(i)}
                         className={`w-full flex items-center justify-between p-4 rounded-xl transition-all ${
-                          i === selectedIndex ? 'bg-primary/10 text-primary' : 'text-secondary/60 hover:bg-background/50'
+                          i === selectedIndex
+                            ? "bg-primary/10 text-primary"
+                            : "text-secondary/60 hover:bg-background/50"
                         }`}
                       >
                         <div className="flex items-center gap-4 text-left">
-                          <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${
-                            item.type === 'function' ? 'bg-primary/10 text-primary' : 'bg-secondary/10 text-secondary'
-                          }`}>
-                            {item.type === 'function' ? <Zap size={18} /> : <Activity size={18} />}
+                          <div
+                            className={`w-10 h-10 rounded-lg flex items-center justify-center ${
+                              item.type === "function"
+                                ? "bg-primary/10 text-primary"
+                                : "bg-secondary/10 text-secondary"
+                            }`}
+                          >
+                            {item.type === "function" ? (
+                              <Zap size={18} />
+                            ) : (
+                              <Activity size={18} />
+                            )}
                           </div>
                           <div>
-                            <div className="font-bold font-mono">{item.name}</div>
-                            <div className="text-xs opacity-60 line-clamp-1">{item.description}</div>
+                            <div className="font-bold font-mono">
+                              {item.name}
+                            </div>
+                            <div className="text-xs opacity-60 line-clamp-1">
+                              {item.description}
+                            </div>
                           </div>
                         </div>
                         {i === selectedIndex && (
@@ -174,11 +204,15 @@ export default function CommandPalette({ isInline = false }: { isInline?: boolea
               <div className="px-6 py-3 border-t border-border/50 bg-background/20 flex items-center justify-between text-[10px] font-bold uppercase tracking-widest text-secondary/30">
                 <div className="flex gap-4">
                   <div className="flex items-center gap-1">
-                    <span className="px-1.5 py-0.5 bg-background rounded border border-border">↑↓</span>
+                    <span className="px-1.5 py-0.5 bg-background rounded border border-border">
+                      ↑↓
+                    </span>
                     <span>Navigate</span>
                   </div>
                   <div className="flex items-center gap-1">
-                    <span className="px-1.5 py-0.5 bg-background rounded border border-border">Enter</span>
+                    <span className="px-1.5 py-0.5 bg-background rounded border border-border">
+                      Enter
+                    </span>
                     <span>Select</span>
                   </div>
                 </div>

@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 
 export default function Background() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -8,7 +8,7 @@ export default function Background() {
   useEffect(() => {
     if (!canvasRef.current) return;
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
     const setSize = () => {
@@ -18,8 +18,9 @@ export default function Background() {
     setSize();
 
     let particles: any[] = [];
-    const calculateParticleCount = () => Math.floor((window.innerWidth * window.innerHeight) / 2000);
-    
+    const calculateParticleCount = () =>
+      Math.floor((window.innerWidth * window.innerHeight) / 2000);
+
     class Particle {
       x: number = 0;
       y: number = 0;
@@ -47,7 +48,8 @@ export default function Background() {
       update() {
         this.y -= this.speed;
         if (this.y < 0) this.y = canvas.height;
-        if (!this.fadingOut && Date.now() > this.fadeStart) this.fadingOut = true;
+        if (!this.fadingOut && Date.now() > this.fadeStart)
+          this.fadingOut = true;
         if (this.fadingOut) {
           this.opacity -= 0.005;
           if (this.opacity <= 0) this.reset();
@@ -72,14 +74,14 @@ export default function Background() {
     let animationFrameId: number;
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      particles.forEach(p => {
+      particles.forEach((p) => {
         p.update();
         p.draw();
       });
       animationFrameId = requestAnimationFrame(animate);
     };
 
-    window.addEventListener('resize', () => {
+    window.addEventListener("resize", () => {
       setSize();
       init();
     });

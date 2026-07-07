@@ -1,26 +1,30 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Plus, Minus } from 'lucide-react';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
     question: "What is ZBR?",
-    answer: "ZBR is a scripting language for building Discord bots. You write simple .zbr files with ZBR functions, run zbr run, and your bot is online, no coding required."
+    answer:
+      "ZBR is a scripting language for building Discord bots. You write simple .zbr files with ZBR functions, run zbr run, and your bot is online, no coding required.",
   },
   {
     question: "Is it faster than JavaScript?",
-    answer: "ZBR runs on a high-performance Rust backend so the runtime engine itself is fast, but speed isn't really the point, simplicity is. You don't write Rust or JS, you write ZBR syntax like Zban{userID} and the engine handles everything."
+    answer:
+      "ZBR runs on a high-performance Rust backend so the runtime engine itself is fast, but speed isn't really the point, simplicity is. You don't write Rust or JS, you write ZBR syntax like Zban{userID} and the engine handles everything.",
   },
   {
     question: "Can I use it with existing projects?",
-    answer: "ZBR is standalone, you install it via npm, add your bot token to .env, write .zbr command files, and run it. It's not designed to integrate with existing codebases, it's its own self-contained bot runtime."
+    answer:
+      "ZBR is standalone, you install it via npm, add your bot token to .env, write .zbr command files, and run it. It's not designed to integrate with existing codebases, it's its own self-contained bot runtime.",
   },
   {
     question: "Is it free to use?",
-    answer: "Yes, ZBR is fully open source under the ARR license. Free for personal and commercial use forever. You self-host your own bot, we don't charge for hosting."
-  }
+    answer:
+      "Yes, ZBR is fully open source under the ARR license. Free for personal and commercial use forever. You self-host your own bot, we don't charge for hosting.",
+  },
 ];
 
 export default function FAQ() {
@@ -29,18 +33,22 @@ export default function FAQ() {
   return (
     <section className="py-0 px-4 relative overflow-hidden">
       <div className="max-w-3xl mx-auto relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <span className="text-primary font-bold uppercase tracking-[0.3em] text-[10px] mb-4 block">Questions</span>
+          <span className="text-primary font-bold uppercase tracking-[0.3em] text-[10px] mb-4 block">
+            Questions
+          </span>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white font-['Hubot-Sans'] mb-6">
             Frequently Asked
           </h2>
-          <p className="text-secondary/40 text-lg">Everything you need to know about ZBR.</p>
+          <p className="text-secondary/40 text-lg">
+            Everything you need to know about ZBR.
+          </p>
         </motion.div>
 
         <div className="space-y-4">
@@ -61,10 +69,14 @@ export default function FAQ() {
                   {faq.question}
                 </span>
                 <div className="text-primary">
-                  {openIndex === index ? <Minus size={20} /> : <Plus size={20} />}
+                  {openIndex === index ? (
+                    <Minus size={20} />
+                  ) : (
+                    <Plus size={20} />
+                  )}
                 </div>
               </button>
-              
+
               <AnimatePresence>
                 {openIndex === index && (
                   <motion.div

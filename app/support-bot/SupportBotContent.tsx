@@ -1,43 +1,78 @@
-'use client';
+"use client";
 
 import Footer from "@/components/Footer";
-import { MessageSquare, Github, ExternalLink, Zap, Search, Book, Terminal, Bot, ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
+import {
+  MessageSquare,
+  Github,
+  ExternalLink,
+  Zap,
+  Search,
+  Book,
+  Terminal,
+  Bot,
+  ArrowRight,
+} from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function SupportBotContent() {
   const features = [
     {
       title: "Function Discovery",
-      description: "Instant access to syntax, arguments, and examples for any ZBR function.",
-      icon: Search
+      description:
+        "Instant access to syntax, arguments, and examples for any ZBR function.",
+      icon: Search,
     },
     {
       title: "Categorized Reference",
-      description: "Interactive browsing of functions by categories like Moderation, Embeds, and HTTP.",
-      icon: Book
+      description:
+        "Interactive browsing of functions by categories like Moderation, Embeds, and HTTP.",
+      icon: Book,
     },
     {
       title: "Event Triggers",
-      description: "Complete reference for all Discord gateway event triggers supported by ZBR.",
-      icon: Zap
+      description:
+        "Complete reference for all Discord gateway event triggers supported by ZBR.",
+      icon: Zap,
     },
     {
       title: "Built with ZBR",
-      description: "A production-ready example of ZBR's capabilities, including SQLite caching and hot reloading.",
-      icon: Terminal
-    }
+      description:
+        "A production-ready example of ZBR's capabilities, including SQLite caching and hot reloading.",
+      icon: Terminal,
+    },
   ];
 
   const commands = [
     { trigger: "!help", description: "Displays all available commands." },
-    { trigger: "!find <fn>", description: "Provides detailed documentation for a specific function." },
-    { trigger: "!search <query>", description: "Searches for functions by name or description." },
-    { trigger: "!category", description: "Opens an interactive menu to browse functions by category." },
+    {
+      trigger: "!find <fn>",
+      description: "Provides detailed documentation for a specific function.",
+    },
+    {
+      trigger: "!search <query>",
+      description: "Searches for functions by name or description.",
+    },
+    {
+      trigger: "!category",
+      description: "Opens an interactive menu to browse functions by category.",
+    },
     { trigger: "!random", description: "Displays a random ZBR function." },
-    { trigger: "!related <fn>", description: "Lists other functions within the same category." },
-    { trigger: "!triggers", description: "Lists all supported ZBR event triggers." },
-    { trigger: "!stats", description: "Shows statistics about the ZBR language." },
-    { trigger: "!links", description: "Provides important links related to ZBRLang and ZBR." },
+    {
+      trigger: "!related <fn>",
+      description: "Lists other functions within the same category.",
+    },
+    {
+      trigger: "!triggers",
+      description: "Lists all supported ZBR event triggers.",
+    },
+    {
+      trigger: "!stats",
+      description: "Shows statistics about the ZBR language.",
+    },
+    {
+      trigger: "!links",
+      description: "Provides important links related to ZBRLang and ZBR.",
+    },
   ];
 
   return (
@@ -51,17 +86,21 @@ export default function SupportBotContent() {
         >
           <div className="flex items-center gap-3 text-primary">
             <Bot size={24} />
-            <span className="text-[10px] font-bold uppercase tracking-[0.3em]">Official Utility</span>
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em]">
+              Official Utility
+            </span>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-[0.9]">
             Support Bot
           </h1>
           <p className="text-secondary/60 text-lg md:text-xl max-w-2xl leading-relaxed">
-            The official Discord utility for the ZBR scripting language. Built entirely in ZBR, it provides developers with instant access to documentation and tools.
+            The official Discord utility for the ZBR scripting language. Built
+            entirely in ZBR, it provides developers with instant access to
+            documentation and tools.
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -80,7 +119,9 @@ export default function SupportBotContent() {
                 <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
                   <Icon size={24} />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  {feature.title}
+                </h3>
                 <p className="text-secondary/60 text-sm leading-relaxed">
                   {feature.description}
                 </p>
@@ -95,7 +136,9 @@ export default function SupportBotContent() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="mb-24"
         >
-          <h2 className="text-3xl font-bold text-white mb-8 tracking-tight">Command Reference</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 tracking-tight">
+            Command Reference
+          </h2>
           <div className="grid gap-3">
             {commands.map((cmd, i) => (
               <motion.div
@@ -109,12 +152,10 @@ export default function SupportBotContent() {
                   <div className="px-3 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">
                     {cmd.trigger}
                   </div>
-                  <p className="text-secondary/60 text-sm">
-                    {cmd.description}
-                  </p>
+                  <p className="text-secondary/60 text-sm">{cmd.description}</p>
                 </div>
                 <div className="hidden md:block opacity-0 group-hover:opacity-100 transition-opacity">
-                   <ArrowRight size={16} className="text-primary" />
+                  <ArrowRight size={16} className="text-primary" />
                 </div>
               </motion.div>
             ))}
@@ -130,11 +171,15 @@ export default function SupportBotContent() {
           <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
             <Bot size={120} />
           </div>
-          
+
           <div className="relative z-10 max-w-2xl">
-            <h3 className="text-3xl font-bold text-white mb-4">Self-Host the Bot</h3>
+            <h3 className="text-3xl font-bold text-white mb-4">
+              Self-Host the Bot
+            </h3>
             <p className="text-secondary/60 text-lg mb-8 leading-relaxed">
-              Want to run your own instance of the ZBR Support Bot? The entire source code is available on GitHub as a production-ready example of what you can build.
+              Want to run your own instance of the ZBR Support Bot? The entire
+              source code is available on GitHub as a production-ready example
+              of what you can build.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

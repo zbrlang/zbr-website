@@ -1,7 +1,14 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { Shield, Zap, Sparkles, Link as LinkIcon, Lock, Globe } from 'lucide-react';
+import { motion } from "framer-motion";
+import {
+  Shield,
+  Zap,
+  Sparkles,
+  Link as LinkIcon,
+  Lock,
+  Globe,
+} from "lucide-react";
 
 const featureList = [
   { title: "Rust Core", icon: Zap },
