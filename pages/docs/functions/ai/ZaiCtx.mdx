@@ -1,0 +1,29 @@
+# ZaiCtx
+
+Sends a prompt to the AI with Discord context automatically injected as a system message. Returns the response text.
+
+## Syntax
+
+```zbr
+ZaiCtx{apiKey;prompt;model?;maxTokens?;temperature?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| apiKey | string | Yes | - |
+| prompt | string | Yes | - |
+| model | string | No | gemini-2.5-flash-lite |
+| maxTokens | integer | No | - |
+| temperature | number | No | - |
+
+
+
+## Example
+
+```zbr
+ZaiCtx{AIza...;Summarize this conversation;gemini-2.5-flash}
+```
+

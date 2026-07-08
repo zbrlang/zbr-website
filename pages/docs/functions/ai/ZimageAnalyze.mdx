@@ -1,0 +1,28 @@
+# ZimageAnalyze
+
+Analyzes an image from a URL using AI vision and returns a text description based on the prompt.
+
+## Syntax
+
+```zbr
+ZimageAnalyze{apiKey;imageUrl;prompt;model?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| apiKey | string | Yes | - |
+| imageUrl | string | Yes | - |
+| prompt | string | Yes | - |
+| model | string | No | gemini-2.5-flash-lite |
+
+
+
+## Example
+
+```zbr
+ZimageAnalyze{AIza...;https://example.com/image.png;What is in this image?}
+```
+

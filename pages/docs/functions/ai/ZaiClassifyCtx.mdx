@@ -1,0 +1,27 @@
+# ZaiClassifyCtx
+
+Classifies the current Discord context into one category from a comma-separated list. Returns the best matching category.
+
+## Syntax
+
+```zbr
+ZaiClassifyCtx{apiKey;categories;model?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| apiKey | string | Yes | - |
+| categories | string | Yes | - |
+| model | string | No | gemini-2.5-flash-lite |
+
+
+
+## Example
+
+```zbr
+ZaiClassifyCtx{AIza...;question,command,greeting,feedback}
+```
+

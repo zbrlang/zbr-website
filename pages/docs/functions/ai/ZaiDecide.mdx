@@ -1,0 +1,28 @@
+# ZaiDecide
+
+Asks the AI a yes/no question about the provided content. Returns strictly 'true' or 'false'.
+
+## Syntax
+
+```zbr
+ZaiDecide{apiKey;content;question;model?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| apiKey | string | Yes | - |
+| content | string | Yes | - |
+| question | string | Yes | - |
+| model | string | No | gemini-2.5-flash-lite |
+
+
+
+## Example
+
+```zbr
+ZaiDecide{AIza...;The sky is blue;Is this about colors?}
+```
+

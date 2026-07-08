@@ -1,0 +1,29 @@
+# Zai
+
+Sends a prompt to the AI and returns the response text. Supports Gemini API keys (AIza... or AQ...).
+
+## Syntax
+
+```zbr
+Zai{apiKey;prompt;model?;maxTokens?;temperature?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| apiKey | string | Yes | - |
+| prompt | string | Yes | - |
+| model | string | No | gemini-2.5-flash-lite |
+| maxTokens | integer | No | - |
+| temperature | number | No | - |
+
+
+
+## Example
+
+```zbr
+Zai{AIza...;What is Discord?;gemini-2.5-flash;500;0.7}
+```
+

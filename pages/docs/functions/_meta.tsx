@@ -14,6 +14,7 @@ const meta = {
   "runtime": "Runtime",
   "audit": "Audit",
   "automod": "Automod",
+  "ai": "Ai",
   "moderation": "Moderation",
   "utility": "Utility",
   "blacklists": "Blacklists",

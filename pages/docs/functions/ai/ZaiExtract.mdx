@@ -1,0 +1,28 @@
+# ZaiExtract
+
+Extracts specific information from text based on the instruction. Returns 'N/A' if not found.
+
+## Syntax
+
+```zbr
+ZaiExtract{apiKey;content;instruction;model?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| apiKey | string | Yes | - |
+| content | string | Yes | - |
+| instruction | string | Yes | - |
+| model | string | No | gemini-2.5-flash-lite |
+
+
+
+## Example
+
+```zbr
+ZaiExtract{AIza...;Contact me at john@example.com;email address}
+```
+

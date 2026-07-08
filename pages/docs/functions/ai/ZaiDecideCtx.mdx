@@ -1,0 +1,27 @@
+# ZaiDecideCtx
+
+Asks the AI a yes/no question about the current Discord context. Returns strictly 'true' or 'false'.
+
+## Syntax
+
+```zbr
+ZaiDecideCtx{apiKey;question;model?}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| apiKey | string | Yes | - |
+| question | string | Yes | - |
+| model | string | No | gemini-2.5-flash-lite |
+
+
+
+## Example
+
+```zbr
+ZaiDecideCtx{AIza...;Is the author an admin?}
+```
+
