@@ -1,0 +1,26 @@
+# ZpollAnswerDetails
+
+Returns JSON with answer text, emoji, and vote count for a specific answer in a poll.
+
+## Syntax
+
+```zbr
+ZpollAnswerDetails{pollID;answerID}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| pollID | snowflake | Yes | - |
+| answerID | snowflake | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZpollAnswerDetails{1234567890123456789;1}
+```
+

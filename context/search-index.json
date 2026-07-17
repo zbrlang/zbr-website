@@ -1032,6 +1032,12 @@
     "url": "/docs/functions/events/ZeventCount"
   },
   {
+    "name": "ZeventCover",
+    "description": "Gets or sets the cover image URL for a scheduled event.",
+    "type": "function",
+    "url": "/docs/functions/events/ZeventCover"
+  },
+  {
     "name": "ZeventDescription",
     "description": "Returns the description of a scheduled event by its event ID, or an empty string if no description is set.",
     "type": "function",
@@ -1042,6 +1048,12 @@
     "description": "Returns the end time of a scheduled event as a Unix timestamp string, or an empty string if no end time is set.",
     "type": "function",
     "url": "/docs/functions/events/ZeventEnd"
+  },
+  {
+    "name": "ZeventInvite",
+    "description": "Returns a shareable invite URL for the scheduled event.",
+    "type": "function",
+    "url": "/docs/functions/events/ZeventInvite"
   },
   {
     "name": "ZeventName",
@@ -1066,6 +1078,12 @@
     "description": "Returns the number of users subscribed to a scheduled event.",
     "type": "function",
     "url": "/docs/functions/events/ZeventSubscribers"
+  },
+  {
+    "name": "ZeventUpdateStatus",
+    "description": "Updates the status of a scheduled event.",
+    "type": "function",
+    "url": "/docs/functions/events/ZeventUpdateStatus"
   },
   {
     "name": "ZexecutionTime",
@@ -2088,6 +2106,18 @@
     "url": "/docs/functions/onboarding/ZonboardingPrompts"
   },
   {
+    "name": "ZonboardingSetEnabled",
+    "description": "Enables or disables guild onboarding.",
+    "type": "function",
+    "url": "/docs/functions/onboarding/ZonboardingSetEnabled"
+  },
+  {
+    "name": "ZonboardingSetMode",
+    "description": "Sets the onboarding mode for the guild.",
+    "type": "function",
+    "url": "/docs/functions/onboarding/ZonboardingSetMode"
+  },
+  {
     "name": "ZonlyAdmin",
     "description": "Halts execution unless the author has the Administrator permission in the guild.",
     "type": "function",
@@ -2250,6 +2280,12 @@
     "url": "/docs/functions/polls/ZpollAllowMultiselect"
   },
   {
+    "name": "ZpollAnswerDetails",
+    "description": "Returns JSON with answer text, emoji, and vote count for a specific answer in a poll.",
+    "type": "function",
+    "url": "/docs/functions/polls/ZpollAnswerDetails"
+  },
+  {
     "name": "ZpollAnswerVoters",
     "description": "Returns a list of users who voted for a specific poll answer.",
     "type": "function",
@@ -2272,6 +2308,12 @@
     "description": "Ends a poll early by message ID.",
     "type": "function",
     "url": "/docs/functions/polls/ZpollEnd"
+  },
+  {
+    "name": "ZpollExpiration",
+    "description": "Gets or sets the poll's end timestamp.",
+    "type": "function",
+    "url": "/docs/functions/polls/ZpollExpiration"
   },
   {
     "name": "ZpollGet",

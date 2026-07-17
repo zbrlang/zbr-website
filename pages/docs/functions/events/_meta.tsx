@@ -4,12 +4,15 @@ const meta = {
   "ZeditEvent": "ZeditEvent",
   "ZeventChannel": "ZeventChannel",
   "ZeventCount": "ZeventCount",
+  "ZeventCover": "ZeventCover",
   "ZeventDescription": "ZeventDescription",
   "ZeventEnd": "ZeventEnd",
+  "ZeventInvite": "ZeventInvite",
   "ZeventName": "ZeventName",
   "ZeventStart": "ZeventStart",
   "ZeventStatus": "ZeventStatus",
   "ZeventSubscribers": "ZeventSubscribers",
+  "ZeventUpdateStatus": "ZeventUpdateStatus",
   "ZserverEvents": "ZserverEvents"
 };
 

@@ -8,7 +8,7 @@ const terminalSteps = [
   {
     title: "Install the CLI",
     command: "npm i -g @zbrlang/zbr",
-    output: ["added 1 package in 0.8s", "zbr version", "zbr v1.8.2"],
+    output: ["added 1 package in 0.8s", "zbr version", "zbr v1.8.3"],
     description: "Install ZBR CLI, directly from npm.",
   },
   {
