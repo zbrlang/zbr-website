@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav className="absolute top-0 left-0 right-0 z-[100] flex items-center justify-between px-6 md:px-12 py-8 opacity-0 -translate-y-4 animate-[load_1.5s_ease-out_forwards,up_1s_ease-out_forwards]">
       {/* Left: Brand Name */}
       <div className="flex-1">
-        <Link href="/" className="flex items-center gap-2 group w-fit">
+        <Link href="https://zbrlang.tech" className="flex items-center gap-2 group w-fit">
           <span className="text-xl font-bold tracking-tighter text-[#bad6f7] hover:text-white transition-colors uppercase font-['Hubot-Sans']">
             ZBR
           </span>

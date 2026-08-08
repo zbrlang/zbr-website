@@ -192,7 +192,7 @@ export default function SupportBotContent() {
                 View on GitHub
               </a>
               <a
-                href="/docs/resources/support-bot"
+                href="https://docs.zbrlang.tech/resources/support-bot"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white/[0.05] border border-white/[0.1] text-white font-bold hover:bg-white/[0.1] transition-all duration-300"
               >
                 Full Documentation

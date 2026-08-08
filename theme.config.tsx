@@ -44,7 +44,7 @@ const config: DocsThemeConfig = {
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_US" />
       <meta name="apple-mobile-web-app-title" content="ZBR Documentation" />
-      <link rel="icon" type="image/png" href="/images/zbr.png" />
+      <link rel="icon" type="image/png" href="https://zbrlang.tech/images/zbr.png" />
       <script
         dangerouslySetInnerHTML={{
           __html: `(function () {
@@ -56,6 +56,21 @@ const config: DocsThemeConfig = {
     return nextPath || "/";
   }
 
+  function normalizeDocsAnchors() {
+    var anchors = document.querySelectorAll("a[href]");
+    for (var i = 0; i < anchors.length; i += 1) {
+      var anchor = anchors[i];
+      var rawHref = anchor.getAttribute("href");
+      if (!rawHref) continue;
+      if (!(rawHref === "/docs" || rawHref.startsWith("/docs/"))) continue;
+
+      var normalizedHref = stripDocsPrefix(rawHref);
+      if (normalizedHref !== rawHref) {
+        anchor.setAttribute("href", normalizedHref);
+      }
+    }
+  }
+
   var currentPath = window.location.pathname;
   if (currentPath === "/docs" || currentPath.startsWith("/docs/")) {
     var canonicalPath = stripDocsPrefix(currentPath);
@@ -65,6 +80,17 @@ const config: DocsThemeConfig = {
       canonicalPath + window.location.search + window.location.hash,
     );
   }
+
+  normalizeDocsAnchors();
+
+  var observer = new MutationObserver(function () {
+    normalizeDocsAnchors();
+  });
+
+  observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true,
+  });
 
   document.addEventListener(
     "click",
