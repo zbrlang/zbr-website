@@ -35,7 +35,7 @@ export default function ContactContent() {
           className="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
           <a
-            href="mailto:zubariel@gmail.com"
+            href="mailto:dev@zbrlang.tech"
             className="group p-8 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:bg-white/[0.05] hover:border-white/[0.15] transition-all"
           >
             <Mail
@@ -47,7 +47,7 @@ export default function ContactContent() {
               Direct support for technical issues and inquiries.
             </p>
             <span className="text-primary text-sm mt-4 block font-medium">
-              zubariel@gmail.com
+              dev@zbrlang.tech
             </span>
           </a>
 
