@@ -76,17 +76,29 @@ function EndpointCard({
 
   const hasParam = endpoint.path.includes("{name}");
 
+  const resolvePath = () => {
+    let finalPath = endpoint.path;
+    if (hasParam) {
+      finalPath = finalPath.replace(
+        "{name}",
+        param || (endpoint.path.includes("functions") ? "Zabs" : "onMessage"),
+      );
+    }
+    return finalPath;
+  };
+
+  const buildEndpointHref = () => {
+    const finalPath = resolvePath();
+    if (typeof window !== "undefined" && window.location.hostname.startsWith("api.")) {
+      return finalPath;
+    }
+    return `/api${finalPath}`;
+  };
+
   const handleTry = async () => {
     setLoading(true);
     try {
-      let finalPath = endpoint.path;
-      if (hasParam) {
-        finalPath = finalPath.replace(
-          "{name}",
-          param || (endpoint.path.includes("functions") ? "Zabs" : "onMessage"),
-        );
-      }
-      const res = await fetch(`/api${finalPath}`);
+      const res = await fetch(buildEndpointHref());
       const data = await res.json();
       setResponse(data);
     } catch (error) {
@@ -130,7 +142,7 @@ function EndpointCard({
             {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
           </button>
           <Link
-            href={`/api${endpoint.path}`}
+            href={buildEndpointHref()}
             target="_blank"
             className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-secondary/20 hover:text-primary hover:border-primary/50 transition-all"
           >

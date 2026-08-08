@@ -19,6 +19,13 @@ export function middleware(request: NextRequest) {
     return stripped === "" ? "/" : stripped;
   };
 
+  const isPublicAsset =
+    url.pathname.startsWith("/images/") ||
+    url.pathname === "/favicon.ico" ||
+    /\.(?:png|jpg|jpeg|gif|webp|svg|ico|css|js|map|txt|xml|woff|woff2|ttf|otf)$/i.test(
+      url.pathname,
+    );
+
   // 1. Handle WWW Subdomain (www.zbrlang.tech)
   if (isWww) {
     const apexHost = hostname.replace("www.", "");
@@ -46,12 +53,24 @@ export function middleware(request: NextRequest) {
 
   // 3. Handle API Subdomain (api.zbrlang.tech)
   if (isApiSubdomain) {
+    if (url.pathname === "/docs" || url.pathname.startsWith("/docs/")) {
+      const canonicalPath = stripPrefix(url.pathname, "/docs");
+      return NextResponse.redirect(
+        `${protocol}://docs.zbrlang.tech${canonicalPath}${search}`,
+        308,
+      );
+    }
+
     if (url.pathname === "/api" || url.pathname.startsWith("/api/")) {
       const canonicalPath = stripPrefix(url.pathname, "/api");
       return NextResponse.redirect(
         `${protocol}://api.zbrlang.tech${canonicalPath}${search}`,
         308,
       );
+    }
+
+    if (isPublicAsset) {
+      return NextResponse.next();
     }
 
     const rewrittenUrl = url.clone();
@@ -61,12 +80,24 @@ export function middleware(request: NextRequest) {
 
   // 4. Handle Docs Subdomain (docs.zbrlang.tech)
   if (isDocsSubdomain) {
+    if (url.pathname === "/api" || url.pathname.startsWith("/api/")) {
+      const canonicalPath = stripPrefix(url.pathname, "/api");
+      return NextResponse.redirect(
+        `${protocol}://api.zbrlang.tech${canonicalPath}${search}`,
+        308,
+      );
+    }
+
     if (url.pathname === "/docs" || url.pathname.startsWith("/docs/")) {
       const canonicalPath = stripPrefix(url.pathname, "/docs");
       return NextResponse.redirect(
         `${protocol}://docs.zbrlang.tech${canonicalPath}${search}`,
         308,
       );
+    }
+
+    if (isPublicAsset) {
+      return NextResponse.next();
     }
 
     const rewrittenUrl = url.clone();
