@@ -236,7 +236,7 @@ export default function ApiContent() {
               Base URL
             </span>
             <code className="px-2 py-1 bg-white/[0.03] border border-white/[0.08] rounded text-primary text-xs font-mono truncate">
-              https://zbrlang.vercel.app/api
+              https://api.zbrlang.tech/
             </code>
           </div>
         </motion.div>

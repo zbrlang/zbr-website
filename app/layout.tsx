@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   description:
     "The scripting language for Discord bots powered by a high-performance Rust runtime engine. You write commands as plain .zbr files using ZBR functions, no boilerplate, no event handlers, no framework knowledge required.",
-  authors: [{ name: "ZBRLang", url: "https://zbr-website.vercel.app" }],
+  authors: [{ name: "ZBRLang", url: "https://zbrlang.tech" }],
   icons: {
     icon: "/images/zbr.png",
     shortcut: "/images/zbr.png",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "ZBR",
     description:
       "The scripting language for Discord bots powered by a high-performance Rust runtime engine. You write commands as plain .zbr files using ZBR functions, no boilerplate, no event handlers, no framework knowledge required.",
-    url: "https://zbr-website.vercel.app",
+    url: "https://zbr-website.tech",
     siteName: "ZBR",
     locale: "en_US",
     type: "website",

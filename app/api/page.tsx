@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "ZBR API",
     description:
       "Public access to ZBR function and trigger definitions used across the documentation, CLI, and developer tooling.",
-    url: "https://zbr-website.vercel.app/api",
+    url: "https://api.zbrlang.tech",
     siteName: "ZBR",
     locale: "en_US",
     type: "website",

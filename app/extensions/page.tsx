@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "ZBR Extensions",
     description:
       "Write ZBR commands with full editor support. Syntax highlighting, snippets, and smart completions across your favorite IDEs.",
-    url: "https://zbr-website.vercel.app/extensions",
+    url: "https://zbrlang.tech/extensions",
     siteName: "ZBR",
     locale: "en_US",
     type: "website",

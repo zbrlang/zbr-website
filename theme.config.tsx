@@ -38,7 +38,7 @@ const config: DocsThemeConfig = {
         content="Official documentation for ZBR, a high-performance Discord scripting language built with Rust."
       />
       <meta property="og:image" content="/images/zbr.png" />
-      <meta property="og:url" content="https://zbr-website.vercel.app/docs" />
+      <meta property="og:url" content="https://docs.zbrlang.tech/" />
       <meta property="og:site_name" content="ZBR" />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_US" />
@@ -51,7 +51,7 @@ const config: DocsThemeConfig = {
     content: (
       <span>
         {new Date().getFullYear()} ©{" "}
-        <a href="https://zbr-website.vercel.app/" target="_blank">
+        <a href="https://zbrlang.tech/" target="_blank">
           ZBRLang
         </a>
         .

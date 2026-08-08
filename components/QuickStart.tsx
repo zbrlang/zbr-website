@@ -236,7 +236,7 @@ export default function QuickStart() {
                       production.
                     </p>
                     <a
-                      href="https://zbr-webapp.vercel.app"
+                      href="https://app.zbrlang.tech"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block bg-primary text-neutral px-6 py-3 rounded-full text-sm font-semibold hover:bg-primary/90 transition-colors"

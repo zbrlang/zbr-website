@@ -94,7 +94,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="https://zbr-webapp.vercel.app"
+                    href="https://app.zbrlang.tech"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium"
