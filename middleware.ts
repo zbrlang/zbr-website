@@ -100,7 +100,7 @@ export function middleware(request: NextRequest) {
     }
 
     return NextResponse.rewrite(
-      new URL(`/docs${url.pathname === "/" ? "" : url.pathname}`, url),
+      new URL(`${url.pathname.startsWith("/docs") ? "" : "/docs"}${url.pathname}`, url),
     );
   }
 
