@@ -17,6 +17,7 @@ const config: DocsThemeConfig = {
       <span style={{ opacity: 0.5, fontWeight: 400 }}>Documentation</span>
     </div>
   ),
+  logoLink: "https://zbrlang.tech",
   search: {
     component: <CommandPalette isInline />,
   },

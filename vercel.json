@@ -1,14 +1,1 @@
-{
-  "rewrites": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "docs.zbrlang.tech"
-        }
-      ],
-      "destination": "/docs/:path*"
-    }
-  ]
-}
+{}
