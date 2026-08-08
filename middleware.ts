@@ -89,9 +89,8 @@ export function middleware(request: NextRequest) {
     }
 
     if (url.pathname === "/docs" || url.pathname.startsWith("/docs/")) {
-      const canonicalPath = stripPrefix(url.pathname, "/docs");
       return NextResponse.redirect(
-        `${protocol}://docs.zbrlang.tech${canonicalPath}${search}`,
+        `${protocol}://docs.zbrlang.tech${stripPrefix(url.pathname, "/docs")}${search}`,
         308,
       );
     }
@@ -100,9 +99,9 @@ export function middleware(request: NextRequest) {
       return NextResponse.next();
     }
 
-    const rewrittenUrl = url.clone();
-    rewrittenUrl.pathname = url.pathname === "/" ? "/docs" : `/docs${url.pathname}`;
-    return NextResponse.rewrite(rewrittenUrl);
+    return NextResponse.rewrite(
+      new URL(`/docs${url.pathname === "/" ? "" : url.pathname}`, url),
+    );
   }
 
   return NextResponse.next();
