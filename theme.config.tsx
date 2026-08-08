@@ -45,6 +45,48 @@ const config: DocsThemeConfig = {
       <meta property="og:locale" content="en_US" />
       <meta name="apple-mobile-web-app-title" content="ZBR Documentation" />
       <link rel="icon" type="image/png" href="/images/zbr.png" />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function () {
+  if (typeof window === "undefined") return;
+  if (window.location.hostname !== "docs.zbrlang.tech") return;
+
+  function stripDocsPrefix(pathname) {
+    var nextPath = pathname.replace(/^\/docs(?=\/|$)/, "");
+    return nextPath || "/";
+  }
+
+  var currentPath = window.location.pathname;
+  if (currentPath === "/docs" || currentPath.startsWith("/docs/")) {
+    var canonicalPath = stripDocsPrefix(currentPath);
+    window.history.replaceState(
+      null,
+      "",
+      canonicalPath + window.location.search + window.location.hash,
+    );
+  }
+
+  document.addEventListener(
+    "click",
+    function (event) {
+      var target = event.target;
+      while (target && target.tagName !== "A") {
+        target = target.parentElement;
+      }
+      if (!target) return;
+
+      var href = target.getAttribute("href");
+      if (!href) return;
+      if (!(href === "/docs" || href.startsWith("/docs/"))) return;
+
+      event.preventDefault();
+      window.location.assign(stripDocsPrefix(href));
+    },
+    true,
+  );
+})();`,
+        }}
+      />
     </>
   ),
   docsRepositoryBase: "https://github.com/zbrlang/zbr-website/",

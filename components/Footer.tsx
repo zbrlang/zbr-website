@@ -55,7 +55,9 @@ export default function Footer() {
               <ul className="space-y-3">
                 <li>
                   <Link
-                    href="/docs"
+                    href="https://docs.zbrlang.tech"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium"
                   >
                     Documentation
@@ -63,7 +65,9 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/api"
+                    href="https://api.zbrlang.tech"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium"
                   >
                     API
@@ -71,7 +75,9 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/support-bot"
+                    href="https://zbrlang.tech/support-bot"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium"
                   >
                     Support Bot
@@ -86,7 +92,9 @@ export default function Footer() {
               <ul className="space-y-3">
                 <li>
                   <Link
-                    href="/extensions"
+                    href="https://zbrlang.tech/extensions"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium"
                   >
                     Extensions
@@ -131,7 +139,9 @@ export default function Footer() {
               <ul className="space-y-3">
                 <li>
                   <Link
-                    href="/privacy"
+                    href="https://zbrlang.tech/privacy"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium"
                   >
                     Privacy Policy
@@ -139,7 +149,9 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/terms"
+                    href="https://zbrlang.tech/terms"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium"
                   >
                     Terms of Service
@@ -147,7 +159,9 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/contact"
+                    href="https://zbrlang.tech/contact"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium"
                   >
                     Support
