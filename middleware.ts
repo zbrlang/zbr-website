@@ -10,13 +10,13 @@ export function middleware(request: NextRequest) {
   const isApiSubdomain = hostname?.startsWith("api.");
   const isDocsSubdomain = hostname?.startsWith("docs.");
 
-  // 1. Handle WWW Subdomain (www.zbrlang.xyz)
+  // 1. Handle WWW Subdomain (www.zbrlang.tech)
   if (isWww) {
     url.hostname = hostname!.replace("www.", "");
     return NextResponse.redirect(url);
   }
 
-  // 2. Handle API Subdomain (api.zbrlang.xyz)
+  // 2. Handle API Subdomain (api.zbrlang.tech)
   if (isApiSubdomain) {
     if (!url.pathname.startsWith("/api")) {
       url.pathname = `/api${url.pathname}`;
@@ -24,7 +24,7 @@ export function middleware(request: NextRequest) {
     }
   }
 
-  // 3. Handle Docs Subdomain (docs.zbrlang.xyz)
+  // 3. Handle Docs Subdomain (docs.zbrlang.tech)
   if (isDocsSubdomain) {
     if (!url.pathname.startsWith("/docs")) {
       url.pathname = `/docs${url.pathname}`;
