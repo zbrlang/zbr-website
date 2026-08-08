@@ -48,7 +48,6 @@ const config: DocsThemeConfig = {
     </>
   ),
   docsRepositoryBase: "https://github.com/zbrlang/zbr-website/",
-  primaryHue: 220,
   footer: {
     content: (
       <span>
