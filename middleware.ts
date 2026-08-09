@@ -21,8 +21,6 @@ export function middleware(request: NextRequest) {
   const isApiSubdomain = hostname?.startsWith("api.");
   const isDocsSubdomain = hostname?.startsWith("docs.");
   const isNpmSubdomain = hostname?.startsWith("npm.");
-  const isDevSubdomain = hostname?.startsWith("dev.");
-  const isZubSubdomain = hostname?.startsWith("zub.");
 
   // 1. Handle WWW Subdomain (www.zbrlang.tech)
   if (isWww) {
@@ -54,7 +52,7 @@ export function middleware(request: NextRequest) {
     }
   }
 
-  // 4. Handle npm/dev/zub Subdomains
+  // 4. Handle npm Subdomain (npm.zbrlang.tech)
   if (isNpmSubdomain) {
     const npmPackageName = url.pathname.replace(/^\//, "");
 
@@ -79,10 +77,6 @@ export function middleware(request: NextRequest) {
         `https://www.npmjs.com/package/${npmPackage}`,
       );
     }
-  }
-
-  if (isDevSubdomain || isZubSubdomain) {
-    return NextResponse.redirect("https://zubariel.is-a.dev");
   }
 
   return NextResponse.next();
