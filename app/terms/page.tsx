@@ -2,7 +2,7 @@ import { Metadata, Viewport } from "next";
 import TosContent from "./TosContent";
 
 export const viewport: Viewport = {
-  themeColor: "#7C3AED",
+  themeColor: "#ffffff",
 };
 
 export const metadata: Metadata = {
