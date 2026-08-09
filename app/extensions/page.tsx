@@ -1,5 +1,9 @@
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 import ExtensionsContent from "./ExtensionsContent";
+
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+};
 
 export const metadata: Metadata = {
   title: "Extensions",

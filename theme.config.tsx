@@ -33,6 +33,7 @@ const config: DocsThemeConfig = {
         name="description"
         content="Official documentation for ZBR, a high-performance Discord scripting language built with Rust."
       />
+      <meta name="theme-color" content="#ffffff" />
       <meta property="og:title" content="ZBR Documentation" />
       <meta
         property="og:description"
@@ -44,7 +45,11 @@ const config: DocsThemeConfig = {
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_US" />
       <meta name="apple-mobile-web-app-title" content="ZBR Documentation" />
-      <link rel="icon" type="image/png" href="https://zbrlang.tech/images/zbr.png" />
+      <link
+        rel="icon"
+        type="image/png"
+        href="https://zbrlang.tech/images/zbr.png"
+      />
     </>
   ),
   docsRepositoryBase: "https://github.com/zbrlang/zbr-website/",
