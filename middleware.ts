@@ -20,6 +20,9 @@ export function middleware(request: NextRequest) {
   const isWww = hostname?.startsWith("www.");
   const isApiSubdomain = hostname?.startsWith("api.");
   const isDocsSubdomain = hostname?.startsWith("docs.");
+  const isNpmSubdomain = hostname?.startsWith("npm.");
+  const isDevSubdomain = hostname?.startsWith("dev.");
+  const isZubSubdomain = hostname?.startsWith("zub.");
 
   // 1. Handle WWW Subdomain (www.zbrlang.tech)
   if (isWww) {
@@ -49,6 +52,37 @@ export function middleware(request: NextRequest) {
       url.pathname = `/docs${url.pathname}`;
       return NextResponse.rewrite(url);
     }
+  }
+
+  // 4. Handle npm/dev/zub Subdomains
+  if (isNpmSubdomain) {
+    const npmPackageName = url.pathname.replace(/^\//, "");
+
+    if (npmPackageName === "") {
+      return NextResponse.redirect("https://www.npmjs.com/org/zbrlang");
+    }
+
+    const npmPackageMap: Record<string, string> = {
+      zbr: "@zbrlang/zbr",
+      "zbr-darwin-arm64": "@zbrlang/zbr-darwin-arm64",
+      "zbr-darwin-x64": "@zbrlang/zbr-darwin-x64",
+      "zbr-linux-arm64": "@zbrlang/zbr-linux-arm64",
+      "zbr-linux-x64": "@zbrlang/zbr-linux-x64",
+      "zbr-windows-arm64": "@zbrlang/zbr-windows-arm64",
+      "zbr-windows-x64": "@zbrlang/zbr-windows-x64",
+    };
+
+    const npmPackage = npmPackageMap[npmPackageName];
+
+    if (npmPackage) {
+      return NextResponse.redirect(
+        `https://www.npmjs.com/package/${npmPackage}`,
+      );
+    }
+  }
+
+  if (isDevSubdomain || isZubSubdomain) {
+    return NextResponse.redirect("https://zubariel.is-a.dev");
   }
 
   return NextResponse.next();
