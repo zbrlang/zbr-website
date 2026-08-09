@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     description:
       "The scripting language for Discord bots powered by a high-performance Rust runtime engine. You write commands as plain .zbr files using ZBR functions, no boilerplate, no event handlers, no framework knowledge required.",
     url: "https://zbr-website.tech",
-    siteName: "ZBR",
+    siteName: "ZBRLang",
     locale: "en_US",
     type: "website",
     images: [{ url: "/images/zbr.png" }],

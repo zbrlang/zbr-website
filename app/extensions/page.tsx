@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "Write ZBR commands with full editor support. Syntax highlighting, snippets, and smart completions across your favorite IDEs.",
     url: "https://zbrlang.tech/extensions",
-    siteName: "ZBR",
+    siteName: "ZBRLang",
     locale: "en_US",
     type: "website",
     images: [{ url: "/images/zbr.png" }],

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "Get support for the ZBR framework. Contact us via email, Discord, or GitHub.",
     url: "https://zbrlang.tech/contact",
-    siteName: "ZBR",
+    siteName: "ZBRLang",
     locale: "en_US",
     type: "website",
     images: [{ url: "/images/zbr.png" }],

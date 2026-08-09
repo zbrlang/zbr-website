@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "Official Discord support bot for ZBR scripting language.",
     url: "https://zbrlang.tech/support-bot",
-    siteName: "ZBR",
+    siteName: "ZBRLang",
     locale: "en_US",
     type: "website",
     images: [{ url: "/images/zbr.png" }],

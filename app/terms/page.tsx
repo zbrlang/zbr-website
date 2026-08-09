@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "Terms of Service for the ZBR framework, outlining the rules and regulations for using the platform.",
     url: "https://zbrlang.tech/terms",
-    siteName: "ZBR",
+    siteName: "ZBRLang",
     locale: "en_US",
     type: "website",
     images: [{ url: "/images/zbr.png" }],

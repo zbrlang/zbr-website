@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "Privacy Policy for the ZBR framework, detailing data collection and storage practices.",
     url: "https://zbrlang.tech/privacy",
-    siteName: "ZBR",
+    siteName: "ZBRLang",
     locale: "en_US",
     type: "website",
     images: [{ url: "/images/zbr.png" }],

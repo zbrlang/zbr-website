@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "Public access to ZBR function and trigger definitions used across the documentation, CLI, and developer tooling.",
     url: "https://api.zbrlang.tech",
-    siteName: "ZBR",
+    siteName: "ZBRLang",
     locale: "en_US",
     type: "website",
     images: [{ url: "/images/zbr.png" }],
