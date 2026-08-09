@@ -41,7 +41,7 @@ const config: DocsThemeConfig = {
       />
       <meta property="og:image" content="/images/zbr.png" />
       <meta property="og:url" content="https://docs.zbrlang.tech/" />
-      <meta property="og:site_name" content="ZBR" />
+      <meta property="og:site_name" content="ZBRLang" />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_US" />
       <meta name="apple-mobile-web-app-title" content="ZBR Documentation" />
