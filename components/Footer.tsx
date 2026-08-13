@@ -180,7 +180,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-2">
             <span>BUILT BY</span>
-            <a href="https://zubariel.is-a.dev">
+            <a href="https://zubs.me/">
               <span className="text-foreground/40 font-black">Zubariel</span>
             </a>
           </div>
