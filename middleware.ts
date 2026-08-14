@@ -21,6 +21,7 @@ export function middleware(request: NextRequest) {
   const isApiSubdomain = hostname?.startsWith("api.");
   const isDocsSubdomain = hostname?.startsWith("docs.");
   const isNpmSubdomain = hostname?.startsWith("npm.");
+  const isPackagesSubdomain = hostname?.startsWith("packages.");
 
   // 1. Handle WWW Subdomain (www.zbrlang.tech)
   if (isWww) {
@@ -54,28 +55,32 @@ export function middleware(request: NextRequest) {
 
   // 4. Handle npm Subdomain (npm.zbrlang.tech)
   if (isNpmSubdomain) {
-    const npmPackageName = url.pathname.replace(/^\//, "");
+    return NextResponse.redirect("https://www.npmjs.com/package/@zbrlang/zbr");
+  }
 
-    if (npmPackageName === "") {
-      return NextResponse.redirect("https://www.npmjs.com/org/zbrlang");
+  // 5. Handle packages Subdomain (packages.zbrlang.tech)
+  if (isPackagesSubdomain) {
+    const packageName = url.pathname.replace(/^\//, "");
+
+    if (packageName === "") {
+      return NextResponse.redirect("https://github.com/zbrlang/zbr/releases");
     }
 
-    const npmPackageMap: Record<string, string> = {
-      zbr: "@zbrlang/zbr",
-      "zbr-darwin-arm64": "@zbrlang/zbr-darwin-arm64",
-      "zbr-darwin-x64": "@zbrlang/zbr-darwin-x64",
-      "zbr-linux-arm64": "@zbrlang/zbr-linux-arm64",
-      "zbr-linux-x64": "@zbrlang/zbr-linux-x64",
-      "zbr-windows-arm64": "@zbrlang/zbr-windows-arm64",
-      "zbr-windows-x64": "@zbrlang/zbr-windows-x64",
+    const githubReleaseBase = "https://github.com/zbrlang/zbr/releases/latest/download";
+
+    const packageMap: Record<string, string> = {
+      "zbr-darwin-arm64": "zbr-darwin-arm64",
+      "zbr-darwin-x64": "zbr-darwin-x64",
+      "zbr-linux-arm64": "zbr-linux-arm64",
+      "zbr-linux-x64": "zbr-linux-x64",
+      "zbr-windows-arm64": "zbr-windows-arm64.exe",
+      "zbr-windows-x64": "zbr-windows-x64.exe",
     };
 
-    const npmPackage = npmPackageMap[npmPackageName];
+    const targetFile = packageMap[packageName];
 
-    if (npmPackage) {
-      return NextResponse.redirect(
-        `https://www.npmjs.com/package/${npmPackage}`,
-      );
+    if (targetFile) {
+      return NextResponse.redirect(`${githubReleaseBase}/${targetFile}`);
     }
   }
 
