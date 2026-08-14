@@ -23,23 +23,15 @@ export function middleware(request: NextRequest) {
   const isNpmSubdomain = hostname?.startsWith("npm.");
   const isPackagesSubdomain = hostname?.startsWith("packages.");
   const isInstallSubdomain = hostname?.startsWith("install.");
+  const isHomebrewSubdomain = hostname?.startsWith("homebrew.");
+  const isScoopSubdomain = hostname?.startsWith("scoop.");
+  const isAurSubdomain = hostname?.startsWith("aur.");
+  const isWingetSubdomain = hostname?.startsWith("winget.");
 
   // 1. Handle WWW Subdomain (www.zbrlang.tech)
   if (isWww) {
     url.hostname = hostname!.replace("www.", "");
     return NextResponse.redirect(url);
-  }
-
-  // 2. Handle API Subdomain (api.zbrlang.tech)
-  if (isApiSubdomain) {
-    if (isPublicAsset) {
-      return NextResponse.next();
-    }
-
-    if (!url.pathname.startsWith("/api")) {
-      url.pathname = `/api${url.pathname}`;
-      return NextResponse.rewrite(url);
-    }
   }
 
   // 3. Handle Docs Subdomain (docs.zbrlang.tech)
@@ -52,6 +44,12 @@ export function middleware(request: NextRequest) {
       url.pathname = `/docs${url.pathname}`;
       return NextResponse.rewrite(url);
     }
+  } else if (url.pathname.startsWith("/docs")) {
+    // Redirect from main domain to docs subdomain
+    url.hostname = "docs.zbrlang.tech";
+    url.pathname = url.pathname.replace(/^\/docs/, "");
+    if (url.pathname === "") url.pathname = "/";
+    return NextResponse.redirect(url);
   }
 
   // 4. Handle npm Subdomain (npm.zbrlang.tech)
@@ -90,6 +88,20 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(
       "https://raw.githubusercontent.com/zbrlang/zbr/main/scripts/install.sh",
     );
+  }
+
+  // 7. Handle Distribution Subdomains
+  if (isHomebrewSubdomain) {
+    return NextResponse.redirect("https://github.com/zbrlang/homebrew-tap");
+  }
+  if (isScoopSubdomain) {
+    return NextResponse.redirect("https://github.com/zbrlang/scoop-bucket");
+  }
+  if (isAurSubdomain) {
+    return NextResponse.redirect("https://github.com/zbrlang/aur-package");
+  }
+  if (isWingetSubdomain) {
+    return NextResponse.redirect("https://github.com/zbrlang/winget-packages");
   }
 
   return NextResponse.next();
