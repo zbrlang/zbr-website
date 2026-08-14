@@ -48,7 +48,7 @@ export default function Navbar() {
         </Link>
 
         <Link
-          href="https://docs.zbrlang.tech"
+          href="https://zbrlang.tech/docs"
           target="_blank"
           rel="noopener noreferrer"
           className="pill-button-primary px-3 md:px-8 h-9 md:h-10 flex items-center justify-center min-w-[36px] md:min-w-fit"

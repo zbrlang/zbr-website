@@ -40,7 +40,7 @@ const config: DocsThemeConfig = {
         content="Official documentation for ZBR, a high-performance Discord scripting language built with Rust."
       />
       <meta property="og:image" content="/images/zbr.png" />
-      <meta property="og:url" content="https://docs.zbrlang.tech/" />
+      <meta property="og:url" content="https://zbrlang.tech/docs" />
       <meta property="og:site_name" content="ZBRLang" />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_US" />

@@ -55,7 +55,7 @@ export default function Footer() {
               <ul className="space-y-3">
                 <li>
                   <Link
-                    href="https://docs.zbrlang.tech"
+                    href="https://zbrlang.tech/docs"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-secondary/40 hover:text-primary transition-colors text-xs font-medium"

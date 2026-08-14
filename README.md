@@ -20,7 +20,7 @@ This repository provides the central platform for ZBR, offering the main landing
 ## Links
 
 - [Website](https://zbrlang.tech)
-- [Documentation](https://docs.zbrlang.tech)
+- [Documentation](https://zbrlang.tech/docs)
 - [API](https://api.zbrlang.tech/)
 - [Extensions](https://zbrlang.tech/extensions)
 - [Support](https://zbrlang.tech/contact)

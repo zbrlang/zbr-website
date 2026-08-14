@@ -19,7 +19,6 @@ export function middleware(request: NextRequest) {
   // Define subdomains
   const isWww = hostname?.startsWith("www.");
   const isApiSubdomain = hostname?.startsWith("api.");
-  const isDocsSubdomain = hostname?.startsWith("docs.");
   const isNpmSubdomain = hostname?.startsWith("npm.");
   const isPackagesSubdomain = hostname?.startsWith("packages.");
   const isInstallSubdomain = hostname?.startsWith("install.");
@@ -34,30 +33,12 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url);
   }
 
-  // 3. Handle Docs Subdomain (docs.zbrlang.tech)
-  if (isDocsSubdomain) {
-    if (isPublicAsset) {
-      return NextResponse.next();
-    }
-
-    if (!url.pathname.startsWith("/docs")) {
-      url.pathname = `/docs${url.pathname}`;
-      return NextResponse.rewrite(url);
-    }
-  } else if (url.pathname.startsWith("/docs")) {
-    // Redirect from main domain to docs subdomain
-    url.hostname = "docs.zbrlang.tech";
-    url.pathname = url.pathname.replace(/^\/docs/, "");
-    if (url.pathname === "") url.pathname = "/";
-    return NextResponse.redirect(url);
-  }
-
-  // 4. Handle npm Subdomain (npm.zbrlang.tech)
+  // 2. Handle npm Subdomain (npm.zbrlang.tech)
   if (isNpmSubdomain) {
     return NextResponse.redirect("https://www.npmjs.com/package/@zbrlang/zbr");
   }
 
-  // 5. Handle packages Subdomain (packages.zbrlang.tech)
+  // 3. Handle packages Subdomain (packages.zbrlang.tech)
   if (isPackagesSubdomain) {
     const packageName = url.pathname.replace(/^\//, "");
 
@@ -83,14 +64,14 @@ export function middleware(request: NextRequest) {
     }
   }
 
-  // 6. Handle install Subdomain (install.zbrlang.tech)
+  // 4. Handle install Subdomain (install.zbrlang.tech)
   if (isInstallSubdomain) {
     return NextResponse.redirect(
       "https://raw.githubusercontent.com/zbrlang/zbr/main/scripts/install.sh",
     );
   }
 
-  // 7. Handle Distribution Subdomains
+  // 5. Handle Distribution Subdomains
   if (isHomebrewSubdomain) {
     return NextResponse.redirect("https://github.com/zbrlang/homebrew-tap");
   }
