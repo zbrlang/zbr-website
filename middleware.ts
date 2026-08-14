@@ -22,6 +22,7 @@ export function middleware(request: NextRequest) {
   const isDocsSubdomain = hostname?.startsWith("docs.");
   const isNpmSubdomain = hostname?.startsWith("npm.");
   const isPackagesSubdomain = hostname?.startsWith("packages.");
+  const isInstallSubdomain = hostname?.startsWith("install.");
 
   // 1. Handle WWW Subdomain (www.zbrlang.tech)
   if (isWww) {
@@ -82,6 +83,13 @@ export function middleware(request: NextRequest) {
     if (targetFile) {
       return NextResponse.redirect(`${githubReleaseBase}/${targetFile}`);
     }
+  }
+
+  // 6. Handle install Subdomain (install.zbrlang.tech)
+  if (isInstallSubdomain) {
+    return NextResponse.redirect(
+      "https://raw.githubusercontent.com/zbrlang/zbr/main/scripts/install.sh",
+    );
   }
 
   return NextResponse.next();
