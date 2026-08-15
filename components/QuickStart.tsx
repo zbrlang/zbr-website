@@ -8,7 +8,7 @@ const terminalSteps = [
   {
     title: "Install the CLI",
     command: "npm i -g @zbrlang/zbr",
-    output: ["added 1 package in 0.8s", "zbr version", "zbr v1.8.4"],
+    output: ["added 1 package in 0.8s", "zbr version", "zbr v1.8.5"],
     description: "Install ZBR CLI, directly from npm.",
   },
   {
@@ -160,7 +160,7 @@ export default function QuickStart() {
                     <div className="w-3 h-3 rounded-full bg-white/10" />
                   </div>
                   <span className="text-[10px] font-bold uppercase tracking-widest text-white/20">
-                    zbr-cli v1.4.1
+                    zbr-cli v1.4.5
                   </span>
                 </div>
 
