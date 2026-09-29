@@ -1,0 +1,26 @@
+# ZregexGroups
+
+Returns every capture group of the first match of the pattern, joined by newlines. The whole match is excluded. Returns an empty string when the pattern does not match.
+
+## Syntax
+
+```zbr
+ZregexGroups{text;pattern}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| text | string | Yes | - |
+| pattern | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZregexGroups{warned by <@123> : spamming;warned by <@(\d+)> : (.+)}
+```
+
