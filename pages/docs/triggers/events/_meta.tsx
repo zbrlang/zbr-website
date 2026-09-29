@@ -1,4 +1,9 @@
 const meta = {
+  "onAuditLogEntry": "onAuditLogEntry",
+  "onAutomodAction": "onAutomodAction",
+  "onAutomodRuleCreate": "onAutomodRuleCreate",
+  "onAutomodRuleDelete": "onAutomodRuleDelete",
+  "onAutomodRuleUpdate": "onAutomodRuleUpdate",
   "onBanAdd": "onBanAdd",
   "onBanRemove": "onBanRemove",
   "onBoostAdd": "onBoostAdd",
@@ -15,11 +20,19 @@ const meta = {
   "onMessage": "onMessage",
   "onMessageDelete": "onMessageDelete",
   "onMessageEdit": "onMessageEdit",
+  "onPollVoteAdd": "onPollVoteAdd",
+  "onPollVoteRemove": "onPollVoteRemove",
   "onReactionAdd": "onReactionAdd",
   "onReactionRemove": "onReactionRemove",
   "onRoleCreate": "onRoleCreate",
   "onRoleDelete": "onRoleDelete",
   "onRoleUpdate": "onRoleUpdate",
+  "onStageInstanceCreate": "onStageInstanceCreate",
+  "onStageInstanceDelete": "onStageInstanceDelete",
+  "onStageInstanceUpdate": "onStageInstanceUpdate",
+  "onThreadCreate": "onThreadCreate",
+  "onThreadDelete": "onThreadDelete",
+  "onThreadUpdate": "onThreadUpdate",
   "onVoiceStateUpdate": "onVoiceStateUpdate"
 };
 
