@@ -1,0 +1,20 @@
+# onPollVoteRemove
+
+Fires when a user removes their vote from a poll. Requires the GUILD_MESSAGE_POLLS intent. Poll fields are read with Zoption{key}.
+
+## When it fires
+
+A vote is removed from a poll
+
+
+## Available Context Variables
+
+| Variable | Description |
+| :--- | :--- |
+| author_id | User ID who un-voted |
+| username | Empty |
+| channel_id | Channel ID of the poll |
+| guild_id | Guild ID (if applicable) |
+| message | Empty. Zoption keys: messageID, answerID |
+| trigger_message_id | Poll message ID |
+
