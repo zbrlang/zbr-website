@@ -1,0 +1,20 @@
+# onThreadUpdate
+
+Fires when a thread is updated, such as being renamed, archived, or locked. Requires the GUILDS intent. Thread fields are read with Zoption{key}.
+
+## When it fires
+
+Thread is updated
+
+
+## Available Context Variables
+
+| Variable | Description |
+| :--- | :--- |
+| author_id | Empty |
+| username | Empty |
+| channel_id | Thread ID |
+| guild_id | Guild ID |
+| message | Empty. Zoption keys: threadID, name, parentID, type (e.g. PublicThread) |
+| trigger_message_id | Thread ID |
+
