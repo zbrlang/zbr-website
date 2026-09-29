@@ -1,0 +1,20 @@
+# onAutomodRuleDelete
+
+Fires when an auto moderation rule is deleted. Requires the AUTO_MODERATION_CONFIGURATION intent. Rule fields are read with Zoption{key}.
+
+## When it fires
+
+Automod rule is deleted
+
+
+## Available Context Variables
+
+| Variable | Description |
+| :--- | :--- |
+| author_id | User ID who deleted the rule |
+| username | Empty |
+| channel_id | Empty |
+| guild_id | Guild ID |
+| message | Empty. Zoption keys: ruleID, name, eventType (e.g. MessageSend), trigger, enabled |
+| trigger_message_id | Rule ID |
+
