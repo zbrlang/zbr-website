@@ -1,0 +1,26 @@
+# ZregexAll
+
+Returns every match of the pattern in the text, joined by newlines. Returns an empty string when the pattern does not match.
+
+## Syntax
+
+```zbr
+ZregexAll{text;pattern}
+```
+
+
+## Arguments
+
+| Name | Type | Required | Default |
+| :--- | :--- | :--- | :--- |
+| text | string | Yes | - |
+| pattern | string | Yes | - |
+
+
+
+## Example
+
+```zbr
+ZregexAll{order 5 then 12;\d+}
+```
+
