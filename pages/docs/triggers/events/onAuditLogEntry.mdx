@@ -1,0 +1,20 @@
+# onAuditLogEntry
+
+Fires when an audit log entry is created in a guild. Requires the GUILD_MODERATION intent. Entry fields are read with Zoption{key}.
+
+## When it fires
+
+Any auditable action occurs
+
+
+## Available Context Variables
+
+| Variable | Description |
+| :--- | :--- |
+| author_id | User ID of whoever performed the action |
+| username | Empty |
+| channel_id | Channel ID if the entry targets one, otherwise empty |
+| guild_id | Guild ID |
+| message | Empty. Zoption keys: entryID, action (e.g. Member(Kick)), actionCode, targetID, reason, channelID, automodRuleName |
+| trigger_message_id | Audit log entry ID |
+
