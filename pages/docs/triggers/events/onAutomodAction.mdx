@@ -1,0 +1,20 @@
+# onAutomodAction
+
+Fires when an auto moderation rule takes action, such as blocking a message. Requires the AUTO_MODERATION_EXECUTION intent. Action fields are read with Zoption{key}.
+
+## When it fires
+
+An automod rule blocks or flags content
+
+
+## Available Context Variables
+
+| Variable | Description |
+| :--- | :--- |
+| author_id | User ID who triggered the rule |
+| username | Empty |
+| channel_id | Channel ID if the action targets one, otherwise empty |
+| guild_id | Guild ID |
+| message | Empty. Zoption keys: ruleID, action (e.g. BlockMessage), triggerType (e.g. Keyword), messageID |
+| trigger_message_id | Message ID if the action targets a message |
+
