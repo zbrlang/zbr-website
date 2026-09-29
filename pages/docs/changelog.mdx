@@ -2,6 +2,24 @@
 
 All notable changes to the ZBR project are documented here.
 
+## v1.8.6 - Regex Capture & Event Triggers
+
+This release adds 3 regex functions for working with capture groups, plus 13 new triggers for audit logs, threads, stages, polls, and automod.
+
+### New Functions
+
+- **`ZregexCapture{text;pattern;index}`**: Returns a capture group from the first match. Index `0` is the whole match, `1` and above are capture groups.
+- **`ZregexGroups{text;pattern}`**: Returns every capture group of the first match, joined by newlines.
+- **`ZregexAll{text;pattern}`**: Returns every match of the pattern, joined by newlines.
+
+These add capture group support, which `ZregexMatch`, `ZregexReplace`, and `Zextract` could not provide.
+
+### Events
+
+- Added new triggers: `onAuditLogEntry`, `onThreadCreate`, `onThreadUpdate`, `onThreadDelete`, `onStageInstanceCreate`, `onStageInstanceUpdate`, `onStageInstanceDelete`, `onPollVoteAdd`, `onPollVoteRemove`, `onAutomodRuleCreate`, `onAutomodRuleUpdate`, `onAutomodRuleDelete`, `onAutomodAction`.
+- Trigger-specific data is read with `Zoption{key}`.
+- Added the `AUTO_MODERATION_CONFIGURATION`, `AUTO_MODERATION_EXECUTION`, and `GUILD_MESSAGE_POLLS` intents. Additive, no configuration needed.
+
 ## v1.8.5 - Distribution Simplification
 
 This release reverts the experimental distribution changes introduced in v1.8.4, returning ZBR to its simpler NPM/Bun and manual download distribution model.
